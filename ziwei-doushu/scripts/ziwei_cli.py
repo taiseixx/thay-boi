@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 import math
 from dataclasses import dataclass
 from datetime import date, timedelta
@@ -16,6 +17,9 @@ from pathlib import Path
 from typing import Any
 
 from lunar_python import Lunar, LunarYear, Solar
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from vi_terms import translate, translate_text  # noqa: E402  (chuyển ngữ output sang tiếng Việt)
 
 DEFAULT_RULESET = "ziwei-sanhe-v1"
 
@@ -586,14 +590,18 @@ def main() -> int:
     input_path = Path(args.input)
     output_path = Path(args.output)
 
+    lang = "vi"
     try:
         payload = json.loads(input_path.read_text(encoding="utf-8-sig"))
+        lang = str(payload.get("lang") or "vi")
         output = build_output(payload)
+        if lang == "vi":
+            output = translate(output)
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
         return 0
     except Exception as exc:
-        error_payload = {"error": str(exc)}
+        error_payload = {"error": translate_text(str(exc)) if lang == "vi" else str(exc)}
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(json.dumps(error_payload, ensure_ascii=False, indent=2), encoding="utf-8")
         return 1

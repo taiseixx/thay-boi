@@ -1,353 +1,353 @@
-# 紫微斗数星曜详解
+# Chi tiết các sao trong Tử vi đẩu số
 
-## 目录
-1. [十四主星总览](#主星总览)
-2. [十四主星详解](#主星详解)
-3. [主星组合（同宫双星）](#主星组合)
-4. [甲级辅星详解](#辅星详解)
-5. [六煞星详解](#六煞星)
-6. [星曜庙旺陷表](#庙旺陷表)
+## Mục lục
+1. [Tổng quan 14 chính tinh](#tong-quan-chinh-tinh)
+2. [Chi tiết 14 chính tinh](#chi-tiet-chinh-tinh)
+3. [Tổ hợp chính tinh (hai sao đồng cung)](#to-hop-chinh-tinh)
+4. [Chi tiết phụ tinh hạng giáp](#phu-tinh)
+5. [Lục sát tinh](#luc-sat-tinh)
+6. [Bảng miếu vượng hãm](#bang-mieu-vuong-ham)
 
 ---
 
-## 主星总览
+## Tổng quan chính tinh
 
-十四主星分为北斗星系和南斗星系：
+14 chính tinh chia thành chòm Bắc đẩu và chòm Nam đẩu:
 
-### 北斗星系（紫微星系）
-| 星名 | 五行 | 阴阳 | 核心关键词 | 类比角色 |
+### Chòm Bắc đẩu (chòm Tử Vi)
+| Tên sao | Ngũ hành | Âm dương | Từ khóa cốt lõi | Vai ví von |
 |------|------|------|-----------|---------|
-| 紫微 | 己土 | 阴 | 帝王、尊贵、统御、好面子 | 皇帝 |
-| 天机 | 乙木 | 阴 | 智慧、机变、谋略、善变 | 军师 |
-| 太阳 | 丙火 | 阳 | 光明、博爱、贵气、付出 | 太阳/慈父 |
-| 武曲 | 辛金 | 阴 | 财星、刚毅、果断、孤克 | 财务总监 |
-| 天同 | 壬水 | 阳 | 温和、享福、懒散、晚发 | 福星/小孩 |
-| 廉贞 | 丙火/己土 | 阴 | 复杂、桃花、囚星、政治 | 次桃花/政客 |
+| Tử Vi | Kỷ Thổ | Âm | Đế vương, tôn quý, thống lĩnh, trọng sĩ diện | Hoàng đế |
+| Thiên Cơ | Ất Mộc | Âm | Trí tuệ, cơ biến, mưu lược, hay thay đổi | Quân sư |
+| Thái Dương | Bính Hỏa | Dương | Quang minh, bác ái, quý khí, cho đi | Mặt trời / người cha hiền |
+| Vũ Khúc | Tân Kim | Âm | Tài tinh, cương nghị, quyết đoán, cô khắc | Giám đốc tài chính |
+| Thiên Đồng | Nhâm Thủy | Dương | Ôn hòa, hưởng phúc, lười, phát muộn | Phúc tinh / đứa trẻ |
+| Liêm Trinh | Bính Hỏa / Kỷ Thổ | Âm | Phức tạp, đào hoa, tù tinh, chính trị | Thứ đào hoa / chính khách |
 
-### 南斗星系（天府星系）
-| 星名 | 五行 | 阴阳 | 核心关键词 | 类比角色 |
+### Chòm Nam đẩu (chòm Thiên Phủ)
+| Tên sao | Ngũ hành | Âm dương | Từ khóa cốt lõi | Vai ví von |
 |------|------|------|-----------|---------|
-| 天府 | 戊土 | 阳 | 稳重、库府、保守、衣食 | 财政大臣/国库 |
-| 太阴 | 癸水 | 阴 | 清秀、田宅、柔美、母亲 | 月亮/慈母 |
-| 贪狼 | 甲木/癸水 | 阳 | 欲望、桃花、才艺、多变 | 交际花/艺术家 |
-| 巨门 | 癸水 | 阴 | 口才、是非、暗星、分析 | 律师/评论家 |
-| 天相 | 壬水 | 阳 | 辅佐、印星、衣食、随和 | 宰相/秘书长 |
-| 天梁 | 戊土 | 阳 | 荫星、化解、老成、清高 | 法官/长者 |
-| 七杀 | 庚金/丙火 | 阳 | 将星、冲劲、孤独、变动 | 将军/冒险家 |
-| 破军 | 癸水 | 阴 | 破坏、开创、消耗、变革 | 先锋官/革命者 |
+| Thiên Phủ | Mậu Thổ | Dương | Vững vàng, kho tàng, bảo thủ, cơm áo đủ đầy | Đại thần tài chính / quốc khố |
+| Thái Âm | Quý Thủy | Âm | Thanh tú, điền trạch, mềm mại, người mẹ | Mặt trăng / người mẹ hiền |
+| Tham Lang | Giáp Mộc / Quý Thủy | Dương | Dục vọng, đào hoa, tài nghệ, đa biến | Người giao tế / nghệ sĩ |
+| Cự Môn | Quý Thủy | Âm | Khẩu tài, thị phi, ám tinh, phân tích | Luật sư / nhà bình luận |
+| Thiên Tướng | Nhâm Thủy | Dương | Phò tá, ấn tinh, cơm áo, dễ chịu | Tể tướng / chánh văn phòng |
+| Thiên Lương | Mậu Thổ | Dương | Ấm tinh, hóa giải, già dặn, thanh cao | Quan tòa / bậc trưởng thượng |
+| Thất Sát | Canh Kim / Bính Hỏa | Dương | Tướng tinh, xông xáo, cô độc, biến động | Tướng quân / nhà mạo hiểm |
+| Phá Quân | Quý Thủy | Âm | Phá hoại, khai sáng, hao tổn, cải cách | Tiên phong / nhà cách mạng |
 
 ---
 
-## 主星详解
+## Chi tiết chính tinh
 
-使用方法：
+Cách dùng:
 
-- 先看星曜落宫，再看庙旺利陷。
-- 再看是否有左右、魁钺、昌曲、禄马、羊陀、火铃、空劫、四化介入。
-- 最后放回三方四正判断，不能只凭一句关键词断整张盘。
+- Xem sao nằm ở cung nào trước, rồi xem miếu vượng lợi hãm.
+- Tiếp theo xem có Tả Hữu, Khôi Việt, Xương Khúc, Lộc Mã, Kình Đà, Hỏa Linh, Không Kiếp, tứ hóa tham gia hay không.
+- Cuối cùng đặt vào tam phương tứ chính mà phán đoán, không chỉ dựa vào một từ khóa mà đoán cả lá số.
 
-### 紫微星
-**核心特质**：尊贵、自尊心强、领导力、好面子、需要被尊重
-**优点**：气度恢宏、有领袖气质、慷慨大方、有组织能力
-**缺点**：自视甚高、主观意识强、容易刚愎自用、需要被捧
-**在各宫含义**：
-- 命宫：天生具有领导气质，自尊心极强
-- 官禄：事业格局大，适合管理层或创业
-- 财帛：财运好但花费也大，讲究排场
-- 夫妻：配偶条件好但要求也高
-**喜搭配**：左辅、右弼、天魁、天钺（百官朝拱）
-**忌搭配**：独坐无辅星则为"孤君"，力量大减
+### Sao Tử Vi
+**Đặc tính cốt lõi**: tôn quý, lòng tự trọng cao, khả năng lãnh đạo, trọng sĩ diện, cần được tôn trọng
+**Ưu điểm**: khí độ rộng lớn, có tố chất lãnh tụ, hào phóng, có năng lực tổ chức
+**Nhược điểm**: tự cao, chủ quan, dễ cố chấp độc đoán, cần được tâng bốc
+**Ý nghĩa ở các cung**:
+- Mệnh: bẩm sinh có khí chất lãnh đạo, lòng tự trọng rất cao
+- Quan Lộc: sự nghiệp có tầm vóc lớn, hợp làm quản lý hoặc khởi nghiệp
+- Tài Bạch: tài vận tốt nhưng tiêu cũng nhiều, chuộng phô trương
+- Phu Thê: người phối ngẫu có điều kiện tốt nhưng đòi hỏi cũng cao
+**Hợp với**: Tả Phù, Hữu Bật, Thiên Khôi, Thiên Việt (bách quan triều củng)
+**Kỵ**: ngồi một mình không có phụ tinh thì thành "cô quân", sức mạnh giảm nhiều
 
-### 天机星
-**核心特质**：聪明、善变、谋略、浮动、不稳定
-**优点**：思维敏捷、分析力强、善于规划、适应力强
-**缺点**：想太多做太少、犹豫不决、心猿意马、缺乏定力
-**在各宫含义**：
-- 命宫：聪明伶俐但容易想多做少
-- 官禄：适合企划、策略、顾问类工作
-- 财帛：财来财去快，适合流动性投资
-- 夫妻：感情中多变化、多波折
-**喜搭配**：天梁（机梁善谈，利文教学术）
-**忌搭配**：擎羊、化忌（机变成机巧，反受其害）
+### Sao Thiên Cơ
+**Đặc tính cốt lõi**: thông minh, hay đổi, mưu lược, trôi nổi, thiếu ổn định
+**Ưu điểm**: tư duy nhanh, giỏi phân tích, giỏi lập kế hoạch, thích nghi tốt
+**Nhược điểm**: nghĩ nhiều làm ít, do dự, tâm ý bất định, thiếu định lực
+**Ý nghĩa ở các cung**:
+- Mệnh: thông minh lanh lợi nhưng dễ nghĩ nhiều làm ít
+- Quan Lộc: hợp với công việc hoạch định, chiến lược, tư vấn
+- Tài Bạch: tiền vào ra nhanh, hợp đầu tư có tính thanh khoản
+- Phu Thê: tình cảm nhiều thay đổi, nhiều trắc trở
+**Hợp với**: Thiên Lương (Cơ Lương thiện đàm, lợi về giáo dục, học thuật)
+**Kỵ**: Kình Dương, Hóa Kỵ (cơ biến thành cơ xảo, ngược lại tự hại mình)
 
-### 太阳星
-**核心特质**：光明正大、博爱、付出型、贵气、利他
-**优点**：热情大方、乐于助人、有正义感、社交能力强
-**缺点**：不聚财、付出过多、劳碌、对自己不够关注
-**在各宫含义**：
-- 命宫：个性开朗外向，利于公众事务
-- 官禄：适合社会服务、公关、教育
-- 财帛：赚钱不少但留不住，广种薄收
-- 夫妻：男命利妻，女命得夫助
-**特殊**：太阳在寅卯辰巳午未宫为"日出到日中"，力量递增至最强；在申酉戌亥子丑宫为"日落到日藏"，力量递减。白天生人太阳更强。
+### Sao Thái Dương
+**Đặc tính cốt lõi**: quang minh chính đại, bác ái, kiểu người cho đi, quý khí, vị tha
+**Ưu điểm**: nhiệt tình hào phóng, thích giúp người, có chính nghĩa, giỏi giao tiếp
+**Nhược điểm**: không tụ tài, cho đi quá nhiều, vất vả, ít quan tâm bản thân
+**Ý nghĩa ở các cung**:
+- Mệnh: cởi mở hướng ngoại, lợi cho công việc mang tính cộng đồng
+- Quan Lộc: hợp với phục vụ xã hội, quan hệ công chúng, giáo dục
+- Tài Bạch: kiếm không ít nhưng giữ không được, gieo rộng gặt mỏng
+- Phu Thê: nam mệnh lợi vợ, nữ mệnh được chồng giúp
+**Đặc biệt**: Thái Dương ở Dần, Mão, Thìn, Tỵ, Ngọ, Mùi là "mặt trời mọc đến giữa trưa", sức mạnh tăng dần đến mạnh nhất; ở Thân, Dậu, Tuất, Hợi, Tý, Sửu là "mặt trời lặn đến ẩn", sức mạnh giảm dần. Người sinh ban ngày thì Thái Dương mạnh hơn.
 
-### 武曲星
-**核心特质**：财星第一、刚毅果断、实干、孤克、不善言辞
-**优点**：执行力极强、财运好、做事干脆、意志坚定
-**缺点**：性格孤僻、缺乏人情味、说话直接伤人、感情生活不顺
-**在各宫含义**：
-- 命宫：刚直务实，适合金融财经
-- 官禄：财经、银行、军警、技术领域
-- 财帛：正财运极佳，善于理财
-- 夫妻：感情较为严肃，婚姻需要磨合
-**喜搭配**：天府（武府同宫，财库充盈）
-**忌搭配**：破军、化忌（武破之象，先破后成）
+### Sao Vũ Khúc
+**Đặc tính cốt lõi**: tài tinh hàng đầu, cương nghị quyết đoán, thực tế, cô khắc, không khéo ăn nói
+**Ưu điểm**: năng lực thực thi rất mạnh, tài vận tốt, làm việc dứt khoát, ý chí kiên định
+**Nhược điểm**: tính tình cô độc, thiếu tình người, nói thẳng dễ làm tổn thương, đường tình cảm không thuận
+**Ý nghĩa ở các cung**:
+- Mệnh: cương trực thực tế, hợp ngành tài chính
+- Quan Lộc: tài chính, ngân hàng, quân đội cảnh sát, kỹ thuật
+- Tài Bạch: chính tài rất tốt, giỏi quản lý tiền
+- Phu Thê: tình cảm khá nghiêm túc, hôn nhân cần thời gian mài giũa
+**Hợp với**: Thiên Phủ (Vũ Phủ đồng cung, kho tài đầy ắp)
+**Kỵ**: Phá Quân, Hóa Kỵ (tượng Vũ Phá, phá trước thành sau)
 
-### 天同星
-**核心特质**：福星、温和、享受、懒散、晚发、先苦后甜
-**优点**：性格温和、与人为善、有福气、不争不抢
-**缺点**：缺乏上进心、依赖性强、遇事退缩、办事拖拉
-**在各宫含义**：
-- 命宫：好好先生/小姐，人缘好但缺乏魄力
-- 官禄：不太有企图心，适合稳定工作
-- 财帛：有福可享但不太会赚大钱
-- 夫妻：感情温馨但可能缺乏激情
-**特殊**：天同化忌反而可以激发斗志，属于"逆境成才"型
+### Sao Thiên Đồng
+**Đặc tính cốt lõi**: phúc tinh, ôn hòa, hưởng thụ, lười, phát muộn, trước khổ sau ngọt
+**Ưu điểm**: tính ôn hòa, hiền lành với người, có phúc, không tranh giành
+**Nhược điểm**: thiếu chí tiến thủ, dễ ỷ lại, gặp việc hay lùi, làm việc chậm chạp
+**Ý nghĩa ở các cung**:
+- Mệnh: người hiền lành dễ chịu, được lòng người nhưng thiếu quyết đoán
+- Quan Lộc: không nhiều tham vọng, hợp công việc ổn định
+- Tài Bạch: có phúc để hưởng nhưng khó kiếm tiền lớn
+- Phu Thê: tình cảm ấm áp nhưng có thể thiếu đam mê
+**Đặc biệt**: Thiên Đồng Hóa Kỵ ngược lại kích thích ý chí, thuộc kiểu "thành tài từ nghịch cảnh"
 
-### 廉贞星
-**核心特质**：复杂多面、政治手腕、次桃花、囚星、情绪化
-**优点**：精明能干、应变能力强、善于交际、感受力强
-**缺点**：情绪波动大、固执己见、容易走极端、桃花是非多
-**在各宫含义**：
-- 命宫：性格复杂多面，爱恨分明
-- 官禄：适合政治、公关、演艺、法律
-- 财帛：财运起伏大，投机性强
-- 夫妻：感情热烈但波折多
-**特殊**：廉贞在官禄为正桃花（事业桃花），在命宫子午位独坐称"廉贞独坐清白"
+### Sao Liêm Trinh
+**Đặc tính cốt lõi**: phức tạp nhiều mặt, thủ đoạn chính trị, thứ đào hoa, tù tinh, cảm xúc mạnh
+**Ưu điểm**: tinh minh giỏi giang, ứng biến tốt, giỏi giao tế, cảm nhận nhạy bén
+**Nhược điểm**: cảm xúc dao động lớn, cố chấp, dễ cực đoan, nhiều thị phi đào hoa
+**Ý nghĩa ở các cung**:
+- Mệnh: tính cách phức tạp nhiều mặt, yêu ghét rõ ràng
+- Quan Lộc: hợp chính trị, quan hệ công chúng, biểu diễn, pháp luật
+- Tài Bạch: tài vận lên xuống mạnh, tính đầu cơ cao
+- Phu Thê: tình cảm nồng nhiệt nhưng nhiều sóng gió
+**Đặc biệt**: Liêm Trinh ở Quan Lộc là chính đào hoa (đào hoa trong sự nghiệp); ở cung Mệnh vị trí Tý, Ngọ ngồi một mình gọi là "Liêm Trinh độc tọa thanh bạch"
 
-### 天府星
-**核心特质**：稳重可靠、国库、保守、衣食无忧、守成
-**优点**：稳健踏实、有安全感、生活品质好、善于守成
-**缺点**：过于保守、缺乏开创精神、可能小气、不够冒险
-**在各宫含义**：
-- 命宫：稳重有度，天生有安定感
-- 官禄：适合管理、财务、库房类工作
-- 财帛：守财有方，理财能力强
-- 夫妻：婚姻稳定，配偶持家
-**关键**：天府被称为"令星"，其力量受对宫和夹宫影响大——对宫有吉星则天府更稳，对宫有煞星则"府库空露"
+### Sao Thiên Phủ
+**Đặc tính cốt lõi**: vững vàng đáng tin, quốc khố, bảo thủ, cơm áo không lo, giữ thành
+**Ưu điểm**: chắc chắn, mang lại cảm giác an toàn, chất lượng sống tốt, giỏi giữ thành quả
+**Nhược điểm**: quá bảo thủ, thiếu tinh thần khai phá, có thể keo kiệt, ngại mạo hiểm
+**Ý nghĩa ở các cung**:
+- Mệnh: điềm đạm có chừng mực, bẩm sinh có cảm giác ổn định
+- Quan Lộc: hợp quản lý, tài chính, kho bãi
+- Tài Bạch: giữ tiền có phương pháp, giỏi quản lý tài chính
+- Phu Thê: hôn nhân ổn định, người phối ngẫu biết lo việc nhà
+**Mấu chốt**: Thiên Phủ được gọi là "lệnh tinh", sức mạnh chịu ảnh hưởng lớn của cung đối và các cung giáp hai bên. Cung đối có cát tinh thì Thiên Phủ càng vững, cung đối có sát tinh thì "phủ khố không lộ" (kho rỗng)
 
-### 太阴星
-**核心特质**：柔美、田宅、母亲/妻子、清秀、内敛
-**优点**：细腻温柔、有审美感、善理家务、田宅运好
-**缺点**：多愁善感、优柔寡断、容易胡思乱想、缺乏魄力
-**在各宫含义**：
-- 命宫：性格温柔内敛，男命主得女贵人
-- 官禄：适合艺术、设计、房产
-- 财帛：不动产运好，积蓄能力强
-- 夫妻：男命主配偶温柔，女命重感情
-**特殊**：太阴与太阳相反，在申酉戌亥子丑宫为"月升到月满"，力量递增；在寅卯辰巳午未宫力量递减。夜间生人太阴更强。
+### Sao Thái Âm
+**Đặc tính cốt lõi**: mềm mại, điền trạch, mẹ / vợ, thanh tú, hướng nội
+**Ưu điểm**: tinh tế dịu dàng, có óc thẩm mỹ, giỏi việc nhà, vận nhà đất tốt
+**Nhược điểm**: đa sầu đa cảm, thiếu quyết đoán, dễ nghĩ ngợi lung tung, thiếu khí phách
+**Ý nghĩa ở các cung**:
+- Mệnh: tính tình dịu dàng hướng nội, nam mệnh được quý nhân nữ giúp
+- Quan Lộc: hợp nghệ thuật, thiết kế, bất động sản
+- Tài Bạch: vận bất động sản tốt, giỏi tích lũy
+- Phu Thê: nam mệnh chủ người phối ngẫu dịu dàng, nữ mệnh trọng tình cảm
+**Đặc biệt**: Thái Âm ngược với Thái Dương: ở Thân, Dậu, Tuất, Hợi, Tý, Sửu là "trăng lên đến trăng tròn", sức mạnh tăng dần; ở Dần, Mão, Thìn, Tỵ, Ngọ, Mùi thì giảm dần. Người sinh ban đêm thì Thái Âm mạnh hơn.
 
-### 贪狼星
-**核心特质**：欲望、桃花、才艺、社交、多才多艺、好奇心
-**优点**：才华横溢、社交能力极强、多才多艺、适应力强
-**缺点**：欲望太多、沉迷享乐、不够专注、桃花问题
-**在各宫含义**：
-- 命宫：多才多艺、交际广泛、人生经历丰富
-- 官禄：适合演艺、公关、销售、创意行业
-- 财帛：偏财运好但花费也大
-- 夫妻：桃花多，感情丰富但复杂
-**特殊**：贪狼遇火星或铃星（火贪格/铃贪格）反而是大吉格局，主突发横财
+### Sao Tham Lang
+**Đặc tính cốt lõi**: dục vọng, đào hoa, tài nghệ, giao tiếp, đa tài đa nghệ, tò mò
+**Ưu điểm**: tài hoa, giao tiếp rất giỏi, đa tài, thích nghi tốt
+**Nhược điểm**: ham muốn nhiều, dễ sa đà hưởng lạc, thiếu tập trung, chuyện đào hoa
+**Ý nghĩa ở các cung**:
+- Mệnh: đa tài đa nghệ, giao du rộng, đời nhiều trải nghiệm
+- Quan Lộc: hợp biểu diễn, quan hệ công chúng, bán hàng, ngành sáng tạo
+- Tài Bạch: thiên tài (tiền bất ngờ) tốt nhưng tiêu cũng nhiều
+- Phu Thê: đào hoa nhiều, tình cảm phong phú nhưng phức tạp
+**Đặc biệt**: Tham Lang gặp Hỏa Tinh hoặc Linh Tinh (Hỏa Tham cách / Linh Tham cách) lại là cách cục đại cát, chủ phát tài đột ngột
 
-### 巨门星
-**核心特质**：口才、是非、暗星、分析能力、疑心
-**优点**：口才极佳、分析能力强、善于研究、洞察力强
-**缺点**：是非多、猜疑心重、人际关系紧张、容易吃暗亏
-**在各宫含义**：
-- 命宫：口才好但容易招惹是非
-- 官禄：适合律师、教师、主播、研究
-- 财帛：靠口才和专业知识赚钱
-- 夫妻：婚姻中口角多
-**特殊**：巨门化禄为"石中隐玉"，化忌则是非加倍；巨门在子午宫独坐（"石中隐玉格"）力量最佳
+### Sao Cự Môn
+**Đặc tính cốt lõi**: khẩu tài, thị phi, ám tinh, năng lực phân tích, đa nghi
+**Ưu điểm**: ăn nói rất giỏi, phân tích mạnh, giỏi nghiên cứu, nhìn thấu vấn đề
+**Nhược điểm**: nhiều thị phi, hay nghi ngờ, quan hệ căng thẳng, dễ chịu thiệt ngầm
+**Ý nghĩa ở các cung**:
+- Mệnh: ăn nói giỏi nhưng dễ chuốc thị phi
+- Quan Lộc: hợp luật sư, giáo viên, dẫn chương trình, nghiên cứu
+- Tài Bạch: kiếm tiền nhờ khẩu tài và chuyên môn
+- Phu Thê: hôn nhân nhiều cãi vã
+**Đặc biệt**: Cự Môn Hóa Lộc là "ngọc ẩn trong đá", Hóa Kỵ thì thị phi tăng gấp bội; Cự Môn ngồi một mình ở Tý, Ngọ ("Thạch trung ẩn ngọc cách") có sức mạnh tốt nhất
 
-### 天相星
-**核心特质**：辅佐、印星、衣食、随和、注重外表
-**优点**：协调能力强、注重礼仪、善于辅佐、有品味
-**缺点**：缺乏主见、依赖性强、过于在意外在、不够独立
-**在各宫含义**：
-- 命宫：温文尔雅、注重形象、善于社交
-- 官禄：适合秘书、行政、外交
-- 财帛：有财但需要依托平台
-- 夫妻：重视婚姻品质
-**关键**：天相受夹宫影响极大——被吉星夹（财荫夹印）则大吉，被煞星夹（刑忌夹印）则大凶
+### Sao Thiên Tướng
+**Đặc tính cốt lõi**: phò tá, ấn tinh, cơm áo, dễ chịu, coi trọng vẻ ngoài
+**Ưu điểm**: giỏi điều phối, trọng lễ nghi, giỏi phò tá, có gu
+**Nhược điểm**: thiếu chủ kiến, dễ ỷ lại, quá để ý bề ngoài, chưa đủ độc lập
+**Ý nghĩa ở các cung**:
+- Mệnh: nho nhã lịch sự, chú trọng hình ảnh, giỏi giao tiếp
+- Quan Lộc: hợp thư ký, hành chính, ngoại giao
+- Tài Bạch: có tiền nhưng cần dựa vào một nền tảng
+- Phu Thê: coi trọng chất lượng hôn nhân
+**Mấu chốt**: Thiên Tướng chịu ảnh hưởng rất lớn của các cung giáp. Bị cát tinh giáp (Tài Ấm giáp Ấn) thì đại cát, bị sát tinh giáp (Hình Kỵ giáp Ấn) thì đại hung
 
-### 天梁星
-**核心特质**：荫星、化解灾厄、清高、老成持重、孤独
-**优点**：逢凶化吉、正义感强、关怀他人、稳重大气
-**缺点**：过于清高、不食人间烟火、好为人师、感情淡薄
-**在各宫含义**：
-- 命宫：有化解灾厄的能力，适合公益
-- 官禄：适合医疗、法律、宗教、公益
-- 财帛：不太重视物质，清廉之象
-- 夫妻：婚姻中不够浪漫
-**特殊**：天梁在午宫独坐为"日月并明"（与太阳同宫或对宫），大吉
+### Sao Thiên Lương
+**Đặc tính cốt lõi**: ấm tinh, hóa giải tai ách, thanh cao, già dặn chín chắn, cô độc
+**Ưu điểm**: gặp hung hóa cát, chính nghĩa, quan tâm người khác, điềm đạm rộng lượng
+**Nhược điểm**: quá thanh cao, xa rời thực tế, thích dạy đời, tình cảm nhạt
+**Ý nghĩa ở các cung**:
+- Mệnh: có khả năng hóa giải tai ách, hợp việc công ích
+- Quan Lộc: hợp y tế, pháp luật, tôn giáo, công ích
+- Tài Bạch: không coi trọng vật chất, tượng thanh liêm
+- Phu Thê: hôn nhân thiếu lãng mạn
+**Đặc biệt**: Thiên Lương ngồi một mình ở cung Ngọ là "Nhật Nguyệt tịnh minh" (đồng cung hoặc đối cung với Thái Dương), đại cát
 
-### 七杀星
-**核心特质**：将星、冲劲十足、孤独、变动、开拓
-**优点**：魄力十足、勇于开创、执行力强、不畏困难
-**缺点**：性格孤傲、人际关系差、太过激进、缺乏耐心
-**在各宫含义**：
-- 命宫：人生起伏大，大起大落
-- 官禄：适合军警、开创性事业、竞技
-- 财帛：能赚大钱也能亏大钱
-- 夫妻：婚姻波动大
-**特殊**：七杀与紫微同宫（紫杀格），帝王驭将，格局极高
+### Sao Thất Sát
+**Đặc tính cốt lõi**: tướng tinh, xông xáo, cô độc, biến động, khai phá
+**Ưu điểm**: rất có khí phách, dám khai phá, thực thi mạnh, không sợ khó
+**Nhược điểm**: tính kiêu ngạo cô độc, quan hệ kém, quá cấp tiến, thiếu kiên nhẫn
+**Ý nghĩa ở các cung**:
+- Mệnh: đời nhiều thăng trầm, lên voi xuống chó
+- Quan Lộc: hợp quân đội cảnh sát, sự nghiệp mang tính khai phá, thi đấu
+- Tài Bạch: kiếm được nhiều cũng có thể mất nhiều
+- Phu Thê: hôn nhân biến động lớn
+**Đặc biệt**: Thất Sát đồng cung với Tử Vi (Tử Sát cách), đế vương cầm tướng, cách cục rất cao
 
-### 破军星
-**核心特质**：破坏与重建、先锋、消耗、变革、不安定
-**优点**：开创力极强、勇于变革、不拘一格、适应变化
-**缺点**：破坏性强、不够稳定、浪费资源、喜新厌旧
-**在各宫含义**：
-- 命宫：一生多变动，破旧立新
-- 官禄：适合开创性行业、科研、改革
-- 财帛：财来财去快，消耗性大
-- 夫妻：婚姻变动大
-**提示**：破军不只代表“破”，也代表重组、转型、换赛道。解释时一定连同三方四正、化忌与财官结构一起看。
-
----
-
-## 主星组合
-
-这部分只作为**排盘完成后的组合标签**，不作为反推排盘的背表。
-
-使用原则：
-
-- 先按 `calculation.md` 排出十四主星。
-- 再确认命宫实际落到哪组主星。
-- 不要因为“想判断某个格局”而回头改主星位置。
-
-常见命宫主星组合名称如下：
-
-### 紫微系
-
-- 紫微独坐
-- 紫微天府
-- 紫微贪狼
-- 紫微天相
-- 紫微七杀
-- 紫微破军
-
-### 天机系
-
-- 天机独坐
-- 天机太阴
-- 天机巨门
-- 天机天梁
-
-### 太阳系
-
-- 太阳独坐
-- 太阳太阴
-- 太阳巨门
-- 太阳天梁
-
-### 武曲系
-
-- 武曲独坐
-- 武曲天府
-- 武曲贪狼
-- 武曲天相
-- 武曲七杀
-- 武曲破军
-
-### 天同系
-
-- 天同独坐
-- 天同太阴
-- 天同巨门
-- 天同天梁
-
-### 廉贞系
-
-- 廉贞独坐
-- 廉贞天府
-- 廉贞贪狼
-- 廉贞天相
-- 廉贞七杀
-- 廉贞破军
-
-说明：
-
-- 同一个组合，层次高低不由名字决定，而由庙旺、吉煞、四化、三方四正共同决定。
-- 例如“紫杀”可以是大格局，也可以是高波动结构；“机巨”可以是口才与洞察，也可以是纠结与是非。
-- 如果组合名称和实际排盘不一致，以实际排盘为准。
+### Sao Phá Quân
+**Đặc tính cốt lõi**: phá rồi dựng, tiên phong, hao tổn, cải cách, bất an
+**Ưu điểm**: khai sáng rất mạnh, dám cải cách, không câu nệ khuôn phép, thích nghi với thay đổi
+**Nhược điểm**: tính phá hoại cao, thiếu ổn định, lãng phí nguồn lực, có mới nới cũ
+**Ý nghĩa ở các cung**:
+- Mệnh: cả đời nhiều biến động, phá cũ lập mới
+- Quan Lộc: hợp ngành có tính khai phá, nghiên cứu khoa học, cải cách
+- Tài Bạch: tiền vào ra nhanh, hao tổn lớn
+- Phu Thê: hôn nhân biến động lớn
+**Lưu ý**: Phá Quân không chỉ là "phá", mà còn là tái cấu trúc, chuyển đổi, đổi đường đua. Khi luận phải xét cùng tam phương tứ chính, Hóa Kỵ và cấu trúc Tài – Quan.
 
 ---
 
-## 辅星详解
+## Tổ hợp chính tinh
 
-### 吉星（六吉星）
+Phần này chỉ là **nhãn tổ hợp sau khi đã lập xong lá số**, không dùng làm bảng học thuộc để suy ngược ra lá số.
 
-| 星名 | 五行 | 核心特质 | 在命宫含义 |
+Nguyên tắc dùng:
+
+- Trước hết an 14 chính tinh theo `calculation.md`.
+- Sau đó xác nhận cung Mệnh thực sự rơi vào tổ hợp chính tinh nào.
+- Không vì "muốn đoán một cách cục nào đó" mà quay lại sửa vị trí chính tinh.
+
+Tên các tổ hợp chính tinh ở cung Mệnh thường gặp:
+
+### Hệ Tử Vi
+
+- Tử Vi độc tọa
+- Tử Vi – Thiên Phủ
+- Tử Vi – Tham Lang
+- Tử Vi – Thiên Tướng
+- Tử Vi – Thất Sát
+- Tử Vi – Phá Quân
+
+### Hệ Thiên Cơ
+
+- Thiên Cơ độc tọa
+- Thiên Cơ – Thái Âm
+- Thiên Cơ – Cự Môn
+- Thiên Cơ – Thiên Lương
+
+### Hệ Thái Dương
+
+- Thái Dương độc tọa
+- Thái Dương – Thái Âm
+- Thái Dương – Cự Môn
+- Thái Dương – Thiên Lương
+
+### Hệ Vũ Khúc
+
+- Vũ Khúc độc tọa
+- Vũ Khúc – Thiên Phủ
+- Vũ Khúc – Tham Lang
+- Vũ Khúc – Thiên Tướng
+- Vũ Khúc – Thất Sát
+- Vũ Khúc – Phá Quân
+
+### Hệ Thiên Đồng
+
+- Thiên Đồng độc tọa
+- Thiên Đồng – Thái Âm
+- Thiên Đồng – Cự Môn
+- Thiên Đồng – Thiên Lương
+
+### Hệ Liêm Trinh
+
+- Liêm Trinh độc tọa
+- Liêm Trinh – Thiên Phủ
+- Liêm Trinh – Tham Lang
+- Liêm Trinh – Thiên Tướng
+- Liêm Trinh – Thất Sát
+- Liêm Trinh – Phá Quân
+
+Ghi chú:
+
+- Cùng một tổ hợp, cao hay thấp không do cái tên quyết định mà do miếu vượng, cát sát, tứ hóa và tam phương tứ chính cùng quyết định.
+- Ví dụ "Tử Sát" có thể là đại cách cục, cũng có thể là cấu trúc dao động mạnh; "Cơ Cự" có thể là khẩu tài và sự sâu sắc, cũng có thể là rối rắm và thị phi.
+- Nếu tên tổ hợp không khớp với lá số thực tế thì lấy lá số thực tế làm chuẩn.
+
+---
+
+## Phụ tinh
+
+### Cát tinh (lục cát tinh)
+
+| Tên sao | Ngũ hành | Đặc tính cốt lõi | Ý nghĩa ở cung Mệnh |
 |------|------|---------|-----------|
-| 文昌 | 辛金 | 正统学问、科甲功名、文书 | 聪慧好学、学历高、表达好 |
-| 文曲 | 癸水 | 才艺、异路功名、口才 | 多才多艺、偏才、有文艺天赋 |
-| 左辅 | 戊土 | 助力、贵人、善良 | 人缘好、有贵人帮、做事有助力 |
-| 右弼 | 癸水 | 助力、贵人、随和 | 同上，但更柔和 |
-| 天魁 | 丙火 | 阳贵人（男贵人）、科甲 | 遇难有人帮，考试运好 |
-| 天钺 | 丁火 | 阴贵人（女贵人）、阴助 | 暗中有贵人相助 |
+| Văn Xương | Tân Kim | Học vấn chính thống, khoa bảng công danh, văn thư | Thông minh hiếu học, học vấn cao, diễn đạt tốt |
+| Văn Khúc | Quý Thủy | Tài nghệ, công danh đường khác, khẩu tài | Đa tài, thiên tài, có năng khiếu văn nghệ |
+| Tả Phù | Mậu Thổ | Trợ lực, quý nhân, lương thiện | Được lòng người, có quý nhân giúp, làm việc có người đỡ |
+| Hữu Bật | Quý Thủy | Trợ lực, quý nhân, dễ chịu | Như trên nhưng mềm mỏng hơn |
+| Thiên Khôi | Bính Hỏa | Dương quý nhân (quý nhân nam), khoa bảng | Gặp nạn có người giúp, vận thi cử tốt |
+| Thiên Việt | Đinh Hỏa | Âm quý nhân (quý nhân nữ), giúp ngầm | Có quý nhân âm thầm giúp đỡ |
 
-### 禄马相关
+### Nhóm Lộc Mã
 
-| 星名 | 五行 | 核心特质 | 在命宫含义 |
+| Tên sao | Ngũ hành | Đặc tính cốt lõi | Ý nghĩa ở cung Mệnh |
 |------|------|---------|-----------|
-| 禄存 | 己土 | 正财禄、稳定收入、孤独 | 有财运但有孤独感，两侧必有擎羊陀罗 |
-| 天马 | 火 | 驿马、奔波、变动 | 人生多变动、出行多 |
+| Lộc Tồn | Kỷ Thổ | Chính tài lộc, thu nhập ổn định, cô độc | Có tài vận nhưng có cảm giác cô độc, hai bên luôn có Kình Dương và Đà La |
+| Thiên Mã | Hỏa | Dịch mã, bôn ba, biến động | Đời nhiều thay đổi, hay đi xa |
 
-禄存+天马同宫或三合 = "禄马交驰"，主发财
+Lộc Tồn + Thiên Mã đồng cung hoặc tam hợp = "Lộc Mã giao trì", chủ phát tài
 
 ---
 
-## 六煞星
+## Lục sát tinh
 
-| 星名 | 五行 | 核心特质 | 在命宫含义 |
+| Tên sao | Ngũ hành | Đặc tính cốt lõi | Ý nghĩa ở cung Mệnh |
 |------|------|---------|-----------|
-| 擎羊 | 庚金 | 刑伤、是非、刚烈 | 个性刚强、争斗、容易受伤 |
-| 陀罗 | 辛金 | 拖延、纠缠、暗耗 | 做事拖拉、暗中消耗、纠结 |
-| 火星 | 丙火 | 急躁、暴烈、突发 | 性急、脾气暴、但遇贪狼反成吉格 |
-| 铃星 | 丁火 | 阴火、暗燃、隐患 | 心火暗烧、表面平静内心焦虑 |
-| 地空 | 火 | 空虚、落空、创意 | 想法独特但不切实际，有哲学宗教缘分 |
-| 地劫 | 火 | 劫夺、损失、灵感 | 财物损失，但有灵感和直觉 |
+| Kình Dương | Canh Kim | Hình thương, thị phi, cương liệt | Tính cương cường, tranh đấu, dễ bị thương |
+| Đà La | Tân Kim | Trì hoãn, dây dưa, hao ngầm | Làm việc chậm, hao tổn âm thầm, rối rắm |
+| Hỏa Tinh | Bính Hỏa | Nóng vội, bạo liệt, đột phát | Tính nóng, dễ nổi giận, nhưng gặp Tham Lang lại thành cát cách |
+| Linh Tinh | Đinh Hỏa | Âm hỏa, cháy ngầm, ẩn họa | Lửa lòng âm ỉ, ngoài bình thản trong lo âu |
+| Địa Không | Hỏa | Hư không, thất bại, sáng tạo | Ý tưởng độc đáo nhưng thiếu thực tế, có duyên với triết học, tôn giáo |
+| Địa Kiếp | Hỏa | Cướp đoạt, tổn thất, linh cảm | Tổn thất tiền của, nhưng có linh cảm và trực giác |
 
-煞星不全是凶——在特定组合中反而成为催化剂。关键看搭配。
+Sát tinh không hẳn là hung: trong một số tổ hợp nhất định chúng lại thành chất xúc tác. Mấu chốt là xem phối hợp.
 
 ---
 
-## 庙旺陷表
+## Bảng miếu vượng hãm
 
-### 十四主星庙旺利平陷
+### Miếu vượng lợi bình hãm của 14 chính tinh
 
-（庙=5, 旺=4, 得地=3, 利=2, 平=1, 不得地=0, 落陷=-1）
+(Miếu = 5, Vượng = 4, Đắc địa = 3, Lợi = 2, Bình = 1, Bất đắc địa = 0, Hãm = -1)
 
-| 主星 | 子 | 丑 | 寅 | 卯 | 辰 | 巳 | 午 | 未 | 申 | 酉 | 戌 | 亥 |
+| Chính tinh | Tý | Sửu | Dần | Mão | Thìn | Tỵ | Ngọ | Mùi | Thân | Dậu | Tuất | Hợi |
 |------|---|---|---|---|---|---|---|---|---|---|---|---|
-| 紫微 | 平 | 庙 | 旺 | 旺 | 得地 | 旺 | 庙 | 庙 | 旺 | 旺 | 得地 | 旺 |
-| 天机 | 庙 | 落陷 | 得地 | 旺 | 利 | 平 | 庙 | 落陷 | 得地 | 旺 | 利 | 平 |
-| 太阳 | 落陷 | 不得地 | 旺 | 庙 | 旺 | 旺 | 旺 | 得地 | 得地 | 平 | 不得地 | 落陷 |
-| 武曲 | 旺 | 庙 | 得地 | 利 | 庙 | 平 | 旺 | 庙 | 得地 | 利 | 庙 | 平 |
-| 天同 | 旺 | 不得地 | 利 | 平 | 平 | 庙 | 落陷 | 不得地 | 旺 | 平 | 平 | 庙 |
-| 廉贞 | 平 | 利 | 庙 | 平 | 利 | 落陷 | 平 | 利 | 庙 | 平 | 利 | 落陷 |
-| 天府 | 庙 | 庙 | 庙 | 得地 | 庙 | 得地 | 旺 | 庙 | 得地 | 旺 | 庙 | 得地 |
-| 太阴 | 庙 | 庙 | 旺 | 落陷 | 落陷 | 落陷 | 不得地 | 不得地 | 利 | 旺 | 旺 | 庙 |
-| 贪狼 | 旺 | 庙 | 平 | 利 | 庙 | 落陷 | 旺 | 庙 | 平 | 利 | 庙 | 落陷 |
-| 巨门 | 旺 | 不得地 | 庙 | 庙 | 落陷 | 旺 | 旺 | 不得地 | 庙 | 庙 | 落陷 | 旺 |
-| 天相 | 庙 | 庙 | 庙 | 落陷 | 得地 | 得地 | 庙 | 得地 | 庙 | 落陷 | 得地 | 得地 |
-| 天梁 | 庙 | 旺 | 庙 | 庙 | 庙 | 落陷 | 庙 | 旺 | 落陷 | 得地 | 庙 | 落陷 |
-| 七杀 | 旺 | 庙 | 庙 | 旺 | 庙 | 平 | 旺 | 庙 | 庙 | 旺 | 庙 | 平 |
-| 破军 | 庙 | 旺 | 得地 | 落陷 | 旺 | 平 | 庙 | 旺 | 得地 | 落陷 | 旺 | 平 |
+| Tử Vi | Bình | Miếu | Vượng | Vượng | Đắc địa | Vượng | Miếu | Miếu | Vượng | Vượng | Đắc địa | Vượng |
+| Thiên Cơ | Miếu | Hãm | Đắc địa | Vượng | Lợi | Bình | Miếu | Hãm | Đắc địa | Vượng | Lợi | Bình |
+| Thái Dương | Hãm | Bất đắc địa | Vượng | Miếu | Vượng | Vượng | Vượng | Đắc địa | Đắc địa | Bình | Bất đắc địa | Hãm |
+| Vũ Khúc | Vượng | Miếu | Đắc địa | Lợi | Miếu | Bình | Vượng | Miếu | Đắc địa | Lợi | Miếu | Bình |
+| Thiên Đồng | Vượng | Bất đắc địa | Lợi | Bình | Bình | Miếu | Hãm | Bất đắc địa | Vượng | Bình | Bình | Miếu |
+| Liêm Trinh | Bình | Lợi | Miếu | Bình | Lợi | Hãm | Bình | Lợi | Miếu | Bình | Lợi | Hãm |
+| Thiên Phủ | Miếu | Miếu | Miếu | Đắc địa | Miếu | Đắc địa | Vượng | Miếu | Đắc địa | Vượng | Miếu | Đắc địa |
+| Thái Âm | Miếu | Miếu | Vượng | Hãm | Hãm | Hãm | Bất đắc địa | Bất đắc địa | Lợi | Vượng | Vượng | Miếu |
+| Tham Lang | Vượng | Miếu | Bình | Lợi | Miếu | Hãm | Vượng | Miếu | Bình | Lợi | Miếu | Hãm |
+| Cự Môn | Vượng | Bất đắc địa | Miếu | Miếu | Hãm | Vượng | Vượng | Bất đắc địa | Miếu | Miếu | Hãm | Vượng |
+| Thiên Tướng | Miếu | Miếu | Miếu | Hãm | Đắc địa | Đắc địa | Miếu | Đắc địa | Miếu | Hãm | Đắc địa | Đắc địa |
+| Thiên Lương | Miếu | Vượng | Miếu | Miếu | Miếu | Hãm | Miếu | Vượng | Hãm | Đắc địa | Miếu | Hãm |
+| Thất Sát | Vượng | Miếu | Miếu | Vượng | Miếu | Bình | Vượng | Miếu | Miếu | Vượng | Miếu | Bình |
+| Phá Quân | Miếu | Vượng | Đắc địa | Hãm | Vượng | Bình | Miếu | Vượng | Đắc địa | Hãm | Vượng | Bình |
 
-出处：《紫微斗數全書》卷二「庙旺得地利益平和不得地落陷」总表（在「禄权科忌图」之后、「一 命宫」之前），取维基文库录入本，修订版 oldid=1963110：https://zh.wikisource.org/w/index.php?title=紫微斗數全書/卷二&oldid=1963110 。原表的「利益」「平和」在本表记作「利」「平」。开源排盘库 iztro 2.6.2 的主星亮度数据与此表 168 格完全一致。
+Nguồn: bảng tổng "Miếu vượng đắc địa lợi ích bình hòa bất đắc địa lạc hãm" ở quyển 2 sách *Tử Vi Đẩu Số Toàn Thư* (sau "Lộc Quyền Khoa Kỵ đồ", trước "Nhất: cung Mệnh"), lấy theo bản nhập liệu trên Wikisource, bản sửa oldid=1963110: https://zh.wikisource.org/w/index.php?title=紫微斗數全書/卷二&oldid=1963110 . Trong bảng gốc, "lợi ích" và "bình hòa" được ghi gọn là "Lợi" và "Bình". Dữ liệu độ sáng chính tinh của thư viện lập lá số mã nguồn mở iztro 2.6.2 khớp hoàn toàn 168 ô với bảng này.
 
-限制与异文：
+Giới hạn và dị bản:
 
-- 维基文库本为网友录入，未注明底本，尚未与影印本或刻本逐字核对。
-- 书内有异文：卷三「论诸星同垣各司所宜」逐星列举中，天机在辰作「旺」，本表作「利」；卷二「一 命宫」逐星宫位文与本表有 12 格不同（太阳丑戌、廉贞寅、天府卯、太阴寅午未酉戌、巨门辰戌、天梁丑未）。本表以卷二总表为准。
-- 不同流派的庙旺表有出入；本表是《全書》口径，中州派等其他流派的完整表尚未找到可核对的来源。
-- 旧版本表（2026-03 初始版本）有 89 格与《全書》不同且无出处，已全部按卷二总表更正。
+- Bản Wikisource do cư dân mạng nhập, không ghi bản gốc, chưa đối chiếu từng chữ với bản chụp hay bản khắc.
+- Sách có dị bản: ở quyển 3, mục "Luận chư tinh đồng viên các ty sở nghi", Thiên Cơ ở Thìn ghi là "Vượng", bảng này ghi "Lợi"; phần văn từng sao theo cung ở "Nhất: cung Mệnh" quyển 2 khác bảng này 12 ô (Thái Dương ở Sửu, Tuất; Liêm Trinh ở Dần; Thiên Phủ ở Mão; Thái Âm ở Dần, Ngọ, Mùi, Dậu, Tuất; Cự Môn ở Thìn, Tuất; Thiên Lương ở Sửu, Mùi). Bảng này lấy bảng tổng quyển 2 làm chuẩn.
+- Các phái khác nhau có bảng miếu vượng khác nhau; bảng này theo quy ước *Toàn Thư*, chưa tìm được nguồn có thể đối chiếu cho bảng đầy đủ của Trung Châu phái hay các phái khác.
+- Bảng phiên bản cũ (bản đầu tiên tháng 3/2026) có 89 ô khác *Toàn Thư* và không ghi nguồn, đã sửa toàn bộ theo bảng tổng quyển 2.
 
-实际论盘时应结合整体格局综合判断，不可单以庙陷定吉凶。
+Khi luận lá số thực tế phải kết hợp toàn cục, không được chỉ dựa vào miếu hãm mà định cát hung.
 
-### 庙旺陷的实际影响
-- **庙旺**：星曜优点充分发挥，缺点被压制，遇煞也能化解
-- **得地/利**：正常发挥，遇吉加吉，遇凶则有波折
-- **平**：力量不足，需要辅星帮扶
-- **落陷**：缺点暴露，优点难以发挥，遇煞雪上加霜，但如果化禄化权可以补救
+### Ảnh hưởng thực tế của miếu vượng hãm
+- **Miếu, Vượng**: ưu điểm của sao phát huy đầy đủ, nhược điểm bị kìm, gặp sát tinh cũng hóa giải được
+- **Đắc địa, Lợi**: phát huy bình thường, gặp cát thêm cát, gặp hung thì có trắc trở
+- **Bình**: sức yếu, cần phụ tinh hỗ trợ
+- **Hãm**: nhược điểm lộ ra, ưu điểm khó phát huy, gặp sát tinh thì càng tệ, nhưng nếu Hóa Lộc hoặc Hóa Quyền thì có thể bù đắp

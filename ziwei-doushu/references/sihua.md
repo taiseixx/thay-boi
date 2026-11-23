@@ -1,207 +1,207 @@
-# 紫微斗数四化详解
+# Chi tiết Tứ hóa trong Tử vi đẩu số
 
-## 目录
-1. [四化基础概念](#基础概念)
-2. [各年干四化表](#四化表)
-3. [四化入十二宫详解](#四化入宫)
-4. [大限四化与流年四化](#运限四化)
-5. [四化飞星进阶](#飞星进阶)
+## Mục lục
+1. [Khái niệm cơ bản về tứ hóa](#khai-niem-co-ban)
+2. [Bảng tứ hóa theo can năm](#bang-tu-hoa)
+3. [Tứ hóa nhập 12 cung](#tu-hoa-nhap-cung)
+4. [Tứ hóa đại hạn và tứ hóa lưu niên](#tu-hoa-van-han)
+5. [Phi tinh tứ hóa nâng cao](#phi-tinh-nang-cao)
 
 ---
 
-## 基础概念
+## Khái niệm cơ bản
 
-四化是紫微斗数中最重要的动态机制，代表星曜受到天干的影响而产生质变。
+Tứ hóa là cơ chế động quan trọng nhất trong Tử vi đẩu số, thể hiện việc sao chịu ảnh hưởng của thiên can mà biến chất.
 
-### 四化含义
+### Ý nghĩa tứ hóa
 
-| 四化 | 符号 | 五行 | 核心含义 | 类比 |
+| Tứ hóa | Ký hiệu | Ngũ hành | Ý nghĩa cốt lõi | Ví von |
 |------|------|------|---------|------|
-| 化禄 | 禄 | 土 | 财禄、顺利、增加、得到 | 收入增加、机会来临 |
-| 化权 | 权 | 木 | 权力、掌控、努力、竞争 | 升职加权、主动争取 |
-| 化科 | 科 | 水 | 名声、贵人、科甲、平顺 | 声名远播、逢凶化吉 |
-| 化忌 | 忌 | 水 | 纠缠、执着、不顺、损失 | 困扰、挫折、放不下 |
+| Hóa Lộc | Lộc | Thổ | Tài lộc, thuận lợi, tăng thêm, có được | Thu nhập tăng, cơ hội đến |
+| Hóa Quyền | Quyền | Mộc | Quyền lực, nắm giữ, nỗ lực, cạnh tranh | Thăng chức thêm quyền, chủ động giành lấy |
+| Hóa Khoa | Khoa | Thủy | Danh tiếng, quý nhân, khoa bảng, êm thuận | Tiếng tăm lan xa, gặp hung hóa cát |
+| Hóa Kỵ | Kỵ | Thủy | Vướng mắc, chấp niệm, không thuận, tổn thất | Phiền não, thất bại, không buông được |
 
-### 四化的层次
-- **生年四化（本命四化）**：影响一生，为先天格局的一部分
-- **大限四化**：影响十年，以大限宫干飞四化
-- **流年四化**：影响一年，以流年天干飞四化
-- **流月/流日四化**：更细的推演，用法相同
+### Các tầng tứ hóa
+- **Tứ hóa năm sinh (tứ hóa bản mệnh)**: ảnh hưởng cả đời, là một phần của cách cục tiên thiên
+- **Tứ hóa đại hạn**: ảnh hưởng mười năm, dùng can cung đại hạn để phi tứ hóa
+- **Tứ hóa lưu niên**: ảnh hưởng một năm, dùng can của năm xem để phi tứ hóa
+- **Tứ hóa lưu nguyệt / lưu nhật**: suy đoán chi tiết hơn, cách dùng tương tự
 
-### 重要原则
-- 化禄、化权、化科为三吉化，化忌为凶化
-- 化忌不一定全凶，要看忌入何宫、忌何星
-- 同一颗星同时化禄又化忌（不同层次），代表该领域有得有失
-- 双化禄、双化权会加强效果，双化忌则问题加倍
+### Nguyên tắc quan trọng
+- Hóa Lộc, Hóa Quyền, Hóa Khoa là ba cát hóa, Hóa Kỵ là hung hóa
+- Hóa Kỵ không hẳn toàn hung, phải xem Kỵ nhập cung nào, Kỵ ở sao nào
+- Cùng một sao vừa Hóa Lộc vừa Hóa Kỵ (ở các tầng khác nhau) nghĩa là lĩnh vực đó có được có mất
+- Song Hóa Lộc, song Hóa Quyền làm tăng hiệu quả, song Hóa Kỵ thì vấn đề tăng gấp đôi
 
 ---
 
-## 四化表
+## Bảng tứ hóa
 
-### 生年四化（以出生年天干查表）
+### Tứ hóa năm sinh (tra theo thiên can năm sinh)
 
-| 年干 | 化禄 | 化权 | 化科 | 化忌 |
+| Can năm | Hóa Lộc | Hóa Quyền | Hóa Khoa | Hóa Kỵ |
 |------|------|------|------|------|
-| 甲 | 廉贞 | 破军 | 武曲 | 太阳 |
-| 乙 | 天机 | 天梁 | 紫微 | 太阴 |
-| 丙 | 天同 | 天机 | 文昌 | 廉贞 |
-| 丁 | 太阴 | 天同 | 天机 | 巨门 |
-| 戊 | 贪狼 | 太阴 | 右弼 | 天机 |
-| 己 | 武曲 | 贪狼 | 天梁 | 文曲 |
-| 庚 | 太阳 | 武曲 | 太阴 | 天同 |
-| 辛 | 巨门 | 太阳 | 文曲 | 文昌 |
-| 壬 | 天梁 | 紫微 | 左辅 | 武曲 |
-| 癸 | 破军 | 巨门 | 太阴 | 贪狼 |
+| Giáp | Liêm Trinh | Phá Quân | Vũ Khúc | Thái Dương |
+| Ất | Thiên Cơ | Thiên Lương | Tử Vi | Thái Âm |
+| Bính | Thiên Đồng | Thiên Cơ | Văn Xương | Liêm Trinh |
+| Đinh | Thái Âm | Thiên Đồng | Thiên Cơ | Cự Môn |
+| Mậu | Tham Lang | Thái Âm | Hữu Bật | Thiên Cơ |
+| Kỷ | Vũ Khúc | Tham Lang | Thiên Lương | Văn Khúc |
+| Canh | Thái Dương | Vũ Khúc | Thái Âm | Thiên Đồng |
+| Tân | Cự Môn | Thái Dương | Văn Khúc | Văn Xương |
+| Nhâm | Thiên Lương | Tử Vi | Tả Phù | Vũ Khúc |
+| Quý | Phá Quân | Cự Môn | Thái Âm | Tham Lang |
 
-此表为三合派标准四化表，不同流派可能略有差异（主要差异在化科星上）。
-
----
-
-## 四化入宫
-
-### 化禄入各宫
-
-| 宫位 | 含义 |
-|------|------|
-| 命宫 | 一生多福禄，个性乐观，人缘好 |
-| 兄弟 | 与兄弟姐妹感情好，手足有助力 |
-| 夫妻 | 感情顺利，配偶带财或有助力 |
-| 子女 | 子女有出息，桃花运好，投资运佳 |
-| 财帛 | 财运亨通，赚钱容易，正财丰厚 |
-| 疾厄 | 身体底子好，有口福享受 |
-| 迁移 | 出外有贵人，外出发展好 |
-| 交友 | 朋友多且有助，下属得力 |
-| 官禄 | 事业顺利，工作有成就感 |
-| 田宅 | 不动产运好，居家环境佳 |
-| 福德 | 精神愉快，兴趣广泛，享福 |
-| 父母 | 父母有助力，长辈缘好，学业好 |
-
-### 化权入各宫
-
-| 宫位 | 含义 |
-|------|------|
-| 命宫 | 个性强势，有主见，领导力强 |
-| 兄弟 | 在兄弟中有话语权，手足关系需要协调 |
-| 夫妻 | 配偶能干但强势，婚姻中有权力角力 |
-| 子女 | 子女个性强，自己对子女有掌控欲 |
-| 财帛 | 通过努力赚钱，理财能力强 |
-| 疾厄 | 身体硬朗但容易逞强 |
-| 迁移 | 在外有影响力，社会地位高 |
-| 交友 | 在朋友中有领导地位 |
-| 官禄 | 事业上有实权，掌管实务 |
-| 田宅 | 对家庭事务有掌控权 |
-| 福德 | 精神世界强大，有自主性 |
-| 父母 | 父母强势或自己孝顺有力 |
-
-### 化科入各宫
-
-| 宫位 | 含义 |
-|------|------|
-| 命宫 | 为人斯文有气质，有贵人运 |
-| 兄弟 | 兄弟中有读书人或名声好的 |
-| 夫妻 | 配偶有气质涵养 |
-| 子女 | 子女聪慧好学 |
-| 财帛 | 以名气赚钱，财运平顺 |
-| 疾厄 | 小病能化解，有贵人医 |
-| 迁移 | 出外有名声，社交得体 |
-| 交友 | 朋友素质好，社交圈层高 |
-| 官禄 | 事业有声望，名声好 |
-| 田宅 | 住所环境雅致 |
-| 福德 | 精神生活丰富，有文化品味 |
-| 父母 | 父母有文化，自己学业运好 |
-
-### 化忌入各宫
-
-| 宫位 | 含义 |
-|------|------|
-| 命宫 | 人生多烦恼，容易钻牛角尖，但也代表执着认真 |
-| 兄弟 | 与兄弟有嫌隙，手足缘薄 |
-| 夫妻 | 感情波折多，婚姻有考验，但也代表在意 |
-| 子女 | 为子女操心多，或子女运需注意 |
-| 财帛 | 财运有阻碍，容易破财或财来财去 |
-| 疾厄 | 身体某方面需要注意，健康课题 |
-| 迁移 | 出门不太顺利，在外辛苦 |
-| 交友 | 朋友可能带来困扰，识人需谨慎 |
-| 官禄 | 事业多波折，工作压力大，但也代表用心 |
-| 田宅 | 不动产运需注意，居家不够安宁 |
-| 福德 | 内心容易焦虑不安，精神层面的课题 |
-| 父母 | 与父母缘分需经营，或长辈关系有摩擦 |
-
-### 化忌的深层理解
-化忌不全是凶——它代表"在意""执着""课题"：
-- 化忌入夫妻：很在意感情，因为在意所以纠结
-- 化忌入官禄：非常重视事业，因为重视所以压力大
-- 化忌可以理解为"这辈子的功课"，是需要去修炼和成长的领域
+Đây là bảng tứ hóa chuẩn của Tam hợp phái. Các phái khác có thể hơi khác (chủ yếu ở sao Hóa Khoa).
 
 ---
 
-## 运限四化
+## Tứ hóa nhập cung
 
-### 大限四化
-以大限所在宫位的天干飞四化，叠加在本命盘上分析。
+### Hóa Lộc nhập các cung
 
-**大限四化的读法**：
-1. 找到当前大限的宫位天干
-2. 用该天干查四化表
-3. 看四化分别飞入本命盘的哪些宫位
-4. 与本命四化叠加分析
-
-**叠加效应**：
-| 组合 | 含义 |
+| Cung | Ý nghĩa |
 |------|------|
-| 本命化禄 + 大限化禄 | 双禄临门，该领域大发 |
-| 本命化禄 + 大限化忌 | 禄忌交战，先好后坏或有得有失 |
-| 本命化忌 + 大限化忌 | 双忌叠加，该领域压力极大 |
-| 本命化忌 + 大限化禄 | 忌处逢禄，困境中有转机 |
-| 本命化权 + 大限化权 | 双权，该领域权力极大但也有争斗 |
-| 本命化科 + 大限化科 | 双科，名气大增 |
+| Mệnh | Cả đời nhiều phúc lộc, tính lạc quan, được lòng người |
+| Huynh Đệ | Tình cảm anh chị em tốt, được anh em giúp |
+| Phu Thê | Tình cảm thuận lợi, người phối ngẫu mang tài lộc hoặc giúp đỡ |
+| Tử Tức | Con cái có tiền đồ, vận đào hoa tốt, vận đầu tư tốt |
+| Tài Bạch | Tài vận hanh thông, kiếm tiền dễ, chính tài dồi dào |
+| Tật Ách | Nền tảng sức khỏe tốt, có lộc ăn uống |
+| Thiên Di | Ra ngoài có quý nhân, phát triển ở xa tốt |
+| Nô Bộc | Bạn bè nhiều và giúp được, cấp dưới đắc lực |
+| Quan Lộc | Sự nghiệp thuận lợi, công việc có thành tựu |
+| Điền Trạch | Vận bất động sản tốt, môi trường sống tốt |
+| Phúc Đức | Tinh thần vui vẻ, sở thích rộng, hưởng phúc |
+| Phụ Mẫu | Cha mẹ giúp đỡ, có duyên với bề trên, học hành tốt |
 
-### 流年四化
-以流年天干飞四化，叠加在大限和本命盘上。
+### Hóa Quyền nhập các cung
 
-流年命宫的确定：流年地支所在的宫位即为流年命宫，其余十一宫按逆时针排列。
+| Cung | Ý nghĩa |
+|------|------|
+| Mệnh | Tính mạnh mẽ, có chủ kiến, năng lực lãnh đạo cao |
+| Huynh Đệ | Có tiếng nói trong anh em, quan hệ anh em cần điều hòa |
+| Phu Thê | Người phối ngẫu giỏi nhưng mạnh mẽ, hôn nhân có giằng co quyền lực |
+| Tử Tức | Con cái cá tính mạnh, bản thân muốn kiểm soát con |
+| Tài Bạch | Kiếm tiền bằng nỗ lực, giỏi quản lý tài chính |
+| Tật Ách | Thân thể cứng cáp nhưng dễ cố quá sức |
+| Thiên Di | Có ảnh hưởng ở bên ngoài, địa vị xã hội cao |
+| Nô Bộc | Có vị trí dẫn dắt trong nhóm bạn |
+| Quan Lộc | Có thực quyền trong sự nghiệp, nắm việc thực tế |
+| Điền Trạch | Nắm quyền quyết việc trong nhà |
+| Phúc Đức | Thế giới tinh thần mạnh, có tính tự chủ |
+| Phụ Mẫu | Cha mẹ mạnh mẽ, hoặc bản thân hiếu thuận và có năng lực |
 
-### 三层四化综合分析步骤
-1. 先看本命四化定先天格局
-2. 叠加大限四化看十年运势
-3. 再叠加流年四化看当年状况
-4. 重点关注三层四化是否集中在同一宫位——集中之处必是该年焦点
+### Hóa Khoa nhập các cung
+
+| Cung | Ý nghĩa |
+|------|------|
+| Mệnh | Nho nhã có khí chất, có vận quý nhân |
+| Huynh Đệ | Trong anh em có người học giỏi hoặc có tiếng tốt |
+| Phu Thê | Người phối ngẫu có khí chất, có tu dưỡng |
+| Tử Tức | Con cái thông minh hiếu học |
+| Tài Bạch | Kiếm tiền nhờ danh tiếng, tài vận êm thuận |
+| Tật Ách | Bệnh nhỏ hóa giải được, gặp thầy thuốc tốt |
+| Thiên Di | Ra ngoài có danh tiếng, giao tế đúng mực |
+| Nô Bộc | Bạn bè có phẩm chất tốt, vòng giao tiếp cao |
+| Quan Lộc | Sự nghiệp có uy tín, danh tiếng tốt |
+| Điền Trạch | Nơi ở tao nhã |
+| Phúc Đức | Đời sống tinh thần phong phú, có gu văn hóa |
+| Phụ Mẫu | Cha mẹ có học, bản thân vận học hành tốt |
+
+### Hóa Kỵ nhập các cung
+
+| Cung | Ý nghĩa |
+|------|------|
+| Mệnh | Đời nhiều phiền não, dễ đi vào ngõ cụt, nhưng cũng là người cố chấp và nghiêm túc |
+| Huynh Đệ | Có hiềm khích với anh em, duyên anh em mỏng |
+| Phu Thê | Tình cảm nhiều trắc trở, hôn nhân bị thử thách, nhưng cũng là vì quá để tâm |
+| Tử Tức | Lo lắng nhiều cho con cái, hoặc vận con cái cần chú ý |
+| Tài Bạch | Tài vận có trở ngại, dễ hao tài hoặc tiền vào ra nhanh |
+| Tật Ách | Một mặt nào đó của sức khỏe cần chú ý, là bài học về sức khỏe |
+| Thiên Di | Ra ngoài không mấy thuận, vất vả ở bên ngoài |
+| Nô Bộc | Bạn bè có thể mang lại phiền toái, cần cẩn trọng khi nhìn người |
+| Quan Lộc | Sự nghiệp nhiều trắc trở, áp lực công việc lớn, nhưng cũng là vì rất tận tâm |
+| Điền Trạch | Vận bất động sản cần chú ý, nhà cửa chưa yên |
+| Phúc Đức | Trong lòng dễ lo âu bất an, bài học về mặt tinh thần |
+| Phụ Mẫu | Duyên với cha mẹ cần vun đắp, hoặc quan hệ với bề trên có va chạm |
+
+### Hiểu sâu về Hóa Kỵ
+Hóa Kỵ không hẳn là hung. Nó thể hiện sự "để tâm", "chấp niệm", "bài học":
+- Hóa Kỵ nhập Phu Thê: rất để tâm đến tình cảm, vì để tâm nên mới rối
+- Hóa Kỵ nhập Quan Lộc: rất coi trọng sự nghiệp, vì coi trọng nên áp lực lớn
+- Có thể hiểu Hóa Kỵ là "bài tập của kiếp này", là lĩnh vực cần tu dưỡng và trưởng thành
 
 ---
 
-## 飞星进阶
+## Tứ hóa vận hạn
 
-### 宫干飞四化（飞星派核心技法）
+### Tứ hóa đại hạn
+Dùng thiên can của cung đại hạn để phi tứ hóa, chồng lên lá số bản mệnh mà phân tích.
 
-飞星派的精髓在于：不仅看生年四化，还关注每个宫位的宫干所飞出的四化落入哪些宫位，由此建立宫位之间的因果关系。
+**Cách đọc tứ hóa đại hạn**:
+1. Tìm thiên can của cung đại hạn hiện tại
+2. Dùng can đó tra bảng tứ hóa
+3. Xem bốn hóa lần lượt bay vào cung nào của lá số bản mệnh
+4. Chồng với tứ hóa bản mệnh mà phân tích
 
-**基本操作**：
-1. 取某宫的天干
-2. 用该天干查四化表
-3. 看四化飞入哪些宫位
-4. 分析"源宫"与"落宫"的关系
+**Hiệu ứng chồng lớp**:
+| Tổ hợp | Ý nghĩa |
+|------|------|
+| Bản mệnh Hóa Lộc + đại hạn Hóa Lộc | Song Lộc lâm môn, lĩnh vực đó phát mạnh |
+| Bản mệnh Hóa Lộc + đại hạn Hóa Kỵ | Lộc Kỵ giao chiến, trước tốt sau xấu hoặc có được có mất |
+| Bản mệnh Hóa Kỵ + đại hạn Hóa Kỵ | Song Kỵ chồng chất, lĩnh vực đó áp lực rất lớn |
+| Bản mệnh Hóa Kỵ + đại hạn Hóa Lộc | Kỵ gặp Lộc, trong khó khăn có chuyển biến |
+| Bản mệnh Hóa Quyền + đại hạn Hóa Quyền | Song Quyền, lĩnh vực đó quyền lực rất lớn nhưng cũng có tranh đấu |
+| Bản mệnh Hóa Khoa + đại hạn Hóa Khoa | Song Khoa, danh tiếng tăng mạnh |
 
-**举例**：
-如果夫妻宫天干为甲，甲年四化为：廉贞化禄、破军化权、武曲化科、太阳化忌。
-找到这四颗星分别在盘中的位置，就知道夫妻宫的"能量"飞到了哪里。
+### Tứ hóa lưu niên
+Dùng thiên can của năm xem để phi tứ hóa, chồng lên đại hạn và lá số bản mệnh.
 
-**常用飞星断语**：
-- A宫飞禄入B宫 → A的资源和善意给了B
-- A宫飞忌入B宫 → A给B带来困扰或在B方面有执念
-- A宫飞忌冲B宫（忌入B的对宫）→ A对B有破坏力
-- 自化禄（A宫飞禄回到A宫）→ A宫内部自行生财
-- 自化忌（A宫飞忌回到A宫）→ A宫自我纠结消耗
+Xác định cung Mệnh lưu niên: cung mang địa chi của năm xem chính là cung Mệnh lưu niên, 11 cung còn lại xếp ngược chiều kim đồng hồ.
 
-### 化忌追踪法
-在一个盘中追踪化忌的走向是飞星派的核心断法：
-1. 生年忌入何宫 → 先天课题所在
-2. 大限忌入何宫 → 这十年的课题
-3. 流年忌入何宫 → 今年的课题
-4. 若三层忌都指向同一宫 → 该领域今年压力极大，需要特别注意
-5. 若忌入某宫又冲对宫 → 对宫领域受到间接影响
+### Các bước phân tích tổng hợp ba tầng tứ hóa
+1. Xem tứ hóa bản mệnh để định cách cục tiên thiên
+2. Chồng tứ hóa đại hạn để xem vận mười năm
+3. Chồng tiếp tứ hóa lưu niên để xem tình hình năm đó
+4. Đặc biệt chú ý ba tầng tứ hóa có tụ vào cùng một cung không: chỗ tụ chắc chắn là tâm điểm của năm đó
 
-### 禄忌对冲
-化禄所在宫位与化忌所在宫位如果是对宫关系，形成"禄忌对冲"：
-- 代表该轴线上有明显的矛盾和拉扯
-- 比如禄在官禄忌在夫妻 → 事业和家庭之间的矛盾
-- 禄在财帛忌在福德 → 赚到钱但精神压力大
+---
+
+## Phi tinh nâng cao
+
+### Phi tứ hóa theo can cung (kỹ pháp cốt lõi của Phi tinh phái)
+
+Tinh túy của Phi tinh phái là: không chỉ xem tứ hóa năm sinh, mà còn xem tứ hóa phát ra từ can của từng cung bay vào những cung nào, từ đó dựng quan hệ nhân quả giữa các cung.
+
+**Thao tác cơ bản**:
+1. Lấy thiên can của một cung
+2. Dùng can đó tra bảng tứ hóa
+3. Xem bốn hóa bay vào những cung nào
+4. Phân tích quan hệ giữa "cung nguồn" và "cung đích"
+
+**Ví dụ**:
+Nếu can cung Phu Thê là Giáp, tứ hóa năm Giáp là: Liêm Trinh Hóa Lộc, Phá Quân Hóa Quyền, Vũ Khúc Hóa Khoa, Thái Dương Hóa Kỵ.
+Tìm vị trí bốn sao này trên lá số là biết "năng lượng" của cung Phu Thê bay về đâu.
+
+**Một số câu đoán phi tinh thường dùng**:
+- Cung A phi Lộc nhập cung B → tài nguyên và thiện ý của A dành cho B
+- Cung A phi Kỵ nhập cung B → A gây phiền toái cho B, hoặc có chấp niệm về mặt B
+- Cung A phi Kỵ xung cung B (Kỵ nhập cung đối của B) → A có sức phá hoại đối với B
+- Tự Hóa Lộc (cung A phi Lộc về chính cung A) → bên trong cung A tự sinh tài
+- Tự Hóa Kỵ (cung A phi Kỵ về chính cung A) → cung A tự rối rắm, tự tiêu hao
+
+### Phép truy Hóa Kỵ
+Truy hướng đi của Hóa Kỵ trên lá số là phép đoán cốt lõi của Phi tinh phái:
+1. Kỵ năm sinh nhập cung nào → nơi có bài học tiên thiên
+2. Kỵ đại hạn nhập cung nào → bài học của mười năm này
+3. Kỵ lưu niên nhập cung nào → bài học của năm nay
+4. Nếu cả ba tầng Kỵ cùng chỉ về một cung → lĩnh vực đó năm nay áp lực rất lớn, cần đặc biệt chú ý
+5. Nếu Kỵ nhập một cung lại xung cung đối → lĩnh vực của cung đối chịu ảnh hưởng gián tiếp
+
+### Lộc Kỵ đối xung
+Cung có Hóa Lộc và cung có Hóa Kỵ nếu là quan hệ đối cung thì thành "Lộc Kỵ đối xung":
+- Cho thấy trên trục đó có mâu thuẫn và giằng co rõ rệt
+- Ví dụ Lộc ở Quan Lộc, Kỵ ở Phu Thê → mâu thuẫn giữa sự nghiệp và gia đình
+- Lộc ở Tài Bạch, Kỵ ở Phúc Đức → kiếm được tiền nhưng áp lực tinh thần lớn

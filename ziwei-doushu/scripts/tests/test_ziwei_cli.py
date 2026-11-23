@@ -26,6 +26,7 @@ from lunar_python.util import LunarUtil
 
 import ziwei_cli as z
 from ziwei_cli import BRANCHES, STEMS, build_output
+from vi_terms import to_zh
 
 REFERENCES = Path(__file__).resolve().parents[2] / "references"
 FIXTURES = Path(__file__).resolve().parent / "fixtures"
@@ -42,7 +43,7 @@ def table_rows(text: str) -> dict[str, list[str]]:
         line = line.strip()
         if not line.startswith("|") or set(line) <= {"|", "-", " "}:
             continue
-        cells = [c.strip() for c in line.strip("|").split("|")]
+        cells = [to_zh(c) for c in line.strip("|").split("|")]
         rows[cells[0]] = cells[1:]
     return rows
 
@@ -66,14 +67,14 @@ def palace_of(output: dict, name: str) -> dict:
 class TestMatchesDocTables:
     calc = read_ref("calculation.md")
 
-    @pytest.mark.parametrize("ju_name,ju_number", [("水二局", 2), ("木三局", 3), ("金四局", 4), ("土五局", 5), ("火六局", 6)])
+    @pytest.mark.parametrize("ju_name,ju_number", [("Thủy Nhị Cục", 2), ("Mộc Tam Cục", 3), ("Kim Tứ Cục", 4), ("Thổ Ngũ Cục", 5), ("Hỏa Lục Cục", 6)])
     def test_ziwei_table(self, ju_name, ju_number):
         start = self.calc.index(f"**{ju_name}**")
         block = self.calc[start:start + 1500]
         cells = []
         for line in block.splitlines():
-            if line.startswith("| 紫微 |"):
-                cells += [c.strip() for c in line.strip("|").split("|")][1:]
+            if line.startswith("| Tử Vi |"):
+                cells += [to_zh(c) for c in line.strip("|").split("|")][1:]
             if len(cells) == 30:
                 break
         assert len(cells) == 30
@@ -81,29 +82,29 @@ class TestMatchesDocTables:
             assert BRANCHES[z.ziwei_position(ju_number, day)] == expected, f"{ju_name} 初{day}"
 
     def test_tianfu_table(self):
-        rows = table_rows(section(self.calc, "| 紫微落宫 | 天府落宫 |", "### 7.3"))
+        rows = table_rows(section(self.calc, "| Tử Vi ở cung | Thiên Phủ ở cung |", "### 7.3"))
         mapping = {k: v[0] for k, v in rows.items() if k in BRANCHES}
         assert len(mapping) == 12
         for zw, tf in mapping.items():
             assert BRANCHES[z.tianfu_position(BRANCHES.index(zw))] == tf
 
     def test_hour_tables(self):
-        rows = table_rows(section(self.calc, "### 文昌、文曲", "### 左辅、右弼"))
-        rows.update(table_rows(section(self.calc, "### 地空、地劫", "### 天马")))
+        rows = table_rows(section(self.calc, "### Văn Xương, Văn Khúc", "### Tả Phù, Hữu Bật"))
+        rows.update(table_rows(section(self.calc, "### Địa Không, Địa Kiếp", "### Thiên Mã")))
         for h in range(12):
             stars = z.place_minor_stars("甲", "子", 1, h)
             for star in ["文昌", "文曲", "地空", "地劫"]:
                 assert BRANCHES[stars[star]] == rows[star][h], f"{star} {BRANCHES[h]}时"
 
     def test_month_tables(self):
-        rows = table_rows(section(self.calc, "### 左辅、右弼", "### 天魁"))
+        rows = table_rows(section(self.calc, "### Tả Phù, Hữu Bật", "### Thiên Khôi"))
         for m in range(1, 13):
             stars = z.place_minor_stars("甲", "子", m, 0)
             assert BRANCHES[stars["左辅"]] == rows["左辅"][m - 1]
             assert BRANCHES[stars["右弼"]] == rows["右弼"][m - 1]
 
     def test_kui_yue_table(self):
-        rows = table_rows(section(self.calc, "### 天魁、天钺", "### 禄存"))
+        rows = table_rows(section(self.calc, "### Thiên Khôi, Thiên Việt", "### Lộc Tồn"))
         for i, stem in enumerate(STEMS):
             stars = z.place_minor_stars(stem, "子", 1, 0)
             assert BRANCHES[stars["天魁"]] == rows["天魁"][i], stem
@@ -117,8 +118,8 @@ class TestMatchesDocTables:
                 assert z.KUI_YUE[stem] == (kui, yue)
 
     def test_lucun_yang_tuo_table(self):
-        rows = table_rows(section(self.calc, "### 禄存、擎羊、陀罗", "### 火星、铃星"))
-        header = rows["年干"]
+        rows = table_rows(section(self.calc, "### Lộc Tồn, Kình Dương, Đà La", "### Hỏa Tinh, Linh Tinh"))
+        header = rows["Can năm"]
         for col, stems in enumerate(header):
             for stem in stems.split("/"):
                 stars = z.place_minor_stars(stem, "子", 1, 0)
@@ -126,34 +127,36 @@ class TestMatchesDocTables:
                     assert BRANCHES[stars[star]] == rows[star][col], f"{stem} {star}"
 
     def test_huo_ling_and_tianma(self):
-        huo = table_rows(section(self.calc, "### 火星、铃星", "规则："))
-        ma = table_rows(section(self.calc, "### 天马", "## 9."))
-        for col, group in enumerate(huo["年支组"]):
+        huo = table_rows(section(self.calc, "### Hỏa Tinh, Linh Tinh", "Quy tắc:"))
+        ma = table_rows(section(self.calc, "### Thiên Mã", "## 9."))
+        for col, group in enumerate(huo["Nhóm chi năm"]):
             for year_branch, h in product(group, range(12)):
                 stars = z.place_minor_stars("甲", year_branch, 1, h)
                 # 以起点宫起子时，顺数到生时
-                assert stars["火星"] == (BRANCHES.index(huo["火星起点"][col]) + h) % 12
-                assert stars["铃星"] == (BRANCHES.index(huo["铃星起点"][col]) + h) % 12
+                assert stars["火星"] == (BRANCHES.index(huo["Khởi Hỏa Tinh"][col]) + h) % 12
+                assert stars["铃星"] == (BRANCHES.index(huo["Khởi Linh Tinh"][col]) + h) % 12
                 assert BRANCHES[stars["天马"]] == ma["天马"][col]
 
     def test_ming_zhu_shen_zhu(self):
-        rows = table_rows(section(self.calc, "## 11. 命主与身主", "## 12."))
-        assert z.MING_ZHU == rows["命主星"]
-        assert z.SHEN_ZHU == rows["身主星"]
+        rows = table_rows(section(self.calc, "## 11. Mệnh chủ và Thân chủ", "## 12."))
+        assert z.MING_ZHU == rows["Mệnh chủ"]
+        assert z.SHEN_ZHU == rows["Thân chủ"]
 
     def test_decadal_start_ages(self):
-        text = section(self.calc, "### 起限年龄", "### 顺逆规则")
-        for name, age in re.findall(r"- (\S+局)：(\d+) 岁", text):
-            assert any(v == (name, int(age)) for v in z.JU_BY_REMAINDER.values())
+        text = section(self.calc, "### Tuổi khởi hạn", "### Quy tắc thuận nghịch")
+        found = re.findall(r"- (.+ Cục): (\d+) tuổi", text)
+        assert len(found) == 5
+        for name, age in found:
+            assert any(v == (to_zh(name), int(age)) for v in z.JU_BY_REMAINDER.values())
 
     def test_sihua_table(self):
-        rows = table_rows(section(read_ref("sihua.md"), "### 生年四化", "## 四化入宫"))
+        rows = table_rows(section(read_ref("sihua.md"), "### Tứ hóa năm sinh", "## Tứ hóa nhập cung"))
         for stem in STEMS:
             assert list(z.SIHUA[stem]) == rows[stem], stem
 
     def test_brightness_table(self):
-        rows = table_rows(section(read_ref("stars.md"), "### 十四主星庙旺利平陷", "出处："))
-        assert rows["主星"] == BRANCHES
+        rows = table_rows(section(read_ref("stars.md"), "### Miếu vượng lợi bình hãm của 14 chính tinh", "Nguồn:"))
+        assert rows["Chính tinh"] == BRANCHES
         for star in z.MAJOR_STARS:
             assert z.BRIGHTNESS[star] == rows[star], star
 
@@ -481,6 +484,13 @@ def test_cli_roundtrip(tmp_path):
     dst = tmp_path / "out.json"
     src.write_text(json.dumps({"calendar_type": "solar", "birth_time": "2000-08-16 14:30", "gender": "女"}), encoding="utf-8")
     sys.argv = ["ziwei_cli.py", "--input", str(src), "--output", str(dst)]
+    assert z.main() == 0
+    out = json.loads(dst.read_text(encoding="utf-8"))
+    # Mặc định output đã chuyển sang tiếng Việt
+    assert out["chart"]["ming_gong"]["branch"] == "Sửu"
+    assert "化禄" not in json.dumps(out, ensure_ascii=False)
+
+    src.write_text(json.dumps({"calendar_type": "solar", "birth_time": "2000-08-16 14:30", "gender": "女", "lang": "zh"}), encoding="utf-8")
     assert z.main() == 0
     assert json.loads(dst.read_text(encoding="utf-8"))["chart"]["ming_gong"]["branch"] == "丑"
 
