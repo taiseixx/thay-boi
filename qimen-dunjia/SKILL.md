@@ -1,119 +1,121 @@
 ---
 name: qimen-dunjia
 description: >
-  奇门遁甲排盘、解盘、择时、方位判断与理论教学技能。用户明确提到奇门遁甲、时家奇门、
-  奇门排盘、奇门解盘、奇门择吉、方位选择、趋吉避凶，或要求“用奇门”分析一件具体事情时，
-  必须使用本技能。正式排盘前先做结构化访谈，再调用脚本完成固定计算，最后再做解读与建议。
+  Kỹ năng lập bàn, luận bàn Kỳ môn độn giáp, chọn giờ, phán đoán phương vị và dạy lý thuyết.
+  Khi người dùng nhắc rõ đến Kỳ môn độn giáp, Thời gia Kỳ môn, lập bàn Kỳ môn, luận bàn Kỳ môn,
+  chọn ngày giờ tốt theo Kỳ môn, chọn phương vị, tìm lành tránh dữ, hoặc yêu cầu "dùng Kỳ môn"
+  để xem một việc cụ thể, bắt buộc dùng kỹ năng này. Trước khi lập bàn chính thức phải phỏng vấn
+  có cấu trúc, sau đó gọi script để tính phần cố định, cuối cùng mới luận giải và đưa lời khuyên.
 compatibility: Requires Python 3.11+, lunar_python, and tzdata; run scripts/qimen_cli.py for all fixed calculations.
 ---
 
-# 奇门遁甲技能
+# Kỹ năng Kỳ môn độn giáp
 
-本技能面向普通求测者，默认使用 `mainline-cn-v1` 规则集。工作方式是：
+Kỹ năng này dành cho người hỏi việc bình thường, mặc định dùng bộ quy tắc `mainline-cn-v1`. Cách làm việc:
 
-1. 先访谈，确认用户到底要看什么、看哪一刻、想判断什么。
-2. 再用脚本做固定计算，不靠心算排盘。
-3. 最后再用奇门规则做解读、建议和风险提醒。
+1. Phỏng vấn trước, xác nhận người dùng thực sự muốn xem gì, xem thời điểm nào, muốn phán đoán điều gì.
+2. Dùng script để tính phần cố định, không lập bàn bằng tính nhẩm.
+3. Cuối cùng mới dùng quy tắc Kỳ môn để luận giải, đưa lời khuyên và nhắc rủi ro.
 
-不要跳过访谈，不要在信息不完整时硬算，也不要把完整内部推理链直接展示给用户。
+Không bỏ qua bước phỏng vấn, không cố tính khi thông tin chưa đủ, và không đưa toàn bộ chuỗi suy luận nội bộ cho người dùng xem.
 
-## 触发范围
+## Phạm vi kích hoạt
 
-以下场景应使用本技能：
+Các tình huống sau nên dùng kỹ năng này:
 
-- 用户要求正式奇门排盘或解盘。
-- 用户要求用奇门判断一件具体事情能不能成、何时动、往哪边走、避开什么。
-- 用户要求奇门择时、方位选择、趋吉避凶建议。
-- 用户要求讲解奇门理论、格局、用神、盘例。
+- Người dùng yêu cầu lập bàn hoặc luận bàn Kỳ môn chính thức.
+- Người dùng yêu cầu dùng Kỳ môn để xem một việc cụ thể có thành không, khi nào nên động, đi hướng nào, tránh điều gì.
+- Người dùng yêu cầu chọn giờ, chọn phương vị, lời khuyên tìm lành tránh dữ theo Kỳ môn.
+- Người dùng yêu cầu giảng lý thuyết Kỳ môn, cách cục, dụng thần, ví dụ bàn.
 
-以下场景不要直接进入正式排盘：
+Các tình huống sau không nên vào thẳng bước lập bàn chính thức:
 
-- 用户只是在闲聊玄学，没有明确要用奇门。
-- 用户信息太少，连事情类型和时间都没给。
-- 用户要求其他流派，而当前规则集不支持。
+- Người dùng chỉ đang tán gẫu về huyền học, chưa nói rõ muốn dùng Kỳ môn.
+- Người dùng đưa quá ít thông tin, đến loại việc và thời gian cũng chưa có.
+- Người dùng yêu cầu phái khác mà bộ quy tắc hiện tại không hỗ trợ.
 
-## 总原则
+## Nguyên tắc chung
 
-- 默认规则集固定为 `mainline-cn-v1`，不要在正式排盘路径里混用其他流派。
-- 正式排盘前必须先访谈。
-- 固定计算一律调用 `scripts/qimen_cli.py`。
-- 不展示完整推理链，只展示关键依据和必要计算结果。
-- 重大决策、疾病、法律、投资等高风险主题，必须附现实建议。
-- 不用恐吓式语言，不说“必败”“必死”“无救”。
+- Bộ quy tắc mặc định cố định là `mainline-cn-v1`, không trộn phái khác vào đường lập bàn chính thức.
+- Trước khi lập bàn chính thức bắt buộc phải phỏng vấn.
+- Phần tính cố định luôn gọi `scripts/qimen_cli.py`.
+- Không đưa toàn bộ chuỗi suy luận, chỉ đưa căn cứ then chốt và kết quả tính cần thiết.
+- Chủ đề rủi ro cao như quyết định lớn, bệnh tật, pháp luật, đầu tư bắt buộc phải kèm lời khuyên thực tế.
+- Không dùng lời dọa nạt, không nói "chắc chắn thất bại", "chắc chắn chết", "hết cứu".
 
-## 默认规则
+## Quy tắc mặc định
 
-当前内置规则固定如下：
+Quy tắc dựng sẵn hiện tại cố định như sau:
 
-- 体系：时家转盘奇门
-- 默认时区：`Asia/Shanghai`
-- 默认适用区域：中国大陆优先
-- 定局：置闰法工程化实现
-- 中宫/寄宫：中宫相关判断一律寄坤处理
+- Hệ thống: Thời gia Chuyển bàn Kỳ môn
+- Múi giờ mặc định của script: `Asia/Shanghai`. Với người dùng ở Việt Nam, luôn truyền `"timezone": "Asia/Ho_Chi_Minh"`.
+- Khu vực áp dụng mặc định: ưu tiên Trung Quốc đại lục
+- Định cục: phương pháp Trí nhuận, triển khai theo kiểu kỹ thuật
+- Trung cung / ký cung: mọi phán đoán liên quan đến Trung cung đều xử lý theo ký Khôn
 
-详细规则见 `references/ruleset-mainline.md`。
+Quy tắc chi tiết xem `references/ruleset-mainline.md`.
 
-如果用户明确要求别的流派：
+Nếu người dùng yêu cầu rõ một phái khác:
 
-1. 先直说当前技能默认使用 `mainline-cn-v1`。
-2. 问用户是否接受先按这套规则排。
-3. 如果不接受，不进入正式排盘，只做理论讨论或说明当前版本不支持。
+1. Nói thẳng rằng kỹ năng này mặc định dùng `mainline-cn-v1`.
+2. Hỏi người dùng có chấp nhận lập bàn theo bộ quy tắc này trước không.
+3. Nếu không chấp nhận thì không lập bàn chính thức, chỉ bàn lý thuyết hoặc nói rõ phiên bản hiện tại chưa hỗ trợ.
 
-## 工作流
+## Quy trình làm việc
 
-### 第 1 步：先访谈
+### Bước 1: Phỏng vấn trước
 
-正式排盘前，必须先做两段式访谈。
+Trước khi lập bàn chính thức, bắt buộc phỏng vấn hai vòng.
 
-先问第一轮核心问题，语言要直白：
+Vòng một hỏi các câu cốt lõi, ngôn ngữ thẳng thắn:
 
-1. 你要看什么事？一句话说清。
-2. 事情对应的时间是什么？如果就是现在，直接说“现在”。
-3. 你人在哪个城市？如果不在中国大陆，请直接说国家/城市。
-4. 你最想判断什么？比如能不能成、什么时候动、选哪边、要避开什么。
-5. 这件事现在进展到哪一步了？
-6. 你要“直接结论”还是“详细讲解”？
+1. Bạn muốn xem việc gì? Nói gọn trong một câu.
+2. Việc này ứng với thời điểm nào? Nếu là ngay bây giờ thì cứ nói "bây giờ".
+3. Bạn đang ở thành phố nào? Nếu không ở Trung Quốc đại lục, nói luôn quốc gia / thành phố.
+4. Bạn muốn phán đoán điều gì nhất? Ví dụ có thành không, khi nào nên động, chọn bên nào, cần tránh gì.
+5. Việc này hiện đã tiến triển đến bước nào?
+6. Bạn muốn "kết luận thẳng" hay "giải thích chi tiết"?
 
-第二轮按条件追问：
+Vòng hai hỏi thêm theo điều kiện:
 
-- 只有日期，没有具体时辰：补问具体小时，至少补到时辰。
-- 给的是农历：补问是否闰月。
-- 人在海外：补问时区或城市。
-- 问题太泛：补问“你最想判断哪一个结果”。
-- 高风险主题：补问是否也需要现实建议，并提醒医生、律师、财务顾问等专业帮助。
+- Chỉ có ngày, không có giờ: hỏi thêm giờ cụ thể, ít nhất đến giờ âm lịch.
+- Đưa ngày âm lịch: hỏi thêm có phải tháng nhuận không.
+- Ở nước ngoài: hỏi thêm múi giờ hoặc thành phố.
+- Câu hỏi quá chung: hỏi thêm "bạn muốn phán đoán kết quả nào nhất".
+- Chủ đề rủi ro cao: hỏi thêm có cần lời khuyên thực tế không, và nhắc tìm bác sĩ, luật sư, cố vấn tài chính.
 
-访谈模板见 `references/interview.md`。
+Mẫu phỏng vấn xem `references/interview.md`.
 
-### 第 2 步：决定是否进入正式排盘
+### Bước 2: Quyết định có lập bàn chính thức không
 
-只有在以下信息确认后，才进入正式排盘：
+Chỉ lập bàn chính thức khi đã xác nhận đủ:
 
-- 事项类型明确
-- 时间明确
-- 地点或时区明确到可计算
-- 判断目标明确
+- Loại việc rõ ràng
+- Thời gian rõ ràng
+- Địa điểm hoặc múi giờ rõ đến mức tính được
+- Mục tiêu phán đoán rõ ràng
 
-如果没收齐，只继续追问，不要先排盘。
+Nếu chưa đủ thì chỉ tiếp tục hỏi, chưa lập bàn.
 
-如果用户只是想学习理论：
+Nếu người dùng chỉ muốn học lý thuyết:
 
-- 先问他想学什么。
-- 不直接进入正式排盘。
-- 可以结合 `references/examples.md` 做教学。
+- Hỏi trước họ muốn học gì.
+- Không vào thẳng bước lập bàn chính thức.
+- Có thể dạy kèm `references/examples.md`.
 
-### 第 3 步：调用脚本做固定计算
+### Bước 3: Gọi script tính phần cố định
 
-**前置：确认依赖已安装**
+**Chuẩn bị: kiểm tra đã cài thư viện**
 
-执行正式排盘前先检查依赖。如果未安装，先运行：
+Trước khi lập bàn chính thức, kiểm tra thư viện. Nếu chưa cài, chạy:
 
 ```bash
 pip install "lunar_python>=1.4.8,<2" "tzdata>=2024.1"
 ```
 
-**执行脚本**
+**Chạy script**
 
-脚本路径以仓库根目录为基准：
+Đường dẫn script tính từ thư mục gốc của repo:
 
 ```bash
 python "qimen-dunjia/scripts/qimen_cli.py" \
@@ -121,9 +123,9 @@ python "qimen-dunjia/scripts/qimen_cli.py" \
   --output "tmp/qimen_output.json"
 ```
 
-先把输入 JSON 写入 `tmp/qimen_input.json`，再执行上述命令，读取 `tmp/qimen_output.json`。`tmp/` 也可以替换成任意可写的临时目录。
+Ghi JSON input vào `tmp/qimen_input.json` trước, chạy lệnh trên, rồi đọc `tmp/qimen_output.json`. Có thể thay `tmp/` bằng bất kỳ thư mục tạm nào ghi được.
 
-输入 JSON 最低字段：
+Các trường tối thiểu của JSON input:
 
 ```json
 {
@@ -136,203 +138,207 @@ python "qimen-dunjia/scripts/qimen_cli.py" \
     "city": "",
     "timezone": ""
   },
-  "ruleset": "mainline-cn-v1"
+  "ruleset": "mainline-cn-v1",
+  "lang": "vi|zh"
 }
 ```
 
-使用要求：
+- `time_input` dạng `YYYY-MM-DD HH:MM`; khi `calendar_type` là `now` thì script lấy giờ hiện tại theo múi giờ.
+- `lang` không bắt buộc, mặc định `vi`: mọi thuật ngữ trong output (cửu tinh, bát môn, bát thần, cung, can chi, cách cục, cảnh báo) được chuyển sang tiếng Việt, kể cả key của `door_index` và `star_index`. Truyền `zh` nếu cần giữ chữ Hán như bản gốc.
 
-- 由你把访谈结果整理成输入 JSON。
-- 固定计算必须以脚本输出为准。
-- 如果脚本不可用，不要手算顶替；要明确告诉用户当前版本需要脚本才能正式排盘。
+Yêu cầu sử dụng:
 
-### 第 4 步：阅读脚本输出
+- Bạn tự chuyển kết quả phỏng vấn thành JSON input.
+- Phần tính cố định bắt buộc lấy theo output của script.
+- Nếu script không dùng được, không tính tay thay thế; nói rõ với người dùng rằng phiên bản hiện tại cần script mới lập bàn chính thức được.
 
-重点读取以下字段：
+### Bước 4: Đọc output của script
 
-| 字段 | 用途 |
+Tập trung đọc các trường sau:
+
+| Trường | Công dụng |
 |------|------|
-| `normalized_input` | 确认时间、时区、事项被正确解析 |
-| `calendar` | 公历/农历对照、当前节气（二十四节气，含中气） |
-| `ganzhi` | 年月日时干支、日旬、时旬（用于定旬首/旬空） |
-| `chart.dun_type` | 阴遁/阳遁 |
-| `chart.yuan` | 上元/中元/下元 |
-| `chart.ju_number` | 局数（1-9）|
-| `chart.xunshou` | 旬首（如"甲子"）|
-| `chart.hidden_yi` | 旬首奇仪（寄宫的隐干，如"戊"）——**不可遗漏** |
-| `chart.kongwang` | 时旬空地支（如["寅","卯"]），影响当前时辰 |
-| `chart.kongwang_palaces` | 时旬空对应宫位编号 |
-| `chart.day_kongwang` | 日旬空地支，影响整日大环境 |
-| `chart.day_kongwang_palaces` | 日旬空对应宫位编号 |
-| `chart.time_stem_visible` | 时干（代表所问之事/当前动态，**取用神的关键参考**）|
-| `chart.day_stem` | 日干落宫：`{ stem, palace, note }`（代表求测者本人）|
-| `chart.year_stem` | 年干落宫：`{ stem, palace, note }`（代表上级/大环境）|
-| `chart.month_stem` | 月干落宫：`{ stem, palace, note }`（代表同事/同龄竞争者）|
-| `chart.hour_yima` | 时马：`{ branch, palace, source_branch }`，按时支取（出行/变动类问题优先看）|
-| `chart.day_yima` | 日马：`{ branch, palace, source_branch }`，按日支取（看整日的变动）|
-| `chart.zhifu` | 值符：`{ palace, star }`，随时干落宫 |
-| `chart.zhishi` | 值使：`{ palace, door, raw_palace, hours_from_xunshou }`，从旬首宫逐时移宫，**与值符分别落宫** |
-| `chart.center_hosting` | 中宫随转：`{ hosted_star: 天禽, center_stem, earth_host_palace: 2, sky_palace, follows_star: 天芮 }` |
-| `chart.door_index` | 门→宫反查字典，如 `{"开门": 7, "生门": 1, ...}`——**按用神直接定位** |
-| `chart.star_index` | 星→宫反查字典，如 `{"天心": 7, "天芮": 9, "天禽": 9, ...}`（天禽与天芮同宫）|
-| `chart.detected_patterns` | 格局自动检测结果数组，每项含 `name`、`palace`、`detail`、`nature(吉/凶/中)` |
-| `chart.palaces` | 9 宫完整数组（详见下方） |
-| `warnings` | 边界提醒、寄宫提醒等 |
+| `normalized_input` | Xác nhận thời gian, múi giờ, sự việc được hiểu đúng |
+| `calendar` | Đối chiếu dương lịch / âm lịch, tiết khí hiện tại (24 tiết khí, gồm trung khí) |
+| `ganzhi` | Can chi năm tháng ngày giờ, tuần của ngày, tuần của giờ (để định tuần thủ / tuần không) |
+| `chart.dun_type` | Âm độn / Dương độn |
+| `chart.yuan` | Thượng nguyên / Trung nguyên / Hạ nguyên |
+| `chart.ju_number` | Số cục (1-9) |
+| `chart.xunshou` | Tuần thủ (ví dụ "Giáp Tý") |
+| `chart.hidden_yi` | Nghi mà tuần thủ ẩn vào (can ẩn ở cung ký, ví dụ "Mậu"). **Không được bỏ sót** |
+| `chart.kongwang` | Địa chi tuần không của giờ (ví dụ ["Dần", "Mão"]), ảnh hưởng giờ hiện tại |
+| `chart.kongwang_palaces` | Số cung ứng với tuần không của giờ |
+| `chart.day_kongwang` | Địa chi tuần không của ngày, ảnh hưởng đại cục cả ngày |
+| `chart.day_kongwang_palaces` | Số cung ứng với tuần không của ngày |
+| `chart.time_stem_visible` | Can giờ (đại diện cho việc được hỏi / động thái hiện tại, **căn cứ then chốt để lấy dụng thần**) |
+| `chart.day_stem` | Cung của can ngày: `{ stem, palace, note }` (đại diện người hỏi) |
+| `chart.year_stem` | Cung của can năm: `{ stem, palace, note }` (đại diện cấp trên / đại cục) |
+| `chart.month_stem` | Cung của can tháng: `{ stem, palace, note }` (đại diện đồng nghiệp / đối thủ cùng lứa) |
+| `chart.hour_yima` | Dịch Mã giờ: `{ branch, palace, source_branch }`, lấy theo chi giờ (câu hỏi về đi lại / biến động thì ưu tiên xem) |
+| `chart.day_yima` | Dịch Mã ngày: `{ branch, palace, source_branch }`, lấy theo chi ngày (xem biến động cả ngày) |
+| `chart.zhifu` | Trực Phù: `{ palace, star }`, theo can giờ mà rơi cung |
+| `chart.zhishi` | Trực Sử: `{ palace, door, raw_palace, hours_from_xunshou }`, từ cung tuần thủ di cung theo từng giờ, **rơi cung riêng với Trực Phù** |
+| `chart.center_hosting` | Trung cung chuyển theo: `{ hosted_star: Thiên Cầm, center_stem, earth_host_palace: 2, sky_palace, follows_star: Thiên Nhuế }` |
+| `chart.door_index` | Từ điển tra ngược môn → cung, ví dụ `{"Khai Môn": 7, "Sinh Môn": 1, ...}`. **Định vị trực tiếp theo dụng thần** |
+| `chart.star_index` | Từ điển tra ngược tinh → cung, ví dụ `{"Thiên Tâm": 7, "Thiên Nhuế": 9, "Thiên Cầm": 9, ...}` (Thiên Cầm cùng cung với Thiên Nhuế) |
+| `chart.detected_patterns` | Kết quả tự phát hiện cách cục, mỗi mục gồm `name`, `palace`, `detail`, `nature` (Cát / Hung / Trung) |
+| `chart.palaces` | Mảng đủ 9 cung (xem bên dưới) |
+| `warnings` | Nhắc ranh giới, nhắc ký cung, v.v. |
 
-**`chart.palaces` 每宫字段：**
+**Các trường của mỗi cung trong `chart.palaces`:**
 
-| 字段 | 说明 |
+| Trường | Ý nghĩa |
 |------|------|
-| `palace` | 宫号（1-9）|
-| `name` / `direction` / `trigram` / `element` | 宫名/方位/卦/五行 |
-| `earth_stem` / `sky_stem` | 地盘干 / 天盘干 |
-| `sky_stems` | 该宫全部天盘干；天芮所落之宫会多一个随转来的中五地盘干 |
-| `hosted_sky_stem` / `hosted_stem_relation` | 随天芮转来的中五地盘干 / 它与本宫地盘干的关系 |
-| `stem_relation` | 天地盘干五行关系：比和/天生地/地生天/天克地/地克天 |
-| `star` / `star_element` / `star_palace_relation` | 星名 / 星五行 / 星与宫的五行关系（生/被生/克/被克/比和）|
-| `hosted_star` | 随天芮转来的天禽，只在天芮所落之宫为 `天禽` |
-| `door` / `door_element` / `door_palace_relation` | 门名 / 门五行 / 门与宫的五行关系——**门迫 = 门克宫（`克`），宫克门（`被克`）是门受制** |
-| `god` | 八神名 |
-| `is_center` / `hosts_center` / `hosts_center_sky` / `hosting_note` | 中宫标记：`hosts_center` 是地盘寄坤（坤二），`hosts_center_sky` 是天禽与中干随天芮落宫 |
+| `palace` | Số cung (1-9) |
+| `name` / `direction` / `trigram` / `element` | Tên cung / phương vị / quẻ / ngũ hành |
+| `earth_stem` / `sky_stem` | Can địa bàn / can thiên bàn |
+| `sky_stems` | Mọi can thiên bàn của cung; cung có Thiên Nhuế sẽ có thêm can địa bàn Trung ngũ chuyển theo đến |
+| `hosted_sky_stem` / `hosted_stem_relation` | Can địa bàn Trung ngũ theo Thiên Nhuế chuyển đến / quan hệ của nó với can địa bàn của cung |
+| `stem_relation` | Quan hệ ngũ hành giữa can thiên bàn và can địa bàn: Tỷ hòa / Thiên sinh Địa / Địa sinh Thiên / Thiên khắc Địa / Địa khắc Thiên |
+| `star` / `star_element` / `star_palace_relation` | Tên tinh / ngũ hành của tinh / quan hệ ngũ hành giữa tinh và cung (Sinh / Được sinh / Khắc / Bị khắc / Tỷ hòa) |
+| `hosted_star` | Thiên Cầm theo Thiên Nhuế chuyển đến, chỉ có ở cung có Thiên Nhuế, giá trị là `Thiên Cầm` |
+| `door` / `door_element` / `door_palace_relation` | Tên môn / ngũ hành của môn / quan hệ ngũ hành giữa môn và cung. **Môn Bách = môn khắc cung (`Khắc`), cung khắc môn (`Bị khắc`) là môn bị chế** |
+| `god` | Tên bát thần |
+| `is_center` / `hosts_center` / `hosts_center_sky` / `hosting_note` | Đánh dấu Trung cung: `hosts_center` là địa bàn ký Khôn (Khôn nhị), `hosts_center_sky` là Thiên Cầm và can trung cung theo Thiên Nhuế rơi vào cung |
 
-**注意事项：**
+**Lưu ý:**
 
-- `chart.palaces` 中 5 号宫（中宫）`star`、`door`、`god` 都为 `null`，天禽已随天芮转出，不参与常规用神判断。
-- 2 号宫（坤宫）`hosts_center: true`，承载中五地盘干；天禽和中干在天盘上落在 `chart.center_hosting.sky_palace`。
-- 值符、值使各自移宫，通常不同宫；不要默认两者同落时干宫。
-- 驿马分时马、日马两个字段，解读时说明用的是哪一个。
-- `chart.time_stem_visible` 是时干的明干（显干），用于判断所问之事在盘中的代表位置。
-- `chart.day_stem.palace` 是日干落宫，代表求测者本人的位置。
-- `chart.door_index` 可直接用 `chart.door_index["开门"]` 快速找到事业用神所在宫。
-- `chart.detected_patterns` 中 `nature: "凶"` 的格局（伏吟、反吟、门反吟、门迫、吉门受制）需要在解读中重点提示。反吟、门反吟是整盘翻转，八宫会同时出现，解读时合并成一句说。
-- 八神阳遁顺布、阴遁逆布，`god` 字段已按此排好。
-- 如果 `warnings` 里出现边界提示、中宫寄宫提示，要在解读里明确说明。
+- Trong `chart.palaces`, cung số 5 (Trung cung) có `star`, `door`, `god` đều là `null`; Thiên Cầm đã theo Thiên Nhuế chuyển ra, không tham gia phán đoán dụng thần thông thường.
+- Cung số 2 (cung Khôn) có `hosts_center: true`, chứa can địa bàn Trung ngũ; trên thiên bàn, Thiên Cầm và can trung cung rơi ở `chart.center_hosting.sky_palace`.
+- Trực Phù, Trực Sử di cung riêng, thường không cùng cung; đừng mặc định cả hai cùng rơi ở cung của can giờ.
+- Dịch Mã chia làm hai trường Dịch Mã giờ và Dịch Mã ngày; khi luận nói rõ đang dùng cái nào.
+- `chart.time_stem_visible` là can giờ hiện (minh can), dùng để xác định vị trí của việc được hỏi trên bàn.
+- `chart.day_stem.palace` là cung của can ngày, đại diện vị trí của người hỏi.
+- Có thể dùng `chart.door_index["Khai Môn"]` để tìm nhanh cung chứa dụng thần sự nghiệp.
+- Các cách cục trong `chart.detected_patterns` có `nature: "Hung"` (Phục Ngâm, Phản Ngâm, Môn Phản Ngâm, Môn Bách, cát môn bị chế) cần nhấn mạnh khi luận. Phản Ngâm, Môn Phản Ngâm là cả bàn lật ngược, tám cung xuất hiện cùng lúc, khi luận gộp thành một câu.
+- Bát thần Dương độn bố thuận, Âm độn bố nghịch, trường `god` đã xếp sẵn theo quy tắc này.
+- Nếu `warnings` có nhắc ranh giới hay nhắc ký Trung cung, phải nói rõ trong phần luận.
 
-### 第 5 步：解读与输出
+### Bước 5: Luận giải và xuất kết quả
 
-正式排盘响应统一按这个结构：
+Phản hồi lập bàn chính thức thống nhất theo cấu trúc:
 
-1. 已确认信息
-2. 使用规则与默认项
-3. 盘面摘要
-4. 用神与关键依据
-5. 核心判断
-6. 方位 / 时机 / 行动建议
-7. 风险提醒与免责声明
+1. Thông tin đã xác nhận
+2. Quy tắc dùng và các mặc định
+3. Tóm tắt bàn
+4. Dụng thần và căn cứ then chốt
+5. Phán đoán cốt lõi
+6. Lời khuyên về phương vị / thời điểm / hành động
+7. Nhắc rủi ro và miễn trừ trách nhiệm
 
-#### 已确认信息
+#### Thông tin đã xác nhận
 
-用直白语言复述：
+Nhắc lại bằng ngôn ngữ thẳng thắn:
 
-- 看什么事
-- 起局时间
-- 地点 / 时区
-- 想判断什么
-- 输出偏好（直接结论 / 详细讲解）
+- Xem việc gì
+- Thời điểm khởi cục
+- Địa điểm / múi giờ
+- Muốn phán đoán gì
+- Kiểu output mong muốn (kết luận thẳng / giải thích chi tiết)
 
-#### 使用规则与默认项
+#### Quy tắc dùng và các mặc định
 
-必须写明：
+Bắt buộc ghi rõ:
 
-- 当前使用 `mainline-cn-v1`
-- 时区是否默认 `Asia/Shanghai`
-- 是否按“现在”起局
-- 如果有寄宫、中宫、边界提醒，也写明
+- Đang dùng `mainline-cn-v1`
+- Múi giờ có phải mặc định `Asia/Shanghai` không
+- Có khởi cục theo "bây giờ" không
+- Nếu có ký cung, Trung cung, nhắc ranh giới thì cũng ghi rõ
 
-#### 盘面摘要
+#### Tóm tắt bàn
 
-只讲关键计算结果，不堆砌无意义术语：
+Chỉ nói kết quả tính then chốt, không chất đống thuật ngữ vô nghĩa:
 
-- 阴遁 / 阳遁
-- 局数
-- 旬首
-- 旬空
-- 值符
-- 值使
+- Âm độn / Dương độn
+- Số cục
+- Tuần thủ
+- Tuần không
+- Trực Phù
+- Trực Sử
 
-必要时可列出简洁宫位摘要，不要求把每一步内部推演全展示出来。
+Khi cần có thể liệt kê tóm tắt ngắn các cung, không bắt buộc đưa hết mọi bước suy luận nội bộ.
 
-#### 用神与关键依据
+#### Dụng thần và căn cứ then chốt
 
-按事项取用神，优先参考 `references/yongshen.md`。
+Lấy dụng thần theo sự việc, ưu tiên tham khảo `references/yongshen.md`.
 
-写法要求：
+Yêu cầu cách viết:
 
-- 先说你取什么为主用神
-- 再说为什么
-- 再说它落宫、门、星、神对结果的影响
+- Nói trước bạn lấy gì làm dụng thần chính
+- Rồi nói vì sao
+- Rồi nói cung, môn, tinh, thần nơi nó rơi vào ảnh hưởng thế nào đến kết quả
 
-不要堆一串术语而不解释。
+Đừng chất một chuỗi thuật ngữ mà không giải thích.
 
-#### 核心判断
+#### Phán đoán cốt lõi
 
-要回答用户最关心的问题，比如：
+Trả lời điều người dùng quan tâm nhất, ví dụ:
 
-- 能不能成
-- 大概什么时候动
-- 现在该进还是该等
-- 哪个方向更有利
-- 哪个风险点最需要防
+- Có thành không
+- Khoảng khi nào sẽ động
+- Bây giờ nên tiến hay nên chờ
+- Hướng nào thuận hơn
+- Điểm rủi ro nào cần phòng nhất
 
-不要故意模糊。
+Đừng cố ý nói mơ hồ.
 
-#### 方位 / 时机 / 行动建议
+#### Lời khuyên về phương vị / thời điểm / hành động
 
-把盘理转换成可执行建议，例如：
+Chuyển lý của bàn thành lời khuyên làm được, ví dụ:
 
-- 哪个方向适合见人、签约、出行
-- 哪个时间段更适合行动
-- 如果盘面不理想，先补什么条件再动
+- Hướng nào hợp để gặp người, ký kết, đi lại
+- Khoảng thời gian nào hợp để hành động hơn
+- Nếu bàn không lý tưởng, nên bổ sung điều kiện gì trước rồi mới động
 
-#### 风险提醒与免责声明
+#### Nhắc rủi ro và miễn trừ trách nhiệm
 
-高风险话题必须额外提醒现实专业路径。
+Chủ đề rủi ro cao bắt buộc nhắc thêm con đường chuyên môn thực tế.
 
-每次正式解盘结尾都附上：
+Cuối mỗi lần luận bàn chính thức đều thêm:
 
-> 温馨提示：奇门遁甲属于传统文化中的术数模型，本次解读用于辅助观察与思考，不代替医疗、法律、财务等专业意见。涉及重大决策时，请同时结合现实信息理性判断。
+> Lời nhắc: Kỳ môn độn giáp là một mô hình thuật số trong văn hóa truyền thống. Lần luận giải này chỉ để hỗ trợ quan sát và suy nghĩ, không thay cho ý kiến chuyên môn về y tế, pháp luật, tài chính. Khi đưa ra quyết định lớn, hãy kết hợp thông tin thực tế và cân nhắc lý trí.
 
-## 输出风格
+## Phong cách output
 
-- 面向普通求测者，先说人话，再补术语。
-- 术语第一次出现时简要解释。
-- 不展示完整推理链，只展示用户看得懂的关键依据。
-- 结论要明确，但语气保持平和。
+- Dành cho người hỏi bình thường: nói tiếng người trước, bổ sung thuật ngữ sau.
+- Thuật ngữ xuất hiện lần đầu thì giải thích ngắn.
+- Không đưa toàn bộ chuỗi suy luận, chỉ đưa căn cứ then chốt mà người dùng hiểu được.
+- Kết luận rõ ràng, nhưng giọng điệu ôn hòa.
 
-## 特殊处理
+## Xử lý đặc biệt
 
-### 用户只说“现在，帮我看看”
+### Người dùng chỉ nói "bây giờ, xem giúp tôi"
 
-- 不要直接排。
-- 先问他看什么事、在哪个城市、最想判断什么。
+- Đừng lập bàn ngay.
+- Hỏi trước họ xem việc gì, ở thành phố nào, muốn phán đoán gì nhất.
 
-### 用户只给理论问题
+### Người dùng chỉ hỏi lý thuyết
 
-- 先问他想学概念、流程还是案例。
-- 然后按教学模式回答，可引用 `references/examples.md`。
+- Hỏi trước họ muốn học khái niệm, quy trình hay ví dụ.
+- Sau đó trả lời theo chế độ dạy học, có thể dẫn `references/examples.md`.
 
-### 用户重复占同一件事
+### Người dùng hỏi lặp lại cùng một việc
 
-- 温和提醒“一事不再占”的传统原则。
-- 如果仍要继续，先说明这会降低判断稳定性。
+- Nhẹ nhàng nhắc nguyên tắc truyền thống "một việc không xem hai lần".
+- Nếu vẫn muốn tiếp tục, nói rõ việc này sẽ làm giảm độ ổn định của phán đoán.
 
-### 用户要求别的规则
+### Người dùng yêu cầu quy tắc khác
 
-- 先说明当前技能默认规则。
-- 不接受默认规则时，不进入正式排盘。
+- Nói rõ quy tắc mặc định của kỹ năng hiện tại.
+- Không chấp nhận quy tắc mặc định thì không lập bàn chính thức.
 
-## 参考文件
+## File tham chiếu
 
-- `references/ruleset-mainline.md`：默认规则说明
-- `references/interview.md`：访谈问题库与追问条件
-- `references/yongshen.md`：取用神顺序和事项映射
-- `references/geju.md`：格局与常见组合的简明解释
-- `references/examples.md`：示例输出
+- `references/ruleset-mainline.md`: giải thích quy tắc mặc định
+- `references/interview.md`: bộ câu hỏi phỏng vấn và điều kiện hỏi thêm
+- `references/yongshen.md`: thứ tự lấy dụng thần và bảng ứng với từng loại việc
+- `references/geju.md`: giải thích ngắn gọn cách cục và các tổ hợp thường gặp
+- `references/examples.md`: ví dụ output
 
-## 禁止事项
+## Điều cấm
 
-- 不要在缺核心信息时直接排盘。
-- 不要在脚本不可用时改用心算。
-- 不要混用多个流派结论。
-- 不要展示完整内部推理链。
-- 不要恐吓用户。
+- Không lập bàn khi thiếu thông tin cốt lõi.
+- Không dùng tính nhẩm khi script không chạy được.
+- Không trộn kết luận của nhiều phái.
+- Không đưa toàn bộ chuỗi suy luận nội bộ.
+- Không dọa người dùng.

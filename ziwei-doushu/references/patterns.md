@@ -1,159 +1,159 @@
-# 紫微斗数格局参考
+# Tham chiếu cách cục Tử vi đẩu số
 
-## 使用原则
+## Nguyên tắc sử dụng
 
-本文件只用于**排盘完成后的结构总结**，不用于反推主星位置。
+File này chỉ dùng để **tổng kết cấu trúc sau khi đã lập xong lá số**, không dùng để suy ngược vị trí chính tinh.
 
-使用顺序必须是：
+Thứ tự sử dụng bắt buộc:
 
-1. 先按 `calculation.md` 排出主星、辅星、四化、大限。
-2. 再核对命宫及三方四正的真实结构。
-3. 最后才判断是否接近某个格局名称。
+1. Trước hết an chính tinh, phụ tinh, tứ hóa, đại hạn theo `calculation.md`.
+2. Sau đó đối chiếu cấu trúc thật của cung Mệnh và tam phương tứ chính.
+3. Cuối cùng mới xét xem có gần với tên cách cục nào không.
 
-如果格局名和实际盘面冲突，以实际盘面为准。
+Nếu tên cách cục mâu thuẫn với lá số thực tế thì lấy lá số thực tế làm chuẩn.
 
-## 判断要点
+## Điểm mấu chốt khi phán đoán
 
-判断格局时，至少同时看：
+Khi xét cách cục, ít nhất phải xem đồng thời:
 
-- 命宫及命宫三方四正
-- 主星是否庙旺得地
-- 吉星是否加会
-- 煞星与化忌是否破格
-- 本命四化是否增色或减色
+- Cung Mệnh và tam phương tứ chính của cung Mệnh
+- Chính tinh có miếu, vượng, đắc địa không
+- Cát tinh có hội hợp không
+- Sát tinh và Hóa Kỵ có phá cách không
+- Tứ hóa bản mệnh làm tăng hay giảm sắc
 
-格局是总结性的标签，不是铁律，也不应该替代逐宫分析。
+Cách cục là nhãn tổng kết, không phải luật sắt, cũng không nên thay cho việc phân tích từng cung.
 
-## 常见吉格
+## Các cát cách thường gặp
 
-### 1. 紫府同宫
+### 1. Tử Phủ đồng cung
 
-- 核心结构：紫微与天府同宫
-- 常见意义：权柄、资源、稳定性兼具
-- 观察重点：是否有左右、魁钺、昌曲加会；是否被煞忌冲破
+- Cấu trúc cốt lõi: Tử Vi và Thiên Phủ đồng cung
+- Ý nghĩa thường gặp: có cả quyền bính, tài nguyên và sự ổn định
+- Điểm cần xem: có Tả Hữu, Khôi Việt, Xương Khúc hội hợp không; có bị sát kỵ xung phá không
 
-### 2. 紫杀同宫
+### 2. Tử Sát đồng cung
 
-- 核心结构：紫微与七杀同宫
-- 常见意义：魄力大、敢担事、适合带队或开创
-- 观察重点：若吉多则成大气魄，煞重则易走极端
+- Cấu trúc cốt lõi: Tử Vi và Thất Sát đồng cung
+- Ý nghĩa thường gặp: khí phách lớn, dám gánh việc, hợp dẫn dắt đội nhóm hoặc khai phá
+- Điểm cần xem: nhiều cát thì thành khí phách lớn, sát nặng thì dễ cực đoan
 
-### 3. 武府同宫
+### 3. Vũ Phủ đồng cung
 
-- 核心结构：武曲与天府同宫
-- 常见意义：理财、守成、资源管理能力强
-- 观察重点：更适合稳健积累型财富结构
+- Cấu trúc cốt lõi: Vũ Khúc và Thiên Phủ đồng cung
+- Ý nghĩa thường gặp: giỏi quản lý tài chính, giữ thành quả, quản lý nguồn lực
+- Điểm cần xem: hợp hơn với cấu trúc tài sản tích lũy vững chắc
 
-### 4. 日月并明
+### 4. Nhật Nguyệt tịnh minh
 
-- 核心结构：太阳与太阴同在较佳位置，且命宫三方四正得力
-- 常见意义：阴阳协调，名望与生活质量兼顾
-- 观察重点：不要只看日月本身，还要看其三方是否有煞忌
+- Cấu trúc cốt lõi: Thái Dương và Thái Âm cùng ở vị trí tốt, tam phương tứ chính của cung Mệnh đắc lực
+- Ý nghĩa thường gặp: âm dương hài hòa, có cả danh vọng và chất lượng sống
+- Điểm cần xem: không chỉ xem Nhật Nguyệt, còn phải xem tam phương có sát kỵ không
 
-### 5. 日照雷门
+### 5. Nhật chiếu lôi môn
 
-- 核心结构：太阳与巨门同度或形成强联系，且太阳得势
-- 常见意义：口才、表达、传播、公众影响力突出
-- 观察重点：若巨门、太阳再遇化忌，是非也会同步加重
+- Cấu trúc cốt lõi: Thái Dương và Cự Môn đồng độ hoặc liên hệ mạnh, và Thái Dương đắc thế
+- Ý nghĩa thường gặp: nổi bật về khẩu tài, diễn đạt, truyền thông, ảnh hưởng công chúng
+- Điểm cần xem: nếu Cự Môn, Thái Dương gặp thêm Hóa Kỵ thì thị phi cũng tăng theo
 
-### 6. 阳梁昌禄
+### 6. Dương Lương Xương Lộc
 
-- 核心结构：太阳、天梁、文昌/化科、禄存/化禄形成会照
-- 常见意义：利学术、考试、公职、名誉体系
-- 观察重点：适合放在官禄、命宫三方四正整体判断
+- Cấu trúc cốt lõi: Thái Dương, Thiên Lương, Văn Xương / Hóa Khoa, Lộc Tồn / Hóa Lộc hội chiếu
+- Ý nghĩa thường gặp: lợi về học thuật, thi cử, công chức, hệ thống danh dự
+- Điểm cần xem: nên đặt trong toàn cục Quan Lộc và tam phương tứ chính cung Mệnh mà phán
 
-### 7. 机月同梁
+### 7. Cơ Nguyệt Đồng Lương
 
-- 核心结构：天机、太阴、天同、天梁分布于命宫三方四正
-- 常见意义：温和、聪明、规划型、系统型发展
-- 观察重点：是整体结构格，不是单一同宫格
+- Cấu trúc cốt lõi: Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương phân bố trong tam phương tứ chính cung Mệnh
+- Ý nghĩa thường gặp: ôn hòa, thông minh, phát triển theo kiểu hoạch định, có hệ thống
+- Điểm cần xem: là cách theo cấu trúc tổng thể, không phải cách đồng cung đơn lẻ
 
-### 8. 火贪格 / 铃贪格
+### 8. Hỏa Tham cách / Linh Tham cách
 
-- 核心结构：贪狼与火星或铃星形成关键同度/会照
-- 常见意义：爆发力、舞台感、机会来得快
-- 观察重点：吉时可突然起势，失衡时也容易骤起骤落
+- Cấu trúc cốt lõi: Tham Lang với Hỏa Tinh hoặc Linh Tinh đồng độ / hội chiếu ở vị trí then chốt
+- Ý nghĩa thường gặp: sức bùng nổ, cảm giác sân khấu, cơ hội đến nhanh
+- Điểm cần xem: lúc tốt có thể bật lên đột ngột, lúc mất cân bằng cũng dễ lên nhanh xuống nhanh
 
-### 9. 禄马交驰
+### 9. Lộc Mã giao trì
 
-- 核心结构：禄存与天马同宫或在命宫三方四正形成强联系
-- 常见意义：因流动、出差、外部机会而得财
-- 观察重点：常见于“动中求财”的结构
+- Cấu trúc cốt lõi: Lộc Tồn và Thiên Mã đồng cung hoặc liên hệ mạnh trong tam phương tứ chính cung Mệnh
+- Ý nghĩa thường gặp: được tài nhờ di chuyển, công tác xa, cơ hội bên ngoài
+- Điểm cần xem: thường thấy ở cấu trúc "cầu tài trong vận động"
 
-### 10. 三奇加会
+### 10. Tam Kỳ gia hội
 
-- 核心结构：化禄、化权、化科集中于命宫三方四正
-- 常见意义：资源、执行、名声同时发力
-- 观察重点：三吉化同在不等于无代价，仍要看是否见煞忌
+- Cấu trúc cốt lõi: Hóa Lộc, Hóa Quyền, Hóa Khoa tụ ở tam phương tứ chính cung Mệnh
+- Ý nghĩa thường gặp: tài nguyên, thực thi, danh tiếng cùng phát lực
+- Điểm cần xem: ba cát hóa cùng có không có nghĩa là không phải trả giá, vẫn phải xem có gặp sát kỵ không
 
-### 11. 双禄朝垣
+### 11. Song Lộc triều viên
 
-- 核心结构：禄存与化禄同时加会命宫三方四正
-- 常见意义：财禄条件较佳，资源兑现力强
-- 观察重点：若见空劫、化忌，常变成“有财路但难守”
+- Cấu trúc cốt lõi: Lộc Tồn và Hóa Lộc cùng hội vào tam phương tứ chính cung Mệnh
+- Ý nghĩa thường gặp: điều kiện tài lộc khá tốt, khả năng hiện thực hóa tài nguyên mạnh
+- Điểm cần xem: nếu gặp Không Kiếp, Hóa Kỵ thì thường thành "có đường tiền nhưng khó giữ"
 
-## 常见课题型结构
+## Các cấu trúc mang tính bài học thường gặp
 
-### 12. 命无正曜
+### 12. Mệnh vô chính diệu
 
-- 核心结构：命宫无十四主星
-- 常见意义：更受对宫与三方四正牵引
-- 判断方法：重点看对宫主星、三方四正、辅星与四化
+- Cấu trúc cốt lõi: cung Mệnh không có sao nào trong 14 chính tinh
+- Ý nghĩa thường gặp: chịu ảnh hưởng nhiều hơn từ cung đối và tam phương tứ chính
+- Cách phán: tập trung xem chính tinh ở cung đối, tam phương tứ chính, phụ tinh và tứ hóa
 
-### 13. 羊陀夹命
+### 13. Kình Đà giáp Mệnh
 
-- 核心结构：擎羊、陀罗分居命宫两侧或强力夹制命宫
-- 常见意义：有压力、阻滞、磨损感，但也会逼出执行力
-- 观察重点：若主星强且吉化得力，可把压力转为行动力
+- Cấu trúc cốt lõi: Kình Dương, Đà La nằm hai bên cung Mệnh hoặc kẹp chặt cung Mệnh
+- Ý nghĩa thường gặp: có áp lực, trì trệ, cảm giác bị mài mòn, nhưng cũng ép ra năng lực thực thi
+- Điểm cần xem: nếu chính tinh mạnh và cát hóa đắc lực thì có thể biến áp lực thành động lực
 
-### 14. 空劫夹命
+### 14. Không Kiếp giáp Mệnh
 
-- 核心结构：地空、地劫夹命或重压命宫三方
-- 常见意义：现实感、资源感、稳定感较弱；思维可能很跳脱
-- 观察重点：物质层面不稳时，反而可能在创意、哲思、宗教、艺术上有表现
+- Cấu trúc cốt lõi: Địa Không, Địa Kiếp kẹp cung Mệnh hoặc đè nặng tam phương cung Mệnh
+- Ý nghĩa thường gặp: cảm giác thực tế, tài nguyên, ổn định khá yếu; tư duy có thể rất phóng khoáng
+- Điểm cần xem: khi mặt vật chất không ổn, lại có thể thể hiện ở sáng tạo, triết lý, tôn giáo, nghệ thuật
 
-### 15. 巨机化忌
+### 15. Cự Cơ Hóa Kỵ
 
-- 核心结构：巨门或天机化忌落命宫、官禄宫，或强冲命宫三方
-- 常见意义：想法多、纠结重、口舌多、判断成本高
-- 观察重点：化忌不只代表坏，也代表特别在意与容易卡住
+- Cấu trúc cốt lõi: Cự Môn hoặc Thiên Cơ Hóa Kỵ ở cung Mệnh, Quan Lộc, hoặc xung mạnh tam phương cung Mệnh
+- Ý nghĩa thường gặp: nhiều suy nghĩ, rối rắm nặng, nhiều khẩu thiệt, chi phí ra quyết định cao
+- Điểm cần xem: Hóa Kỵ không chỉ là xấu, còn là sự đặc biệt để tâm và dễ bị mắc kẹt
 
-### 16. 廉贞七杀
+### 16. Liêm Trinh – Thất Sát
 
-- 核心结构：廉贞与七杀形成强同度/会照
-- 常见意义：人生起伏大，进取心与风险承受并存
-- 观察重点：吉多则成开创力，煞重则易走剧烈波动
+- Cấu trúc cốt lõi: Liêm Trinh và Thất Sát đồng độ hoặc hội chiếu mạnh
+- Ý nghĩa thường gặp: đời nhiều thăng trầm, chí tiến thủ đi cùng khả năng chịu rủi ro
+- Điểm cần xem: nhiều cát thì thành sức khai phá, sát nặng thì dễ dao động dữ dội
 
-### 17. 刑忌夹印
+### 17. Hình Kỵ giáp Ấn
 
-- 核心结构：天相受刑煞与化忌夹制
-- 常见意义：名声、事业、评价体系容易承压
-- 观察重点：适合结合官禄、迁移、命宫一起看
+- Cấu trúc cốt lõi: Thiên Tướng bị hình sát và Hóa Kỵ kẹp chế
+- Ý nghĩa thường gặp: danh tiếng, sự nghiệp, hệ thống đánh giá dễ chịu áp lực
+- Điểm cần xem: nên xem cùng với Quan Lộc, Thiên Di, Mệnh
 
-### 18. 杀破狼
+### 18. Sát Phá Tham
 
-- 核心结构：七杀、破军、贪狼在命宫三方四正成系统分布
-- 常见意义：强变动、强开创、不安于现状
-- 观察重点：它不是天然凶格，更像“高波动、高开创”的人生结构
+- Cấu trúc cốt lõi: Thất Sát, Phá Quân, Tham Lang phân bố có hệ thống trong tam phương tứ chính cung Mệnh
+- Ý nghĩa thường gặp: biến động mạnh, khai phá mạnh, không yên với hiện trạng
+- Điểm cần xem: đây không phải hung cách bẩm sinh, mà giống cấu trúc đời "dao động cao, khai phá cao"
 
-## 成格与破格
+## Thành cách và phá cách
 
-### 更接近成格的情况
+### Trường hợp gần thành cách hơn
 
-- 主星庙旺得地
-- 命宫三方四正协调
-- 吉星、吉化成系统会照
-- 现实议题能通过结构互补得到承托
+- Chính tinh miếu, vượng, đắc địa
+- Tam phương tứ chính cung Mệnh hài hòa
+- Cát tinh, cát hóa hội chiếu thành hệ thống
+- Các vấn đề thực tế được nâng đỡ nhờ cấu trúc bổ sung cho nhau
 
-### 容易破格的情况
+### Trường hợp dễ phá cách
 
-- 主星落陷且无承托
-- 六煞与化忌集中压入同一重点领域
-- 只有格局名好看，但三方四正实际很散
-- 命宫看似强，财官迁福其余三方却明显拖后腿
+- Chính tinh hãm địa mà không có nâng đỡ
+- Lục sát và Hóa Kỵ dồn vào cùng một lĩnh vực trọng điểm
+- Chỉ có tên cách cục đẹp, còn tam phương tứ chính thực tế rất rời rạc
+- Cung Mệnh trông mạnh, nhưng tam phương Tài, Quan, Thiên Di, Phúc Đức lại kéo lùi rõ rệt
 
-## 使用建议
+## Gợi ý sử dụng
 
-- 格局只做“总结句”，不要替代逐宫分析。
-- 先解释结构，再给格局名，用户更容易听懂也更不容易被误导。
-- 如果盘面只“近似某格”，直接说“接近”“带有某格意味”，不要硬判成格。
+- Cách cục chỉ dùng làm "câu tổng kết", không thay cho phân tích từng cung.
+- Giải thích cấu trúc trước rồi mới nói tên cách cục, người dùng dễ hiểu hơn và ít bị dẫn sai hơn.
+- Nếu lá số chỉ "gần giống một cách" thì nói thẳng là "gần với", "mang ý vị của cách đó", không cố phán là thành cách.

@@ -1,157 +1,157 @@
-# 示例输出
+# Ví dụ output
 
-本文件展示两类场景：正式排盘（含真实脚本输出→解读映射）和理论学习模式。
+File này minh họa hai loại tình huống: lập bàn chính thức (có ánh xạ từ output script thật → luận giải) và chế độ học lý thuyết.
 
 ---
 
-## 示例 1：正式排盘（跳槽）
+## Ví dụ 1: Lập bàn chính thức (nhảy việc)
 
-### 访谈确认信息
+### Thông tin đã xác nhận qua phỏng vấn
 
-- 事项：跳槽/换工作
-- 起局时间：2026-03-24 10:30（公历）
-- 地点：上海（China/Asia/Shanghai）
-- 目标：能不能动，什么时候动更稳
-- 输出偏好：直接结论
+- Sự việc: nhảy việc / đổi công việc
+- Thời điểm khởi cục: 2026-03-24 10:30 (dương lịch)
+- Địa điểm: Thượng Hải (China/Asia/Shanghai)
+- Mục tiêu: có nên động không, khi nào động thì chắc hơn
+- Kiểu output: kết luận thẳng
 
-### 脚本关键输出（摘要）
+### Output then chốt của script (tóm tắt)
 
-执行脚本后从输出 JSON 提取以下关键字段：
+Sau khi chạy script, lấy các trường then chốt sau từ JSON output (đã chuyển ngữ với `lang: vi`):
 
 ```
-calendar.jieqi.active_jie: 春分   ← 2026-03-20 起，已过春分，不能再按惊蛰定局
+calendar.jieqi.active_jie: Xuân Phân   ← từ 2026-03-20, đã qua Xuân Phân, không được định cục theo Kinh Trập nữa
 
 ganzhi:
-  year:  丙午
-  month: 辛卯
-  day:   丁酉
-  time:  乙巳
-  time_xun:     甲辰
-  time_xunkong: 寅卯
+  year:  Bính Ngọ
+  month: Tân Mão
+  day:   Đinh Dậu
+  time:  Ất Tỵ
+  time_xun:     Giáp Thìn
+  time_xunkong: Dần Mão
 
 chart:
-  dun_type:          阳遁
-  yuan:              上元
+  dun_type:          Dương độn
+  yuan:              Thượng nguyên
   ju_number:         3
-  xunshou:           甲辰
-  hidden_yi:         壬
-  kongwang:          [寅, 卯]
-  kongwang_palaces:  [3, 8]  ← 震宫（东）、艮宫（东北）旬空
-  day_kongwang:      [辰, 巳]
-  day_kongwang_palaces: [4]  ← 日旬空影响整日
-  time_stem_visible: 乙      ← 所问之事代表
-  day_stem:          { stem: 丁, palace: 9 }  ← 求测者本人
-  year_stem:         { stem: 丙, palace: 1 }  ← 上级/大环境
-  month_stem:        { stem: 辛, palace: 6 }  ← 同事/竞争者
-  hour_yima:         { branch: 亥, palace: 6, source_branch: 巳 }  ← 时马在乾宫（西北）
-  day_yima:          { branch: 亥, palace: 6, source_branch: 酉 }  ← 日马同在乾宫
+  xunshou:           Giáp Thìn
+  hidden_yi:         Nhâm
+  kongwang:          [Dần, Mão]
+  kongwang_palaces:  [3, 8]  ← cung Chấn (Đông), cung Cấn (Đông Bắc) tuần không
+  day_kongwang:      [Thìn, Tỵ]
+  day_kongwang_palaces: [4]  ← tuần không của ngày ảnh hưởng cả ngày
+  time_stem_visible: Ất      ← đại diện việc được hỏi
+  day_stem:          { stem: Đinh, palace: 9 }  ← người hỏi
+  year_stem:         { stem: Bính, palace: 1 }  ← cấp trên / đại cục
+  month_stem:        { stem: Tân, palace: 6 }  ← đồng nghiệp / đối thủ
+  hour_yima:         { branch: Hợi, palace: 6, source_branch: Tỵ }  ← Dịch Mã giờ ở cung Càn (Tây Bắc)
+  day_yima:          { branch: Hợi, palace: 6, source_branch: Dậu }  ← Dịch Mã ngày cũng ở cung Càn
 
-  zhifu:  { star: 天柱, palace: 2 }  ← 随时干乙落坤宫（西南）
-  zhishi: { door: 惊门, palace: 8, raw_palace: 8, hours_from_xunshou: 1 }  ← 从旬首壬所在兑七顺行一宫，落艮宫（东北）
-  center_hosting: { hosted_star: 天禽, center_stem: 庚, earth_host_palace: 2, sky_palace: 9, follows_star: 天芮 }
+  zhifu:  { star: Thiên Trụ, palace: 2 }  ← theo can giờ Ất rơi cung Khôn (Tây Nam)
+  zhishi: { door: Kinh Môn, palace: 8, raw_palace: 8, hours_from_xunshou: 1 }  ← từ Đoài thất (nơi có Nhâm của tuần thủ) đi thuận một cung, rơi cung Cấn (Đông Bắc)
+  center_hosting: { hosted_star: Thiên Cầm, center_stem: Canh, earth_host_palace: 2, sky_palace: 9, follows_star: Thiên Nhuế }
 
-  door_index: { 死门: 1, 伤门: 2, 开门: 3, 休门: 4, 景门: 6, 杜门: 7, 惊门: 8, 生门: 9 }
-  star_index: { 天任: 1, 天柱: 2, 天辅: 3, 天英: 4, 天蓬: 6, 天心: 7, 天冲: 8, 天芮: 9, 天禽: 9 }
+  door_index: { Tử Môn: 1, Thương Môn: 2, Khai Môn: 3, Hưu Môn: 4, Cảnh Môn: 6, Đỗ Môn: 7, Kinh Môn: 8, Sinh Môn: 9 }
+  star_index: { Thiên Nhậm: 1, Thiên Trụ: 2, Thiên Phụ: 3, Thiên Anh: 4, Thiên Bồng: 6, Thiên Tâm: 7, Thiên Xung: 8, Thiên Nhuế: 9, Thiên Cầm: 9 }
 
   detected_patterns:
-    - { name: 门迫, palace: 1, detail: "死门(土)克坎宫(水)", nature: 凶 }
-    - { name: 门迫, palace: 2, detail: "伤门(木)克坤宫(土)", nature: 凶 }
-    - { name: 门迫, palace: 3, detail: "开门(金)克震宫(木)", nature: 凶 }
-    - { name: 三奇配吉门, palace: 4, detail: "丁+休门", nature: 吉 }
-    - { name: 门迫, palace: 6, detail: "景门(火)克乾宫(金)", nature: 凶 }
-    - { name: 门受制, palace: 7, detail: "杜门(木)受兑宫(金)克", nature: 中 }
-    - { name: 三奇配吉门, palace: 9, detail: "乙+生门", nature: 吉 }
+    - { name: Môn Bách, palace: 1, detail: "Tử Môn (Thổ) khắc cung Khảm (Thủy)", nature: Hung }
+    - { name: Môn Bách, palace: 2, detail: "Thương Môn (Mộc) khắc cung Khôn (Thổ)", nature: Hung }
+    - { name: Môn Bách, palace: 3, detail: "Khai Môn (Kim) khắc cung Chấn (Mộc)", nature: Hung }
+    - { name: Tam Kỳ phối Cát Môn, palace: 4, detail: "Đinh + Hưu Môn", nature: Cát }
+    - { name: Môn Bách, palace: 6, detail: "Cảnh Môn (Hỏa) khắc cung Càn (Kim)", nature: Hung }
+    - { name: Môn Thụ Chế, palace: 7, detail: "Đỗ Môn (Mộc) bị cung Đoài (Kim) khắc", nature: Trung }
+    - { name: Tam Kỳ phối Cát Môn, palace: 9, detail: "Ất + Sinh Môn", nature: Cát }
 
-palaces（部分）：
-  宫2 坤宫/西南：地盘乙 / 天盘壬 / 天柱 / 伤门(木,克) / 值符 / stem_relation:天生地 ← 时干乙所在，值符所在
-  宫3 震宫/东：  地盘戊 / 天盘己 / 天辅(木,比和) / 开门(金,克) / 玄武 / stem_relation:比和 ← 主用神开门所在，时旬空
-  宫8 艮宫/东北：地盘癸 / 天盘戊 / 天冲 / 惊门(金,被生) / 白虎 / stem_relation:天克地 ← 值使所在，时旬空
-  宫9 离宫/南：  地盘丁 / 天盘乙+庚 / 天芮+天禽(土,被生) / 生门(土,被生) / 九天 / stem_relation:天生地 ← 日干丁所在
+palaces (một phần):
+  Cung 2 cung Khôn / Tây Nam: địa bàn Ất / thiên bàn Nhâm / Thiên Trụ / Thương Môn (Mộc, Khắc) / Trực Phù / stem_relation: Thiên sinh Địa ← nơi có can giờ Ất, nơi có Trực Phù
+  Cung 3 cung Chấn / Đông:    địa bàn Mậu / thiên bàn Kỷ / Thiên Phụ (Mộc, Tỷ hòa) / Khai Môn (Kim, Khắc) / Huyền Vũ / stem_relation: Tỷ hòa ← nơi có dụng thần chính Khai Môn, tuần không của giờ
+  Cung 8 cung Cấn / Đông Bắc: địa bàn Quý / thiên bàn Mậu / Thiên Xung / Kinh Môn (Kim, Được sinh) / Bạch Hổ / stem_relation: Thiên khắc Địa ← nơi có Trực Sử, tuần không của giờ
+  Cung 9 cung Ly / Nam:       địa bàn Đinh / thiên bàn Ất + Canh / Thiên Nhuế + Thiên Cầm (Thổ, Được sinh) / Sinh Môn (Thổ, Được sinh) / Cửu Thiên / stem_relation: Thiên sinh Địa ← nơi có can ngày Đinh
 ```
 
-### 读盘过程（内部，不展示给用户）
+### Quá trình đọc bàn (nội bộ, không đưa cho người dùng)
 
-1. **主用神**：事业/跳槽 → 取开门为主用神，辅助看值符、值使和日干（丁）。从 `door_index` 得知开门在 3 宫。
-2. **开门落宫**：3宫震宫（东），开门(金)克震宫(木) → 门迫；配天辅、玄武，且 3 宫时旬空 → 推进的意愿和环境顶着来，信息有虚，条件还没落地。
-3. **求测者（日干丁）**：`day_stem.palace` = 9宫离宫（南），配生门、天芮+天禽、九天，天盘乙与生门成"三奇配吉门" → 本人手里有资源和底气，状态不差。
-4. **所问之事（时干乙）**：落 2宫坤宫（西南），与值符天柱同宫，但伤门门迫 → 这件事本身有分量，推进时容易起摩擦、有损耗。
-5. **值符值使**：值符天柱在坤二，值使惊门在艮八，分别落宫。值使所在艮八时旬空、配白虎 → 当下的行动通道带惊扰、口舌，而且落空。
-6. **格局提示**：门迫集中在 1、2、3、6 宫；吉格在 4 宫（丁+休门，但 4 宫日旬空）和 9 宫（乙+生门，与本人同宫）。
-7. **驿马**：时马、日马都在 6 宫乾宫（西北），但 6 宫景门门迫 → 有变动的念头，往外跑的方向不顺。
-8. **旬空**：时旬空寅卯→3宫(东)+8宫(东北)，正好压在开门和值使上；日旬空辰巳→4宫(东南)整日偏虚。
+1. **Dụng thần chính**: sự nghiệp / nhảy việc → lấy Khai Môn làm dụng thần chính, phụ xem Trực Phù, Trực Sử và can ngày (Đinh). Từ `door_index` biết Khai Môn ở cung 3.
+2. **Cung của Khai Môn**: cung 3 Chấn (Đông), Khai Môn (Kim) khắc cung Chấn (Mộc) → Môn Bách; phối Thiên Phụ, Huyền Vũ, và cung 3 tuần không của giờ → ý muốn thúc đẩy đang đối đầu hoàn cảnh, thông tin có phần hư, điều kiện chưa thành hiện thực.
+3. **Người hỏi (can ngày Đinh)**: `day_stem.palace` = cung 9 Ly (Nam), phối Sinh Môn, Thiên Nhuế + Thiên Cầm, Cửu Thiên, thiên bàn Ất với Sinh Môn thành "Tam Kỳ phối Cát Môn" → bản thân có nguồn lực và chỗ dựa, trạng thái không tệ.
+4. **Việc được hỏi (can giờ Ất)**: rơi cung 2 Khôn (Tây Nam), cùng cung với Trực Phù Thiên Trụ, nhưng Thương Môn bị Môn Bách → bản thân việc này có trọng lượng, khi thúc đẩy dễ va chạm, có hao tổn.
+5. **Trực Phù, Trực Sử**: Trực Phù Thiên Trụ ở Khôn nhị, Trực Sử Kinh Môn ở Cấn bát, rơi cung riêng. Cung Cấn bát nơi có Trực Sử bị tuần không của giờ, phối Bạch Hổ → kênh hành động hiện tại kèm kinh động, khẩu thiệt, mà lại rơi vào không.
+6. **Nhắc cách cục**: Môn Bách tập trung ở cung 1, 2, 3, 6; cát cách ở cung 4 (Đinh + Hưu Môn, nhưng cung 4 tuần không của ngày) và cung 9 (Ất + Sinh Môn, cùng cung với bản thân).
+7. **Dịch Mã**: Dịch Mã giờ, Dịch Mã ngày đều ở cung 6 Càn (Tây Bắc), nhưng cung 6 Cảnh Môn bị Môn Bách → có ý định thay đổi, nhưng hướng đi ra ngoài không thuận.
+8. **Tuần không**: tuần không của giờ Dần Mão → cung 3 (Đông) + cung 8 (Đông Bắc), đè đúng lên Khai Môn và Trực Sử; tuần không của ngày Thìn Tỵ → cung 4 (Đông Nam) cả ngày thiên về hư.
 
-### 正式输出（面向用户）
-
----
-
-**已确认信息**
-
-- 看什么事：跳槽，判断能不能动、什么时候动更稳
-- 起局时间：2026-03-24 10:30，上海（亚洲/上海时区）
-- 输出方式：直接结论
-
-**使用规则与默认项**
-
-- 规则集：`mainline-cn-v1`（时家转盘奇门）
-- 时区：`Asia/Shanghai`（默认）
-- 当前节气：春分
-
-**盘面摘要**
-
-- 阳遁 3 局
-- 旬首：甲辰，旬首奇仪：壬
-- 旬空：寅、卯（东方和东北方力量偏虚）
-- 值符：天柱 · 坤宫（西南）
-- 值使：惊门 · 艮宫（东北）
-
-**用神与关键依据**
-
-主看开门（代表事业推进），辅助看值符、值使和日干。
-
-- 开门落震宫（东），门克宫成门迫，又逢旬空、配玄武——想动的方向现在条件不实，对方给的信息也可能有水分。
-- 你本人（日干丁）落离宫（南），配生门、九天，乙奇加生门——你自己的资源和底气是够的，不是被逼着走。
-- 所问之事（时干乙）和值符同在坤宫，但伤门门迫——这件事分量不轻，硬推容易起摩擦、有损耗。
-- 值使惊门落艮宫，旬空又配白虎——眼下的行动多半是虚惊或口舌，落不到实处。
-
-**核心判断**
-
-- 能不能动：有动的底气，但现在不是拍板的时候。
-- 什么时候动更稳：开门和值使都落在旬空宫，眼前更适合私下摸底（薪资、团队、职责边界），等条件落到纸面上再正式推进。
-
-**方位 / 时机 / 行动建议**
-
-- 南方的机会和你本人状态更合拍，可以优先接触。
-- 东方、东北方向的机会先核实信息，不急着表态。
-- 如果 offer 已在手，先把关键条款谈清楚，不用这两天就辞职。
-
-**风险提醒与免责声明**
-
-此类决定还要结合真实 offer 条件、现金流、试用期风险综合判断。
-
-> 温馨提示：奇门遁甲属于传统文化中的术数模型，本次解读用于辅助观察与思考，不代替医疗、法律、财务等专业意见。涉及重大决策时，请同时结合现实信息理性判断。
+### Output chính thức (cho người dùng)
 
 ---
 
-## 示例 2：理论学习模式
+**Thông tin đã xác nhận**
 
-### 场景
+- Xem việc gì: nhảy việc, phán đoán có nên động không, khi nào động thì chắc hơn
+- Thời điểm khởi cục: 2026-03-24 10:30, Thượng Hải (múi giờ châu Á / Thượng Hải)
+- Kiểu output: kết luận thẳng
 
-用户说：值符和值使是什么意思？
+**Quy tắc dùng và các mặc định**
 
-### 处理方式
+- Bộ quy tắc: `mainline-cn-v1` (Thời gia Chuyển bàn Kỳ môn)
+- Múi giờ: `Asia/Shanghai` (mặc định)
+- Tiết khí hiện tại: Xuân Phân
 
-不进入正式排盘。先确认学习需求，再解释：
+**Tóm tắt bàn**
+
+- Dương độn cục 3
+- Tuần thủ: Giáp Thìn, nghi của tuần thủ: Nhâm
+- Tuần không: Dần, Mão (phương Đông và Đông Bắc sức lực thiên về hư)
+- Trực Phù: Thiên Trụ · cung Khôn (Tây Nam)
+- Trực Sử: Kinh Môn · cung Cấn (Đông Bắc)
+
+**Dụng thần và căn cứ then chốt**
+
+Chủ yếu xem Khai Môn (đại diện việc thúc đẩy sự nghiệp), phụ xem Trực Phù, Trực Sử và can ngày.
+
+- Khai Môn rơi cung Chấn (Đông), môn khắc cung thành Môn Bách, lại gặp tuần không, phối Huyền Vũ: hướng bạn muốn đi hiện điều kiện chưa thật, thông tin phía bên kia đưa ra cũng có thể có phần "thổi phồng".
+- Bản thân bạn (can ngày Đinh) rơi cung Ly (Nam), phối Sinh Môn, Cửu Thiên, Ất kỳ gia Sinh Môn: nguồn lực và chỗ dựa của bạn là đủ, không phải bị ép phải đi.
+- Việc được hỏi (can giờ Ất) cùng ở cung Khôn với Trực Phù, nhưng Thương Môn bị Môn Bách: việc này không nhẹ, cố đẩy dễ va chạm, có hao tổn.
+- Trực Sử Kinh Môn rơi cung Cấn, tuần không lại phối Bạch Hổ: hành động trước mắt phần nhiều là hoảng hão hoặc khẩu thiệt, không đi đến thực chất.
+
+**Phán đoán cốt lõi**
+
+- Có nên động không: có cơ sở để động, nhưng bây giờ chưa phải lúc chốt.
+- Khi nào động thì chắc hơn: Khai Môn và Trực Sử đều rơi cung tuần không, trước mắt hợp để thăm dò kín (lương, đội nhóm, ranh giới trách nhiệm), đợi điều kiện có trên giấy rồi mới chính thức thúc đẩy.
+
+**Lời khuyên về phương vị / thời điểm / hành động**
+
+- Cơ hội ở phương Nam hợp với trạng thái của bạn hơn, có thể ưu tiên tiếp xúc.
+- Cơ hội ở phương Đông, Đông Bắc thì kiểm chứng thông tin trước, chưa vội tỏ thái độ.
+- Nếu đã có offer trong tay, đàm phán rõ các điều khoản then chốt trước, không cần nghỉ việc trong mấy ngày này.
+
+**Nhắc rủi ro và miễn trừ trách nhiệm**
+
+Quyết định kiểu này còn phải xét tổng hợp điều kiện offer thật, dòng tiền, rủi ro thời gian thử việc.
+
+> Lời nhắc: Kỳ môn độn giáp là một mô hình thuật số trong văn hóa truyền thống. Lần luận giải này chỉ để hỗ trợ quan sát và suy nghĩ, không thay cho ý kiến chuyên môn về y tế, pháp luật, tài chính. Khi đưa ra quyết định lớn, hãy kết hợp thông tin thực tế và cân nhắc lý trí.
 
 ---
 
-**值符**（zhífú）：当局的"主导星神"，代表当前时间段最有权威、最有主导力的力量方向。它的落宫决定了整个盘里"谁说了算"，是判断主动权和支持来源的关键参考。
+## Ví dụ 2: Chế độ học lý thuyết
 
-**值使**（zhíshǐ）：当局的"执行门"，代表当前最活跃的行动通道。它的门名（休/生/伤/杜/景/死/惊/开）直接影响当前适合做什么事。
+### Tình huống
 
-**两者关系：**
+Người dùng hỏi: Trực Phù và Trực Sử nghĩa là gì?
 
-- 两者各自移宫：值符跟着时干走，值使从旬首宫起按时辰一宫一宫走，阳遁顺行、阴遁逆行。所以多数时候两者不在同一宫。
-- 如示例 1，值符（天柱）在坤宫，值使（惊门）在艮宫：主导力量和行动通道分在两处，且行动通道正逢旬空，说明有人拍板，但落地的动作还虚。
-- 如果某个时辰两者恰好同宫，说明"主导力量"和"行动通道"集中在一处，力量集中，其他宫位相对弱。
+### Cách xử lý
 
-**想看实战盘例？** 可以告诉我一件具体的事，我们走正式排盘流程，顺带讲每个步骤怎么取值符值使。
+Không lập bàn chính thức. Xác nhận nhu cầu học trước, rồi giải thích:
+
+---
+
+**Trực Phù**: "tinh thần chủ đạo" của cục, đại diện hướng lực lượng có uy quyền, có sức chủ đạo nhất trong khoảng thời gian hiện tại. Cung nó rơi vào quyết định "ai nói là được" trên cả bàn, là căn cứ then chốt để phán quyền chủ động và nguồn hỗ trợ.
+
+**Trực Sử**: "cửa thực thi" của cục, đại diện kênh hành động sôi nổi nhất hiện tại. Tên cửa của nó (Hưu / Sinh / Thương / Đỗ / Cảnh / Tử / Kinh / Khai) ảnh hưởng trực tiếp đến việc hiện tại nên làm gì.
+
+**Quan hệ giữa hai cái:**
+
+- Hai cái di cung riêng: Trực Phù theo can giờ, Trực Sử từ cung tuần thủ đi từng cung theo giờ, Dương độn đi thuận, Âm độn đi nghịch. Vì vậy phần lớn thời gian hai cái không cùng cung.
+- Như ví dụ 1, Trực Phù (Thiên Trụ) ở cung Khôn, Trực Sử (Kinh Môn) ở cung Cấn: lực lượng chủ đạo và kênh hành động nằm ở hai chỗ, mà kênh hành động lại gặp tuần không, cho thấy có người quyết, nhưng hành động thực tế vẫn còn hư.
+- Nếu ở một giờ nào đó hai cái vừa khéo cùng cung, nghĩa là "lực lượng chủ đạo" và "kênh hành động" tụ ở một chỗ, sức mạnh tập trung, các cung khác tương đối yếu.
+
+**Muốn xem ví dụ bàn thực tế?** Có thể kể cho mình một việc cụ thể, mình sẽ đi theo quy trình lập bàn chính thức, tiện thể giảng từng bước lấy Trực Phù, Trực Sử thế nào.

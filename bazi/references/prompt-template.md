@@ -1,43 +1,43 @@
-# 四柱八字分析提示词模板
+# Mẫu prompt phân tích Tứ trụ Bát tự
 
-以下模板用于向AI发起完整的八字分析请求。填入个人信息后使用。
+Mẫu dưới đây dùng để gửi cho AI một yêu cầu phân tích Bát tự đầy đủ. Điền thông tin cá nhân rồi dùng.
 
 ---
 
-你现在是一位专业的中国传统四柱八字命理研究者，熟读并综合参考《穷通宝鉴》《三命通会》《滴天髓》《渊海子平》《千里命稿》《协纪辨方书》《果老星宗》《子平真诠》《神峰通考》等经典命理著作。你擅长结合传统命理理论、排盘规则、十神生克、格局喜忌、旺衰流通、大运流年等方法，对命盘进行系统、细致、可验证的分析。
+Bây giờ bạn là một nhà nghiên cứu mệnh lý Tứ trụ Bát tự truyền thống Trung Hoa, thông thạo và tổng hợp tham khảo các trước tác kinh điển như *Cùng Thông Bảo Giám*, *Tam Mệnh Thông Hội*, *Trích Thiên Tủy*, *Uyên Hải Tử Bình*, *Thiên Lý Mệnh Cảo*, *Hiệp Kỷ Biện Phương Thư*, *Quả Lão Tinh Tông*, *Tử Bình Chân Thuyên*, *Thần Phong Thông Khảo*. Bạn giỏi kết hợp lý thuyết mệnh lý truyền thống, quy tắc lập lá số, sinh khắc thập thần, hỷ kỵ cách cục, vượng suy lưu thông, đại vận lưu niên, để phân tích lá số một cách hệ thống, tỉ mỉ, kiểm chứng được.
 
-请根据我提供的个人信息，严格按照传统四柱八字的逻辑进行分析：
+Hãy dựa vào thông tin cá nhân tôi cung cấp, phân tích nghiêm ngặt theo logic Tứ trụ Bát tự truyền thống:
 
-【个人信息】
-姓名：xx
-曾用名：xx（没有可不填）
-性别：x
-是否健在：x
-出生地：x
-公历出生日期：xxxx年x月x日
-农历出生日期：xxxx年x月x日
-出生时间：x时x分
-当前年份：xxxx年
+【Thông tin cá nhân】
+Họ tên: xx
+Tên cũ: xx (không có thì bỏ trống)
+Giới tính: x
+Còn sống hay không: x
+Nơi sinh: x
+Ngày sinh dương lịch: ngày x tháng x năm xxxx
+Ngày sinh âm lịch: ngày x tháng x năm xxxx
+Giờ sinh: x giờ x phút
+Năm hiện tại: năm xxxx
 
-【排运规则】
-排大运分阴年、阳年。
-阳年：甲、丙、戊、庚、壬
-阴年：乙、丁、己、辛、癸
-阳年男、阴年女顺排；阴年男、阳年女逆排。
-具体排法以月柱干支为基准进行顺逆。
-小孩交大运前，以月柱干支为大运。
-十天干：甲乙丙丁戊己庚辛壬癸
-十二地支：子丑寅卯辰巳午未申酉戌亥
+【Quy tắc xếp vận】
+Xếp đại vận chia năm âm, năm dương.
+Năm dương: Giáp, Bính, Mậu, Canh, Nhâm
+Năm âm: Ất, Đinh, Kỷ, Tân, Quý
+Năm dương nam, năm âm nữ xếp thuận; năm âm nam, năm dương nữ xếp nghịch.
+Cách xếp cụ thể lấy can chi trụ tháng làm gốc mà thuận nghịch.
+Trẻ nhỏ trước khi giao đại vận thì lấy can chi trụ tháng làm đại vận.
+Mười thiên can: Giáp Ất Bính Đinh Mậu Kỷ Canh Tân Nhâm Quý
+Mười hai địa chi: Tý Sửu Dần Mão Thìn Tỵ Ngọ Mùi Thân Dậu Tuất Hợi
 
-请你按以下要求输出：
+Hãy xuất kết quả theo các yêu cầu sau:
 
-1. 先排出我的四柱八字命盘，列出年柱、月柱、日柱、时柱。
-2. 分析日主强弱，判断命局格局、五行分布、寒暖燥湿、喜用神、忌神，并说明判断依据。
-3. 分析十神配置，重点看性格特征、思维方式、为人处事风格、优势短板。
-4. 分析事业、财运、婚姻、家庭、子女、健康等主要人生维度，尽量具体，不要空泛套话。
-5. 结合大运和流年，分析人生不同阶段的走势变化，指出哪些阶段更容易出现机会、转折、压力、波动。
-6. 请重点给出一些"已经发生过"的关键事件预测，标注清楚年份和年龄，方便我校验分析是否贴合实际。
-7. 上述已发生事件请尽量具体到年龄段及年份范围，并说明为什么会在那个阶段出现。
-8. 最后请单独总结：我的命局核心特点、一生最需要注意的风险点、最值得把握的发展方向、特别关键的年份或阶段。
+1. Trước hết lập lá số Tứ trụ Bát tự của tôi, liệt kê trụ năm, trụ tháng, trụ ngày, trụ giờ.
+2. Phân tích nhật chủ mạnh yếu, phán cách cục mệnh cục, phân bố ngũ hành, hàn noãn táo thấp, hỷ dụng thần, kỵ thần, và nói rõ căn cứ phán đoán.
+3. Phân tích phối trí thập thần, trọng điểm xem đặc điểm tính cách, cách tư duy, phong cách đối nhân xử thế, ưu thế và điểm yếu.
+4. Phân tích các mặt chính của đời người như sự nghiệp, tài vận, hôn nhân, gia đình, con cái, sức khỏe, cố gắng cụ thể, đừng nói chung chung sáo rỗng.
+5. Kết hợp đại vận và lưu niên, phân tích diễn biến xu thế ở các giai đoạn khác nhau của đời người, chỉ ra giai đoạn nào dễ xuất hiện cơ hội, bước ngoặt, áp lực, dao động.
+6. Hãy tập trung đưa ra một số dự đoán về sự kiện then chốt "đã xảy ra", ghi rõ năm và tuổi, để tôi kiểm chứng phân tích có sát thực tế không.
+7. Các sự kiện đã xảy ra nói trên hãy cố gắng cụ thể đến khoảng tuổi và khoảng năm, và giải thích vì sao lại xuất hiện ở giai đoạn đó.
+8. Cuối cùng hãy tổng kết riêng: đặc điểm cốt lõi của mệnh cục tôi, điểm rủi ro cần chú ý nhất cả đời, hướng phát triển đáng nắm bắt nhất, các năm hoặc giai đoạn đặc biệt then chốt.
 
-要求：以专业命理研究者口吻输出，但不要故弄玄虚。结论要有依据，尽量体现推演过程。不要只说好听的话，也不要刻意吓人，要客观平衡。内容尽量全面，但结构清晰，分点展开。
+Yêu cầu: xuất kết quả với giọng nhà nghiên cứu mệnh lý chuyên nghiệp, nhưng đừng làm ra vẻ huyền bí. Kết luận phải có căn cứ, cố gắng thể hiện quá trình suy luận. Đừng chỉ nói lời dễ nghe, cũng đừng cố ý dọa, phải khách quan cân bằng. Nội dung cố gắng toàn diện, nhưng cấu trúc rõ ràng, chia ý triển khai.

@@ -1,97 +1,97 @@
-# `mainline-cn-v1` 默认规则
+# Quy tắc mặc định `mainline-cn-v1`
 
-这个 skill 的正式排盘只使用这一套默认规则，不在正式计算里混用别的说法。
+Việc lập bàn chính thức của skill này chỉ dùng một bộ quy tắc mặc định, không trộn cách nói khác vào phần tính chính thức.
 
-## 适用范围
+## Phạm vi áp dụng
 
-- 面向中国大陆常见时家转盘奇门使用习惯
-- 默认时区：`Asia/Shanghai`
-- 海外用户必须先补城市或时区
+- Theo thói quen dùng Thời gia Chuyển bàn Kỳ môn phổ biến ở Trung Quốc đại lục
+- Múi giờ mặc định của script: `Asia/Shanghai`
+- Người dùng ở nước ngoài (kể cả Việt Nam) phải bổ sung thành phố hoặc múi giờ trước; người dùng ở Việt Nam dùng `Asia/Ho_Chi_Minh`
 
-## 固定规则
+## Quy tắc cố định
 
-### 1. 时间规则
+### 1. Quy tắc thời gian
 
-- 用户说"现在"，就按当前绝对时间起局。
-- 没给时区且语境是中国大陆，默认北京时间。
-- 海外用户没给时区时，先追问，不要直接排盘。
+- Người dùng nói "bây giờ" thì khởi cục theo thời điểm tuyệt đối hiện tại.
+- Không có múi giờ và ngữ cảnh là Trung Quốc đại lục thì mặc định giờ Bắc Kinh.
+- Người dùng ở nước ngoài không có múi giờ thì hỏi thêm trước, không lập bàn ngay.
 
-### 2. 节气规则
+### 2. Quy tắc tiết khí
 
-- 以二十四节气（十二节 + 十二中气）切换阴遁 / 阳遁和定局，当前节气取起局时刻之前最近的一个节气。
-- 冬至到芒种：阳遁
-- 夏至到大雪：阴遁
-- 不能只看十二节：冬至、春分、夏至等中气各自对应一组局数，只取节会让中气之后半个月沿用上一个节的局，冬至、夏至后更会把阴阳遁取反。
-- 节气边界前后 24 小时内，输出中要明确写出"边界提醒"。
+- Dùng 24 tiết khí (12 tiết + 12 trung khí) để chuyển Âm độn / Dương độn và định cục; tiết khí hiện tại lấy tiết khí gần nhất trước thời điểm khởi cục.
+- Từ Đông Chí đến Mang Chủng: Dương độn
+- Từ Hạ Chí đến Đại Tuyết: Âm độn
+- Không được chỉ xem 12 tiết: các trung khí như Đông Chí, Xuân Phân, Hạ Chí mỗi cái ứng với một bộ số cục riêng. Chỉ lấy tiết sẽ làm nửa tháng sau trung khí dùng nhầm cục của tiết trước, sau Đông Chí, Hạ Chí còn lấy ngược Âm Dương độn.
+- Trong vòng 24 giờ trước và sau ranh giới tiết khí, output phải ghi rõ "nhắc ranh giới".
 
-### 3. 三元规则
+### 3. Quy tắc tam nguyên
 
-- 按日干支在六十甲子序列中的位置分组。
-- 每 5 日为一元。
-- 顺序固定循环为：上元 -> 中元 -> 下元。
+- Chia nhóm theo vị trí của can chi ngày trong Lục thập hoa giáp.
+- Mỗi 5 ngày là một nguyên.
+- Thứ tự cố định lặp vòng: Thượng nguyên -> Trung nguyên -> Hạ nguyên.
 
-这是当前版本采用的工程化固定规则，用来确保同一输入得到同一结果。
+Đây là quy tắc cố định mang tính kỹ thuật mà phiên bản hiện tại dùng, để đảm bảo cùng một input luôn cho cùng một kết quả.
 
-### 4. 定局规则
+### 4. Quy tắc định cục
 
-- 阴遁 / 阳遁与三元确定后，从固定定局表直接取局数。
-- 不在正式排盘时临时切换拆补法或其他变体。
+- Sau khi xác định Âm / Dương độn và tam nguyên, lấy số cục thẳng từ bảng định cục cố định.
+- Không tạm chuyển sang phép Sách bổ hay biến thể khác khi lập bàn chính thức.
 
-### 5. 中宫规则
+### 5. Quy tắc Trung cung
 
-- 中宫相关判断一律寄坤处理。
-- 如果旬首所遁之仪或时干落在中宫，正式输出里要提示"本盘按寄坤处理"。
-- 地盘：中五地盘干寄坤二。
-- 天盘：天禽寄坤并入天芮，天禽与中五地盘干随天芮一起转，落到天芮所到之宫。该宫天盘同时有两个干（坤二地盘干 + 中五地盘干），输出在 `sky_stems`、`hosted_sky_stem`、`hosted_star` 中，`chart.center_hosting.sky_palace` 给出随转后的宫位。
-- 中五本身不再放星：天禽已随天芮转出。
+- Mọi phán đoán liên quan đến Trung cung đều xử lý theo ký Khôn.
+- Nếu nghi mà tuần thủ ẩn vào hoặc can giờ rơi vào Trung cung, output chính thức phải nhắc "bàn này xử lý theo ký Khôn".
+- Địa bàn: can địa bàn Trung ngũ ký ở Khôn nhị.
+- Thiên bàn: Thiên Cầm ký Khôn và nhập vào Thiên Nhuế; Thiên Cầm và can địa bàn Trung ngũ cùng theo Thiên Nhuế mà chuyển, rơi vào cung Thiên Nhuế đến. Thiên bàn của cung đó đồng thời có hai can (can địa bàn Khôn nhị + can địa bàn Trung ngũ), output ở `sky_stems`, `hosted_sky_stem`, `hosted_star`; `chart.center_hosting.sky_palace` cho biết cung sau khi chuyển.
+- Bản thân Trung ngũ không đặt tinh nữa: Thiên Cầm đã theo Thiên Nhuế chuyển ra.
 
-### 6. 天盘起点规则
+### 6. Quy tắc điểm khởi thiên bàn
 
-- 天盘奇仪的起排参照为旬首所遁之仪（代表甲的位置）。
-- 正常情况：该仪在八宫环中，直接以它为天盘起点。
-- 特殊情况：该仪在地盘落入中宫（5宫）时，寄到坤宫（2宫），天盘从坤宫地盘干起排。中宫不在八宫转盘环中，寄坤后仪的"环上投影"即为坤宫地盘干。
+- Điểm tham chiếu để xếp kỳ nghi trên thiên bàn là nghi mà tuần thủ ẩn vào (đại diện vị trí của Giáp).
+- Trường hợp thường: nghi đó nằm trong vòng tám cung thì lấy luôn làm điểm khởi thiên bàn.
+- Trường hợp đặc biệt: nghi đó trên địa bàn rơi vào Trung cung (cung 5) thì ký sang cung Khôn (cung 2), thiên bàn khởi xếp từ can địa bàn của cung Khôn. Trung cung không nằm trong vòng chuyển bàn tám cung, sau khi ký Khôn thì "hình chiếu trên vòng" của nghi chính là can địa bàn cung Khôn.
 
-### 7. 值符值使规则
+### 7. Quy tắc Trực Phù, Trực Sử
 
-- 值符星：旬首所遁之仪在地盘所落宫位上的那颗九星，随天盘转至时干所到之宫。
-- 值使门：旬首所遁之仪在地盘所落宫位上的那道八门，**与值符分别移宫**：从旬首所在地盘宫起，旬首时辰算第 0 步，此后每过一个时辰沿九宫数序走一宫，阳遁顺行（1→2→…→9→1），阴遁逆行（9→8→…→1→9）。数序经过中五时照常计数，最终落中五则寄坤二。
-- 值使落宫定好后，其余七门按原有相对次序随之转布。值符、值使只在时辰数恰好对上时才同宫。
-- 如果旬首落中宫，则取寄坤后坤宫对应的星和门（天禽寄坤并入天芮，中宫无门时取死门）；值使仍从中五起算移宫。
-- 依据：《烟波钓叟歌》"值符常遣加时干，值使顺逆遁宫去"；《遁甲演义》卷一"八门九星逐时移宫诀"中阳一局乙丑时蓬星在九宫、休门在二宫，丙寅时蓬星在八宫、休门在三宫。
+- Sao Trực Phù: là sao trong cửu tinh ở cung địa bàn nơi nghi của tuần thủ ẩn vào, theo thiên bàn chuyển đến cung của can giờ.
+- Cửa Trực Sử: là cửa trong bát môn ở cung địa bàn nơi nghi của tuần thủ ẩn vào, **di cung riêng với Trực Phù**: khởi từ cung địa bàn của tuần thủ, giờ tuần thủ tính là bước 0, sau đó mỗi giờ đi một cung theo thứ tự số cửu cung, Dương độn đi thuận (1→2→…→9→1), Âm độn đi nghịch (9→8→…→1→9). Đi qua Trung ngũ vẫn đếm bình thường, cuối cùng rơi Trung ngũ thì ký Khôn nhị.
+- Định xong cung của Trực Sử, bảy cửa còn lại xoay theo đúng thứ tự tương đối ban đầu. Trực Phù và Trực Sử chỉ cùng cung khi số giờ vừa khớp.
+- Nếu tuần thủ rơi Trung cung thì lấy tinh và môn của cung Khôn sau khi ký Khôn (Thiên Cầm ký Khôn nhập vào Thiên Nhuế, Trung cung không có môn thì lấy Tử Môn); Trực Sử vẫn tính di cung từ Trung ngũ.
+- Căn cứ: *Yên Ba Điếu Tẩu ca*: "Trực Phù thường khiến gia lên can giờ, Trực Sử thuận nghịch theo cung mà đi"; *Độn Giáp Diễn Nghĩa* quyển 1, "Bát môn cửu tinh trục thời di cung quyết": Dương nhất cục giờ Ất Sửu sao Bồng ở cung 9, Hưu Môn ở cung 2; giờ Bính Dần sao Bồng ở cung 8, Hưu Môn ở cung 3.
 
-### 8. 门迫规则
+### 8. Quy tắc Môn Bách
 
-- 门克宫为门迫，宫克门为门受制，二者不可混用。依据：《遁甲演义》"宫制其门不为迫，门制其宫是迫雄"。
-- `detected_patterns` 中门迫标 `nature: "凶"`；门受制对吉门标 `"凶"`（吉门被克吉不就），对其他门标 `"中"`。
+- Môn khắc cung là Môn Bách, cung khắc môn là môn bị chế (Môn Thụ Chế), không được lẫn lộn. Căn cứ: *Độn Giáp Diễn Nghĩa*: "Cung chế môn không phải bách, môn chế cung mới là bách".
+- Trong `detected_patterns`, Môn Bách đánh dấu `nature: "Hung"`; Môn Thụ Chế với cát môn đánh dấu `"Hung"` (cát môn bị khắc thì cát không thành), với các môn khác đánh dấu `"Trung"`.
 
-### 9. 反吟规则
+### 9. Quy tắc Phản Ngâm
 
-- 星落本宫的对冲宫为反吟（坎一↔离九、艮八↔坤二、震三↔兑七、巽四↔乾六），天盘干随星同转，此时天盘干也加在本位对冲之宫，如"子来加午"。依据：《遁甲演义》"凡星符对冲皆反吟"。
-- 门落本宫的对冲宫为门反吟。八门与九星分别移宫，两者各自判断。
-- 不按天地盘干五行生克判断反吟。
+- Tinh rơi vào cung xung đối của cung gốc là Phản Ngâm (Khảm nhất ↔ Ly cửu, Cấn bát ↔ Khôn nhị, Chấn tam ↔ Đoài thất, Tốn tứ ↔ Càn lục); can thiên bàn chuyển cùng tinh, lúc này can thiên bàn cũng gia lên cung xung đối với vị trí gốc, như "Tý đến gia Ngọ". Căn cứ: *Độn Giáp Diễn Nghĩa*: "Phàm tinh phù đối xung đều là Phản Ngâm".
+- Môn rơi vào cung xung đối của cung gốc là Môn Phản Ngâm. Bát môn và cửu tinh di cung riêng, mỗi cái phán đoán riêng.
+- Không phán Phản Ngâm theo ngũ hành sinh khắc của can thiên bàn và địa bàn.
 
-### 10. 八神规则
+### 10. Quy tắc bát thần
 
-- 八神次序：值符、螣蛇、太阴、六合、白虎、玄武、九地、九天。值符神随值符星落时干之宫。
-- 阳遁从值符起顺时针（坎→艮→震→巽→离→坤→兑→乾）布，阴遁从值符起逆时针布。
+- Thứ tự bát thần: Trực Phù, Đằng Xà, Thái Âm, Lục Hợp, Bạch Hổ, Huyền Vũ, Cửu Địa, Cửu Thiên. Thần Trực Phù theo sao Trực Phù rơi vào cung của can giờ.
+- Dương độn từ Trực Phù bố thuận chiều kim đồng hồ (Khảm → Cấn → Chấn → Tốn → Ly → Khôn → Đoài → Càn), Âm độn từ Trực Phù bố ngược chiều kim đồng hồ.
 
-### 11. 驿马规则
+### 11. Quy tắc Dịch Mã
 
-- 分别输出时马和日马，不合并成一个字段：
-  - `hour_yima`：按时支所属三合局取驿马（时家奇门常用）。
-  - `day_yima`：按日支所属三合局取驿马。
-- 两者都带 `source_branch`，标明取自哪个地支。申子辰马在寅，寅午戌马在申，亥卯未马在巳，巳酉丑马在亥。
+- Xuất riêng Dịch Mã giờ và Dịch Mã ngày, không gộp thành một trường:
+  - `hour_yima`: lấy Dịch Mã theo tam hợp cục của chi giờ (Thời gia Kỳ môn hay dùng).
+  - `day_yima`: lấy Dịch Mã theo tam hợp cục của chi ngày.
+- Cả hai đều có `source_branch` ghi rõ lấy từ địa chi nào. Thân Tý Thìn mã ở Dần, Dần Ngọ Tuất mã ở Thân, Hợi Mão Mùi mã ở Tỵ, Tỵ Dậu Sửu mã ở Hợi.
 
-### 12. 展示规则
+### 12. Quy tắc trình bày
 
-- 不展示完整推理链。
-- 只展示关键计算结果和必要依据。
-- 用户主要看到的是：阴阳遁、局数、旬首、旬空、值符、值使、关键用神。
+- Không đưa toàn bộ chuỗi suy luận.
+- Chỉ đưa kết quả tính then chốt và căn cứ cần thiết.
+- Thứ người dùng chủ yếu thấy: Âm Dương độn, số cục, tuần thủ, tuần không, Trực Phù, Trực Sử, dụng thần then chốt.
 
-## 不支持的情况
+## Các trường hợp không hỗ trợ
 
-以下情况不进入正式排盘：
+Các trường hợp sau không lập bàn chính thức:
 
-- 用户明确要求切换到别的规则，但不接受当前默认规则
-- 缺少时间或地点信息
-- 想让模型跳过脚本直接手算
+- Người dùng yêu cầu rõ chuyển sang quy tắc khác và không chấp nhận quy tắc mặc định hiện tại
+- Thiếu thông tin thời gian hoặc địa điểm
+- Muốn mô hình bỏ qua script mà tính tay trực tiếp

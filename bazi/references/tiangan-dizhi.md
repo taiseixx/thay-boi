@@ -1,89 +1,89 @@
-# 天干地支基础参考
+# Tham chiếu cơ bản về Thiên can, Địa chi
 
-## 十天干
+## Mười thiên can
 
-| 天干 | 阴阳 | 五行 | 序号 |
+| Thiên can | Âm dương | Ngũ hành | Thứ tự |
 |------|------|------|------|
-| 甲 | 阳 | 木 | 1 |
-| 乙 | 阴 | 木 | 2 |
-| 丙 | 阳 | 火 | 3 |
-| 丁 | 阴 | 火 | 4 |
-| 戊 | 阳 | 土 | 5 |
-| 己 | 阴 | 土 | 6 |
-| 庚 | 阳 | 金 | 7 |
-| 辛 | 阴 | 金 | 8 |
-| 壬 | 阳 | 水 | 9 |
-| 癸 | 阴 | 水 | 10 |
+| Giáp | Dương | Mộc | 1 |
+| Ất | Âm | Mộc | 2 |
+| Bính | Dương | Hỏa | 3 |
+| Đinh | Âm | Hỏa | 4 |
+| Mậu | Dương | Thổ | 5 |
+| Kỷ | Âm | Thổ | 6 |
+| Canh | Dương | Kim | 7 |
+| Tân | Âm | Kim | 8 |
+| Nhâm | Dương | Thủy | 9 |
+| Quý | Âm | Thủy | 10 |
 
-## 十二地支
+## Mười hai địa chi
 
-| 地支 | 阴阳 | 五行 | 时辰 | 藏干 |
+| Địa chi | Âm dương | Ngũ hành | Giờ | Tàng can |
 |------|------|------|------|------|
-| 子 | 阳 | 水 | 23-01 | 癸 |
-| 丑 | 阴 | 土 | 01-03 | 己辛癸 |
-| 寅 | 阳 | 木 | 03-05 | 甲丙戊 |
-| 卯 | 阴 | 木 | 05-07 | 乙 |
-| 辰 | 阳 | 土 | 07-09 | 戊乙癸 |
-| 巳 | 阴 | 火 | 09-11 | 丙戊庚 |
-| 午 | 阳 | 火 | 11-13 | 丁己 |
-| 未 | 阴 | 土 | 13-15 | 己丁乙 |
-| 申 | 阳 | 金 | 15-17 | 庚壬戊 |
-| 酉 | 阴 | 金 | 17-19 | 辛 |
-| 戌 | 阳 | 土 | 19-21 | 戊辛丁 |
-| 亥 | 阴 | 水 | 21-23 | 壬甲 |
+| Tý | Dương | Thủy | 23-01 | Quý |
+| Sửu | Âm | Thổ | 01-03 | Kỷ Tân Quý |
+| Dần | Dương | Mộc | 03-05 | Giáp Bính Mậu |
+| Mão | Âm | Mộc | 05-07 | Ất |
+| Thìn | Dương | Thổ | 07-09 | Mậu Ất Quý |
+| Tỵ | Âm | Hỏa | 09-11 | Bính Mậu Canh |
+| Ngọ | Dương | Hỏa | 11-13 | Đinh Kỷ |
+| Mùi | Âm | Thổ | 13-15 | Kỷ Đinh Ất |
+| Thân | Dương | Kim | 15-17 | Canh Nhâm Mậu |
+| Dậu | Âm | Kim | 17-19 | Tân |
+| Tuất | Dương | Thổ | 19-21 | Mậu Tân Đinh |
+| Hợi | Âm | Thủy | 21-23 | Nhâm Giáp |
 
-## 十神关系表（以日主为中心）
+## Bảng quan hệ thập thần (lấy nhật chủ làm trung tâm)
 
-| 关系 | 阴阳同 | 阴阳异 |
+| Quan hệ | Cùng âm dương | Khác âm dương |
 |------|--------|--------|
-| 生我 | 偏印（枭） | 正印 |
-| 同我 | 比肩 | 劫财 |
-| 我生 | 食神 | 伤官 |
-| 我克 | 偏财 | 正财 |
-| 克我 | 七杀（偏官） | 正官 |
+| Sinh ta | Thiên Ấn (Kiêu) | Chính Ấn |
+| Giống ta | Tỷ Kiên | Kiếp Tài |
+| Ta sinh | Thực Thần | Thương Quan |
+| Ta khắc | Thiên Tài | Chính Tài |
+| Khắc ta | Thất Sát (Thiên Quan) | Chính Quan |
 
-## 年上起月法
+## Phép khởi tháng theo can năm
 
-| 年干 | 正月（寅） |
+| Can năm | Tháng Giêng (Dần) |
 |------|-----------|
-| 甲/己 | 丙寅 |
-| 乙/庚 | 戊寅 |
-| 丙/辛 | 庚寅 |
-| 丁/壬 | 壬寅 |
-| 戊/癸 | 甲寅 |
+| Giáp/Kỷ | Bính Dần |
+| Ất/Canh | Mậu Dần |
+| Bính/Tân | Canh Dần |
+| Đinh/Nhâm | Nhâm Dần |
+| Mậu/Quý | Giáp Dần |
 
-## 日上起时法
+## Phép khởi giờ theo can ngày
 
-| 日干 | 子时 |
+| Can ngày | Giờ Tý |
 |------|------|
-| 甲/己 | 甲子 |
-| 乙/庚 | 丙子 |
-| 丙/辛 | 戊子 |
-| 丁/壬 | 庚子 |
-| 戊/癸 | 壬子 |
+| Giáp/Kỷ | Giáp Tý |
+| Ất/Canh | Bính Tý |
+| Bính/Tân | Mậu Tý |
+| Đinh/Nhâm | Canh Tý |
+| Mậu/Quý | Nhâm Tý |
 
-## 大运排列规则
+## Quy tắc xếp đại vận
 
-- 阳年（甲丙戊庚壬）男 / 阴年（乙丁己辛癸）女 → 顺排
-- 阴年男 / 阳年女 → 逆排
-- 以月柱干支为基准，按六十甲子顺序往后/往前推
-- 起运年龄 = 出生日至下一个（顺排）或上一个（逆排）节气的天数 ÷ 3
+- Năm dương (Giáp Bính Mậu Canh Nhâm) nam / năm âm (Ất Đinh Kỷ Tân Quý) nữ → xếp thuận
+- Năm âm nam / năm dương nữ → xếp nghịch
+- Lấy can chi trụ tháng làm gốc, theo thứ tự Lục thập hoa giáp mà suy tới / suy lui
+- Tuổi khởi vận = số ngày từ ngày sinh đến tiết khí kế tiếp (xếp thuận) hoặc tiết khí trước đó (xếp nghịch) ÷ 3
 
-## 地支六冲
+## Địa chi lục xung
 
-子午冲、丑未冲、寅申冲、卯酉冲、辰戌冲、巳亥冲
+Tý Ngọ xung, Sửu Mùi xung, Dần Thân xung, Mão Dậu xung, Thìn Tuất xung, Tỵ Hợi xung
 
-## 地支三刑
+## Địa chi tam hình
 
-寅巳申——无恩之刑
-丑戌未——恃势之刑
-子卯——无礼之刑
-辰辰、午午、酉酉、亥亥——自刑
+Dần Tỵ Thân: vô ân chi hình
+Sửu Tuất Mùi: trì thế chi hình
+Tý Mão: vô lễ chi hình
+Thìn Thìn, Ngọ Ngọ, Dậu Dậu, Hợi Hợi: tự hình
 
-## 地支六合
+## Địa chi lục hợp
 
-子丑合土、寅亥合木、卯戌合火、辰酉合金、巳申合水、午未合土
+Tý Sửu hợp Thổ, Dần Hợi hợp Mộc, Mão Tuất hợp Hỏa, Thìn Dậu hợp Kim, Tỵ Thân hợp Thủy, Ngọ Mùi hợp Thổ
 
-## 地支三合
+## Địa chi tam hợp
 
-申子辰合水局、亥卯未合木局、寅午戌合火局、巳酉丑合金局
+Thân Tý Thìn hợp Thủy cục, Hợi Mão Mùi hợp Mộc cục, Dần Ngọ Tuất hợp Hỏa cục, Tỵ Dậu Sửu hợp Kim cục

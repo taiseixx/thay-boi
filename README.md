@@ -1,57 +1,89 @@
-# Numerologist Skills (你的赛博命理师)
+# Numerologist Skills (Thầy mệnh lý trên mạng của bạn)
 
-本项目把传统术数相关的 AI skill 拆成可审计、可复用、可逐步扩展的工程模块。目标不是把模型包装成“更会玄学”，而是尽量减少它在排盘、流派口径、步骤顺序和解释链路上的幻觉。
+> Bản này được copy từ [FANzR-arch/Numerologist_skills](https://github.com/FANzR-arch/Numerologist_skills) (commit `53ab46e`) và chuyển ngữ sang tiếng Việt. Repo gốc **không có file LICENSE**, nên mặc định tác giả giữ toàn bộ bản quyền. Chỉ dùng để thử nghiệm nội bộ; muốn phát hành hoặc dùng thương mại thì cần xin phép tác giả gốc.
 
-## 当前包含的 Skills
+Dự án này tách các AI skill liên quan đến thuật số truyền thống thành các module kỹ thuật có thể kiểm tra, tái sử dụng và mở rộng dần. Mục tiêu không phải là bọc mô hình cho "giỏi huyền học hơn", mà là cố gắng giảm ảo giác của nó ở các khâu lập lá số, quy ước trường phái, thứ tự các bước và chuỗi luận giải.
 
-| 目录 | 体系 | 主要用途 | 固定计算 / 依赖 |
+## Các skill hiện có
+
+| Thư mục | Hệ | Công dụng chính | Tính toán cố định / phụ thuộc |
 |---|---|---|---|
-| `qimen-dunjia/` | 奇门遁甲 | 单事判断、择时、方位、趋吉避凶 | Python CLI：`scripts/qimen_cli.py` |
-| `ziwei-doushu/` | 紫微斗数 | 本命盘结构解读、宫位分析、大限流年 | Python CLI：`scripts/ziwei_cli.py` |
-| `bazi/` | 四柱八字 | 日主强弱、格局、十神、大运流年 | 规则与 references 驱动 |
+| `qimen-dunjia/` | Kỳ môn độn giáp | Xem một việc cụ thể, chọn giờ, phương vị, tìm lành tránh dữ | Python CLI: `scripts/qimen_cli.py` |
+| `ziwei-doushu/` | Tử vi đẩu số | Luận cấu trúc lá số bản mệnh, phân tích cung, đại hạn lưu niên | Python CLI: `scripts/ziwei_cli.py` |
+| `bazi/` | Tứ trụ Bát tự | Nhật chủ mạnh yếu, cách cục, thập thần, đại vận lưu niên | Dựa vào quy tắc và references (chưa có script) |
 
-## 仓库结构
+## Cấu trúc repo
 
-- `SKILL.md`：主技能说明、触发条件、工作流、输出约束
-- `references/`：规则集、术语表、示例、口径说明
-- `scripts/`：需要刚性计算时使用的外部脚本（当前奇门遁甲、紫微斗数包含）
+- `SKILL.md`: mô tả skill chính, điều kiện kích hoạt, quy trình, ràng buộc output
+- `references/`: bộ quy tắc, bảng thuật ngữ, ví dụ, giải thích quy ước
+- `scripts/`: script bên ngoài dùng khi cần tính toán cứng (hiện có ở Kỳ môn độn giáp và Tử vi đẩu số)
+- `scripts/vi_terms.py`: bảng thuật ngữ Hán → Việt, dùng để chuyển ngữ output của script (thêm trong bản tiếng Việt)
 
-## 设计原则
+## Nguyên tắc thiết kế
 
-1. 先追问，再输出：信息不全时，优先补参数，不硬排盘。
-2. 确定性计算外包：凡是历法换算、固定排盘、结构化计算，优先交给脚本或可信排盘结果。
-3. 先声明口径，再做结论：流派、换日规则、闰月归属、默认规则都要说清楚。
-4. 只给结构化参考：健康、法律、财务等高风险场景不替代现实专业建议。
+1. Hỏi trước, xuất kết quả sau: thông tin chưa đủ thì ưu tiên bổ sung tham số, không cố lập lá số.
+2. Đẩy phần tính toán xác định ra ngoài: đổi lịch, lập lá số cố định, tính toán có cấu trúc thì ưu tiên giao cho script hoặc kết quả lập lá số đáng tin.
+3. Nói rõ quy ước trước, kết luận sau: trường phái, quy tắc đổi ngày, cách tính tháng nhuận, quy tắc mặc định đều phải nói rõ.
+4. Chỉ đưa tham khảo có cấu trúc: các tình huống rủi ro cao như sức khỏe, pháp luật, tài chính không thay cho lời khuyên chuyên môn thực tế.
 
-## 快速上手
+## Bắt đầu nhanh
 
-如果你要运行奇门遁甲的固定计算脚本：
+Chạy script tính toán cố định của Kỳ môn độn giáp:
 
 ```bash
 pip install -r qimen-dunjia/scripts/requirements.txt
 python qimen-dunjia/scripts/qimen_cli.py --input tmp/qimen_input.json --output tmp/qimen_output.json
 ```
 
-如果你要运行紫微斗数的排盘脚本：
+Chạy script lập lá số Tử vi đẩu số:
 
 ```bash
 pip install -r ziwei-doushu/scripts/requirements.txt
 python ziwei-doushu/scripts/ziwei_cli.py --input tmp/ziwei_input.json --output tmp/ziwei_output.json
 ```
 
-## Why This Repo
+Ví dụ input Tử vi (`tmp/ziwei_input.json`):
 
-与其让 LLM 在“似懂非懂”的状态里硬着头皮往下说，不如把关键步骤拆开：
+```json
+{"calendar_type": "solar", "birth_time": "1998-09-21 14:30", "gender": "male", "query_year": 2026}
+```
 
-- 用 Prompt 约束控制提问顺序和输出边界
-- 用 References 固定术语、口径和判断顺序
-- 用外部脚本承接刚性计算
+Ví dụ input Kỳ môn (`tmp/qimen_input.json`), xem ngay bây giờ ở Hà Nội:
 
-这样至少能让过程更透明，错误更容易暴露，版本边界也更清楚。
+```json
+{"question_type": "sự nghiệp", "question_goal": "có nên nhảy việc không", "calendar_type": "now",
+ "location": {"country": "Vietnam", "city": "Hà Nội", "timezone": "Asia/Ho_Chi_Minh"}}
+```
 
-## Disclaimer
+Output mặc định đã chuyển sang thuật ngữ tiếng Việt. Thêm `"lang": "zh"` vào input nếu muốn giữ chữ Hán như bản gốc.
 
-本仓库内容用于传统术数的工程化表达与 AI 约束实验，不构成医疗、法律、财务或其他现实决策建议。
+Chạy test:
+
+```bash
+pip install pytest
+python -m pytest ziwei-doushu/scripts/tests qimen-dunjia/scripts/tests
+```
+
+## Vì sao có repo này
+
+Thay vì để LLM cố nói tiếp trong trạng thái "hiểu lơ mơ", tốt hơn là tách các bước then chốt ra:
+
+- Dùng ràng buộc trong prompt để kiểm soát thứ tự hỏi và giới hạn output
+- Dùng references để cố định thuật ngữ, quy ước và thứ tự phán đoán
+- Dùng script bên ngoài để gánh phần tính toán cứng
+
+Như vậy ít nhất quá trình minh bạch hơn, lỗi dễ lộ ra hơn, và ranh giới phiên bản cũng rõ hơn.
+
+## Miễn trừ trách nhiệm
+
+Nội dung repo này dùng cho việc diễn đạt thuật số truyền thống theo hướng kỹ thuật và thử nghiệm ràng buộc AI, không cấu thành lời khuyên về y tế, pháp luật, tài chính hay các quyết định thực tế khác.
+
+## Ghi chú về bản chuyển ngữ
+
+- Tài liệu (`README.md`, mọi `SKILL.md`, mọi file trong `references/`) đã chuyển sang tiếng Việt với thuật ngữ huyền học chuẩn (Hán Việt).
+- Logic tính toán trong script giữ nguyên, bên trong vẫn dùng chữ Hán để không làm lệch kết quả và giữ bộ test đối chiếu với thư viện iztro. Chỉ có bước cuối chuyển output sang tiếng Việt qua `vi_terms.py`.
+- Comment và docstring trong code Python, file fixture test và trang slide `20260325-AI术数工程化-可视化.html` vẫn giữ tiếng Trung như bản gốc.
+- Trong Tử vi, cung 交友 dịch là **Nô Bộc** theo cách gọi phổ biến ở Việt Nam (có nơi gọi là Giao Hữu).
 
 ---
-*Created as part of the AI Engineering of Traditional Divination (AI 术数工程化) initiative.*
+*Thuộc sáng kiến AI Engineering of Traditional Divination (Kỹ thuật hóa thuật số truyền thống bằng AI).*

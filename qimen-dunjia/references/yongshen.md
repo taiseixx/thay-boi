@@ -1,94 +1,94 @@
-# 用神取用顺序
+# Thứ tự lấy dụng thần
 
-正式解盘不要一上来堆很多用神。先抓主问题，再确定主用神，最后再加辅助参考。
+Khi luận bàn chính thức, đừng vừa vào đã chất nhiều dụng thần. Nắm vấn đề chính trước, rồi xác định dụng thần chính, cuối cùng mới thêm tham khảo phụ.
 
-## 总顺序
+## Thứ tự chung
 
-1. 先确认“谁是主体”
-2. 再确认“要判断什么结果”
-3. 先定主用神
-4. 再加 1 到 2 个辅助参考
+1. Xác nhận "ai là chủ thể" trước
+2. Rồi xác nhận "muốn phán đoán kết quả gì"
+3. Định dụng thần chính trước
+4. Rồi thêm 1 đến 2 tham khảo phụ
 
-## 基础定位
+## Định vị cơ bản
 
-### 求测者本人
+### Bản thân người hỏi
 
-- 优先看日干落宫
+- Ưu tiên xem cung của can ngày
 
-### 所问之事 / 对方 / 当前动作
+### Việc được hỏi / đối phương / hành động hiện tại
 
-- 优先看时干落宫
+- Ưu tiên xem cung của can giờ
 
-## 常见事项
+## Các việc thường gặp
 
-### 事业 / 工作 / 项目推进
+### Sự nghiệp / công việc / thúc đẩy dự án
 
-- 主用神：开门
-- 辅助：值符、日干
+- Dụng thần chính: Khai Môn
+- Phụ: Trực Phù, can ngày
 
-先看：
+Xem trước:
 
-- 开门得不得力
-- 日干和开门关系如何
-- 值符是否给到主导权和支持
+- Khai Môn có đắc lực không
+- Can ngày với Khai Môn quan hệ thế nào
+- Trực Phù có cho quyền chủ động và sự hỗ trợ không
 
-### 求财 / 交易 / 投资
+### Cầu tài / giao dịch / đầu tư
 
-- 主用神：生门
-- 辅助：戊、日干
+- Dụng thần chính: Sinh Môn
+- Phụ: Mậu, can ngày
 
-先看：
+Xem trước:
 
-- 生门有没有被克
-- 戊的位置是否稳
-- 日干能不能接住这笔财
+- Sinh Môn có bị khắc không
+- Vị trí của Mậu có vững không
+- Can ngày có đỡ được khoản tài này không
 
-### 感情
+### Tình cảm
 
-先问清楚求测者的性别和对象性别，再确定用神：
+Hỏi rõ giới tính của người hỏi và giới tính của đối tượng trước rồi mới định dụng thần:
 
-- 男问女（或问异性）：乙为主要参考
-- 女问男（或问异性）：庚为主要参考
-- 同性关系：优先取六合为主用神，辅助看日干与时干的关系
-- 辅助：六合、日干
+- Nam hỏi nữ (hoặc hỏi người khác giới): lấy Ất làm tham khảo chính
+- Nữ hỏi nam (hoặc hỏi người khác giới): lấy Canh làm tham khảo chính
+- Quan hệ đồng giới: ưu tiên lấy Lục Hợp làm dụng thần chính, phụ xem quan hệ giữa can ngày và can giờ
+- Phụ: Lục Hợp, can ngày
 
-如果用户没有明说对象性别，先补问，不要擅自假设。
+Nếu người dùng chưa nói rõ giới tính của đối tượng, hỏi bổ sung trước, đừng tự giả định.
 
-### 考试 / 学习 / 证书
+### Thi cử / học tập / chứng chỉ
 
-- 主用神：景门、天辅
-- 辅助：丁
+- Dụng thần chính: Cảnh Môn, Thiên Phụ
+- Phụ: Đinh
 
-### 疾病 / 健康
+### Bệnh tật / sức khỏe
 
-- 主用神：天芮、死门
-- 辅助：日干
+- Dụng thần chính: Thiên Nhuế, Tử Môn
+- Phụ: can ngày
 
-输出时必须加现实提醒：
+Khi xuất kết quả bắt buộc nhắc thực tế:
 
-- 奇门只能看趋势，不代替就医和检查
+- Kỳ môn chỉ xem được xu hướng, không thay cho việc khám và xét nghiệm
 
-### 出行 / 方位 / 见人
+### Đi lại / phương vị / gặp người
 
-- 主用神：目标方位所在宫
-- 辅助：开门、生门、值符
+- Dụng thần chính: cung của phương vị mục tiêu
+- Phụ: Khai Môn, Sinh Môn, Trực Phù
 
-### 诉讼 / 合同 / 争议
+### Kiện tụng / hợp đồng / tranh chấp
 
-- 主用神：开门、惊门
-- 辅助：天心、值符
+- Dụng thần chính: Khai Môn, Kinh Môn
+- Phụ: Thiên Tâm, Trực Phù
 
-### 寻人 / 寻物
+### Tìm người / tìm đồ
 
-- 主用神：时干 + 类象
-- 辅助：玄武、门的状态
+- Dụng thần chính: can giờ + loại tượng
+- Phụ: Huyền Vũ, trạng thái của môn
 
-## 解读方法
+## Cách luận giải
 
-写用神分析时按这个模板：
+Khi viết phần phân tích dụng thần, theo mẫu sau:
 
-1. 这次主用神我取什么
-2. 我为什么这样取
-3. 它现在落在哪一宫
-4. 这宫里的门、星、神是帮它还是压它
-5. 这对用户最关心的问题意味着什么
+1. Lần này dụng thần chính mình lấy là gì
+2. Vì sao mình lấy như vậy
+3. Hiện nó rơi vào cung nào
+4. Môn, tinh, thần trong cung này giúp nó hay đè nó
+5. Điều đó có ý nghĩa gì với vấn đề người dùng quan tâm nhất

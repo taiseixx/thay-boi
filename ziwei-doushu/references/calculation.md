@@ -1,485 +1,486 @@
-# 紫微斗数排盘计算参考
+# Tham chiếu tính toán lập lá số Tử vi đẩu số
 
-## 说明
+## Giới thiệu
 
-本文件提供本 skill 的默认排盘口径。重点原则：
+File này ghi quy ước lập lá số mặc định của skill. Nguyên tắc chính:
 
-- 先按安星诀排盘，再做解释。
-- 对同一问题若存在民间简化说法与安星诀冲突，以安星诀为准。
-- 子时换日、闰月归属、命主身主等细节若用户已有既定软件或老师口径，优先沿用并说明差异。
+- An sao theo an tinh quyết trước, rồi mới luận giải.
+- Nếu cách nói giản lược trong dân gian mâu thuẫn với an tinh quyết thì theo an tinh quyết.
+- Các chi tiết như đổi ngày ở giờ Tý, tháng nhuận, Mệnh chủ và Thân chủ: nếu người dùng đã quen theo một phần mềm hoặc một thầy nào đó thì ưu tiên giữ quy ước ấy và nói rõ chỗ khác biệt.
 
-## 1. 天干地支与时辰
+## 1. Thiên can, địa chi và giờ
 
-### 十天干与十二地支
+### Mười thiên can và mười hai địa chi
 
-- 十天干：甲、乙、丙、丁、戊、己、庚、辛、壬、癸
-- 十二地支：子、丑、寅、卯、辰、巳、午、未、申、酉、戌、亥
-- 阳年天干：甲、丙、戊、庚、壬
-- 阴年天干：乙、丁、己、辛、癸
+- Mười thiên can: Giáp, Ất, Bính, Đinh, Mậu, Kỷ, Canh, Tân, Nhâm, Quý
+- Mười hai địa chi: Tý, Sửu, Dần, Mão, Thìn, Tỵ, Ngọ, Mùi, Thân, Dậu, Tuất, Hợi
+- Can năm dương: Giáp, Bính, Mậu, Canh, Nhâm
+- Can năm âm: Ất, Đinh, Kỷ, Tân, Quý
 
-### 十二地支在命盘上的固定位置
+### Vị trí cố định của 12 địa chi trên lá số
 
 ```text
-      巳  午  未  申
-      辰          酉
-      卯          戌
-      寅  丑  子  亥
+      Tỵ    Ngọ   Mùi   Thân
+      Thìn              Dậu
+      Mão               Tuất
+      Dần   Sửu   Tý    Hợi
 ```
 
-### 时辰对照
+### Bảng đối chiếu giờ
 
-| 时辰 | 地支 | 时间 |
+| Giờ | Địa chi | Thời gian |
 |------|------|------|
-| 子时 | 子 | 23:00-00:59 |
-| 丑时 | 丑 | 01:00-02:59 |
-| 寅时 | 寅 | 03:00-04:59 |
-| 卯时 | 卯 | 05:00-06:59 |
-| 辰时 | 辰 | 07:00-08:59 |
-| 巳时 | 巳 | 09:00-10:59 |
-| 午时 | 午 | 11:00-12:59 |
-| 未时 | 未 | 13:00-14:59 |
-| 申时 | 申 | 15:00-16:59 |
-| 酉时 | 酉 | 17:00-18:59 |
-| 戌时 | 戌 | 19:00-20:59 |
-| 亥时 | 亥 | 21:00-22:59 |
+| giờ Tý | Tý | 23:00-00:59 |
+| giờ Sửu | Sửu | 01:00-02:59 |
+| giờ Dần | Dần | 03:00-04:59 |
+| giờ Mão | Mão | 05:00-06:59 |
+| giờ Thìn | Thìn | 07:00-08:59 |
+| giờ Tỵ | Tỵ | 09:00-10:59 |
+| giờ Ngọ | Ngọ | 11:00-12:59 |
+| giờ Mùi | Mùi | 13:00-14:59 |
+| giờ Thân | Thân | 15:00-16:59 |
+| giờ Dậu | Dậu | 17:00-18:59 |
+| giờ Tuất | Tuất | 19:00-20:59 |
+| giờ Hợi | Hợi | 21:00-22:59 |
 
-默认口径：
+Quy ước mặc định:
 
-- 本 skill 默认把 `23:00` 后视为次日子时。
-- 若用户已有现成命盘或明确指定沿用民用日期，则保留其口径，并说明差异来源。
+- Skill này mặc định coi sau `23:00` là giờ Tý của ngày hôm sau.
+- Nếu người dùng đã có lá số sẵn hoặc chỉ định rõ giữ nguyên ngày dương lịch, thì giữ quy ước của họ và nói rõ nguồn gốc khác biệt.
 
-## 2. 定命宫与身宫
+## 2. Định cung Mệnh và cung Thân
 
-### 命宫
+### Cung Mệnh
 
-口诀：
+Khẩu quyết:
 
-- 寅起正月，顺数至生月，逆数生时为命宫。
+- Khởi tháng Giêng ở Dần, đếm thuận đến tháng sinh, rồi đếm nghịch đến giờ sinh, đó là cung Mệnh.
 
-步骤：
+Các bước:
 
-1. 从寅宫起正月，顺数到出生农历月份所在宫位。
-2. 以该宫位起子时，逆时针数到出生时辰，所到宫位即为命宫。
+1. Từ cung Dần khởi tháng Giêng, đếm thuận đến cung ứng với tháng sinh âm lịch.
+2. Từ cung đó khởi giờ Tý, đếm ngược chiều kim đồng hồ đến giờ sinh, cung dừng lại là cung Mệnh.
 
-示例：
+Ví dụ:
 
-- 农历三月午时
-- 寅=正月，卯=二月，辰=三月
-- 从辰宫起子时逆数到午时：辰=子，卯=丑，寅=寅，丑=卯，子=辰，亥=巳，戌=午
-- 所以命宫在戌
+- Tháng 3 âm lịch, giờ Ngọ
+- Dần = tháng Giêng, Mão = tháng 2, Thìn = tháng 3
+- Từ cung Thìn khởi giờ Tý đếm nghịch đến giờ Ngọ: Thìn = Tý, Mão = Sửu, Dần = Dần, Sửu = Mão, Tý = Thìn, Hợi = Tỵ, Tuất = Ngọ
+- Vậy cung Mệnh ở Tuất
 
-### 身宫
+### Cung Thân
 
-口诀：
+Khẩu quyết:
 
-- 寅起正月，顺数至生月，顺数生时为身宫。
+- Khởi tháng Giêng ở Dần, đếm thuận đến tháng sinh, rồi đếm thuận đến giờ sinh, đó là cung Thân.
 
-步骤：
+Các bước:
 
-1. 第一段与命宫相同。
-2. 从该宫位起子时，顺时针数到出生时辰，所到宫位即为身宫。
+1. Bước đầu giống cung Mệnh.
+2. Từ cung đó khởi giờ Tý, đếm thuận chiều kim đồng hồ đến giờ sinh, cung dừng lại là cung Thân.
 
-一般说明：
+Ghi chú chung:
 
-- 命宫看先天气质与人生主轴。
-- 身宫看后天表现与发力方向。
-- 身宫会与命、迁、财、官、夫妻、福德等关键宫位之一重合。
+- Cung Mệnh xem khí chất bẩm sinh và trục chính của đời người.
+- Cung Thân xem biểu hiện hậu thiên và hướng dồn sức.
+- Cung Thân luôn trùng với một trong các cung quan trọng: Mệnh, Thiên Di, Tài Bạch, Quan Lộc, Phu Thê, Phúc Đức.
 
-## 3. 安十二宫
+## 3. An 12 cung
 
-命宫确定后，十二宫固定按逆时针排列：
+Sau khi có cung Mệnh, 12 cung luôn xếp ngược chiều kim đồng hồ:
 
-- 命宫
-- 兄弟宫
-- 夫妻宫
-- 子女宫
-- 财帛宫
-- 疾厄宫
-- 迁移宫
-- 交友宫（奴仆宫）
-- 官禄宫（事业宫）
-- 田宅宫
-- 福德宫
-- 父母宫
+- Mệnh
+- Huynh Đệ
+- Phu Thê
+- Tử Tức
+- Tài Bạch
+- Tật Ách
+- Thiên Di
+- Nô Bộc (Giao Hữu)
+- Quan Lộc (Sự Nghiệp)
+- Điền Trạch
+- Phúc Đức
+- Phụ Mẫu
 
-示例：若命宫在午，则
+Ví dụ: nếu cung Mệnh ở Ngọ thì
 
-- 午=命
-- 巳=兄弟
-- 辰=夫妻
-- 卯=子女
-- 寅=财帛
-- 丑=疾厄
-- 子=迁移
-- 亥=交友
-- 戌=官禄
-- 酉=田宅
-- 申=福德
-- 未=父母
+- Ngọ = Mệnh
+- Tỵ = Huynh Đệ
+- Thìn = Phu Thê
+- Mão = Tử Tức
+- Dần = Tài Bạch
+- Sửu = Tật Ách
+- Tý = Thiên Di
+- Hợi = Nô Bộc
+- Tuất = Quan Lộc
+- Dậu = Điền Trạch
+- Thân = Phúc Đức
+- Mùi = Phụ Mẫu
 
-## 4. 起寅首与宫干
+## 4. Khởi can cung Dần và can các cung
 
-起寅首用于确定各宫天干，后续会用到五行局与宫干飞化。
+Khởi can cung Dần dùng để định thiên can của từng cung, về sau cần cho ngũ hành cục và phi hóa theo can cung.
 
-口诀：
+Khẩu quyết:
 
-- 甲己年起丙寅
-- 乙庚年起戊寅
-- 丙辛年起庚寅
-- 丁壬年起壬寅
-- 戊癸年起甲寅
+- Năm Giáp, Kỷ khởi Bính Dần
+- Năm Ất, Canh khởi Mậu Dần
+- Năm Bính, Tân khởi Canh Dần
+- Năm Đinh, Nhâm khởi Nhâm Dần
+- Năm Mậu, Quý khởi Giáp Dần
 
-步骤：
+Các bước:
 
-1. 先按出生年干确定寅宫起什么天干。
-2. 再从寅宫开始，天干依次顺排十二宫。
-3. 排完后即可得到每个宫位的干支组合。
+1. Theo can năm sinh, xác định cung Dần mang can gì.
+2. Từ cung Dần, xếp thuận thiên can lần lượt cho 12 cung.
+3. Xếp xong là có can chi của từng cung.
 
-示例：甲年生人
+Ví dụ: người sinh năm Giáp
 
-- 寅=丙寅
-- 卯=丁卯
-- 辰=戊辰
-- 巳=己巳
-- 午=庚午
-- 未=辛未
-- 申=壬申
-- 酉=癸酉
-- 戌=甲戌
-- 亥=乙亥
-- 子=丙子
-- 丑=丁丑
+- Dần = Bính Dần
+- Mão = Đinh Mão
+- Thìn = Mậu Thìn
+- Tỵ = Kỷ Tỵ
+- Ngọ = Canh Ngọ
+- Mùi = Tân Mùi
+- Thân = Nhâm Thân
+- Dậu = Quý Dậu
+- Tuất = Giáp Tuất
+- Hợi = Ất Hợi
+- Tý = Bính Tý
+- Sửu = Đinh Sửu
 
-## 5. 定五行局
+## 5. Định ngũ hành cục
 
-本 skill 默认使用定五行局诀，不把“纳音查表”当成唯一入口。
+Skill này mặc định dùng quyết định ngũ hành cục, không coi tra bảng nạp âm là cách duy nhất.
 
-### 取数规则
+### Quy tắc lấy số
 
-- 天干取数：
-  - 甲乙=1
-  - 丙丁=2
-  - 戊己=3
-  - 庚辛=4
-  - 壬癸=5
-- 地支取数：
-  - 子午丑未=1
-  - 寅申卯酉=2
-  - 辰戌巳亥=3
+- Số của thiên can:
+  - Giáp, Ất = 1
+  - Bính, Đinh = 2
+  - Mậu, Kỷ = 3
+  - Canh, Tân = 4
+  - Nhâm, Quý = 5
+- Số của địa chi:
+  - Tý, Ngọ, Sửu, Mùi = 1
+  - Dần, Thân, Mão, Dậu = 2
+  - Thìn, Tuất, Tỵ, Hợi = 3
 
-### 计算方法
+### Cách tính
 
-1. 取命宫干支的天干数与地支数相加。
-2. 若结果大于 5，则反复减 5。
-3. 余数对应五行：
-   - 1=木三局
-   - 2=金四局
-   - 3=水二局
-   - 4=火六局
-   - 5=土五局
+1. Cộng số của can và số của chi trong can chi cung Mệnh.
+2. Nếu kết quả lớn hơn 5 thì trừ 5 cho đến khi không lớn hơn 5.
+3. Số còn lại ứng với ngũ hành:
+   - 1 = Mộc Tam Cục
+   - 2 = Kim Tứ Cục
+   - 3 = Thủy Nhị Cục
+   - 4 = Hỏa Lục Cục
+   - 5 = Thổ Ngũ Cục
 
-示例：
+Ví dụ:
 
-- 丙子：2+1=3 -> 水 -> 水二局
-- 辛未：4+1=5 -> 土 -> 土五局
-- 庚申：4+2=6 -> 6-5=1 -> 木 -> 木三局
+- Bính Tý: 2+1=3 -> Thủy -> Thủy Nhị Cục
+- Tân Mùi: 4+1=5 -> Thổ -> Thổ Ngũ Cục
+- Canh Thân: 4+2=6 -> 6-5=1 -> Mộc -> Mộc Tam Cục
 
-## 6. 安紫微星
+## 6. An sao Tử Vi
 
-紫微星以出生农历日数与五行局数确定。实操上最稳妥的做法是直接查表。
+Sao Tử Vi được định bằng ngày sinh âm lịch và số cục. Trong thực hành, cách chắc nhất là tra bảng.
 
-### 紫微星安星表
+### Bảng an sao Tử Vi
 
-**水二局**
+**Thủy Nhị Cục**
 
-| 日数 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| Ngày | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 |------|---|---|---|---|---|---|---|---|---|----|
-| 紫微 | 丑 | 寅 | 寅 | 卯 | 卯 | 辰 | 辰 | 巳 | 巳 | 午 |
+| Tử Vi | Sửu | Dần | Dần | Mão | Mão | Thìn | Thìn | Tỵ | Tỵ | Ngọ |
 
-| 日数 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
+| Ngày | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
 |------|----|----|----|----|----|----|----|----|----|----|
-| 紫微 | 午 | 未 | 未 | 申 | 申 | 酉 | 酉 | 戌 | 戌 | 亥 |
+| Tử Vi | Ngọ | Mùi | Mùi | Thân | Thân | Dậu | Dậu | Tuất | Tuất | Hợi |
 
-| 日数 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
+| Ngày | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
 |------|----|----|----|----|----|----|----|----|----|----|
-| 紫微 | 亥 | 子 | 子 | 丑 | 丑 | 寅 | 寅 | 卯 | 卯 | 辰 |
+| Tử Vi | Hợi | Tý | Tý | Sửu | Sửu | Dần | Dần | Mão | Mão | Thìn |
 
-**木三局**
+**Mộc Tam Cục**
 
-| 日数 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| Ngày | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 |------|---|---|---|---|---|---|---|---|---|----|
-| 紫微 | 辰 | 丑 | 寅 | 巳 | 寅 | 卯 | 午 | 卯 | 辰 | 未 |
+| Tử Vi | Thìn | Sửu | Dần | Tỵ | Dần | Mão | Ngọ | Mão | Thìn | Mùi |
 
-| 日数 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
+| Ngày | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
 |------|----|----|----|----|----|----|----|----|----|----|
-| 紫微 | 辰 | 巳 | 申 | 巳 | 午 | 酉 | 午 | 未 | 戌 | 未 |
+| Tử Vi | Thìn | Tỵ | Thân | Tỵ | Ngọ | Dậu | Ngọ | Mùi | Tuất | Mùi |
 
-| 日数 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
+| Ngày | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
 |------|----|----|----|----|----|----|----|----|----|----|
-| 紫微 | 申 | 亥 | 申 | 酉 | 子 | 酉 | 戌 | 丑 | 戌 | 亥 |
+| Tử Vi | Thân | Hợi | Thân | Dậu | Tý | Dậu | Tuất | Sửu | Tuất | Hợi |
 
-**金四局**
+**Kim Tứ Cục**
 
-| 日数 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| Ngày | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 |------|---|---|---|---|---|---|---|---|---|----|
-| 紫微 | 亥 | 辰 | 丑 | 寅 | 子 | 巳 | 寅 | 卯 | 丑 | 午 |
+| Tử Vi | Hợi | Thìn | Sửu | Dần | Tý | Tỵ | Dần | Mão | Sửu | Ngọ |
 
-| 日数 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
+| Ngày | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
 |------|----|----|----|----|----|----|----|----|----|----|
-| 紫微 | 卯 | 辰 | 寅 | 未 | 辰 | 巳 | 卯 | 申 | 巳 | 午 |
+| Tử Vi | Mão | Thìn | Dần | Mùi | Thìn | Tỵ | Mão | Thân | Tỵ | Ngọ |
 
-| 日数 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
+| Ngày | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
 |------|----|----|----|----|----|----|----|----|----|----|
-| 紫微 | 辰 | 酉 | 午 | 未 | 巳 | 戌 | 未 | 申 | 午 | 亥 |
+| Tử Vi | Thìn | Dậu | Ngọ | Mùi | Tỵ | Tuất | Mùi | Thân | Ngọ | Hợi |
 
-**土五局**
+**Thổ Ngũ Cục**
 
-| 日数 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| Ngày | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 |------|---|---|---|---|---|---|---|---|---|----|
-| 紫微 | 午 | 亥 | 辰 | 丑 | 寅 | 未 | 子 | 巳 | 寅 | 卯 |
+| Tử Vi | Ngọ | Hợi | Thìn | Sửu | Dần | Mùi | Tý | Tỵ | Dần | Mão |
 
-| 日数 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
+| Ngày | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
 |------|----|----|----|----|----|----|----|----|----|----|
-| 紫微 | 申 | 丑 | 午 | 卯 | 辰 | 酉 | 寅 | 未 | 辰 | 巳 |
+| Tử Vi | Thân | Sửu | Ngọ | Mão | Thìn | Dậu | Dần | Mùi | Thìn | Tỵ |
 
-| 日数 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
+| Ngày | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
 |------|----|----|----|----|----|----|----|----|----|----|
-| 紫微 | 戌 | 卯 | 申 | 巳 | 午 | 亥 | 辰 | 酉 | 午 | 未 |
+| Tử Vi | Tuất | Mão | Thân | Tỵ | Ngọ | Hợi | Thìn | Dậu | Ngọ | Mùi |
 
-**火六局**
+**Hỏa Lục Cục**
 
-| 日数 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| Ngày | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 |------|---|---|---|---|---|---|---|---|---|----|
-| 紫微 | 酉 | 午 | 亥 | 辰 | 丑 | 寅 | 戌 | 未 | 子 | 巳 |
+| Tử Vi | Dậu | Ngọ | Hợi | Thìn | Sửu | Dần | Tuất | Mùi | Tý | Tỵ |
 
-| 日数 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
+| Ngày | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
 |------|----|----|----|----|----|----|----|----|----|----|
-| 紫微 | 寅 | 卯 | 亥 | 申 | 丑 | 午 | 卯 | 辰 | 子 | 酉 |
+| Tử Vi | Dần | Mão | Hợi | Thân | Sửu | Ngọ | Mão | Thìn | Tý | Dậu |
 
-| 日数 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
+| Ngày | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
 |------|----|----|----|----|----|----|----|----|----|----|
-| 紫微 | 寅 | 未 | 辰 | 巳 | 丑 | 戌 | 卯 | 申 | 巳 | 午 |
+| Tử Vi | Dần | Mùi | Thìn | Tỵ | Sửu | Tuất | Mão | Thân | Tỵ | Ngọ |
 
-## 7. 安十四主星
+## 7. An 14 chính tinh
 
-### 7.1 紫微星系
+### 7.1 Chòm Tử Vi
 
-口诀意译：
+Ý nghĩa khẩu quyết:
 
-- 紫微逆去天机
-- 隔一太阳武曲
-- 连去天同
-- 空二宫后安廉贞
+- Từ Tử Vi đi nghịch đến Thiên Cơ
+- Cách một cung là Thái Dương, Vũ Khúc
+- Liền tiếp Thiên Đồng
+- Bỏ trống hai cung rồi an Liêm Trinh
 
-默认排法：
+Cách an mặc định:
 
-- 紫微在本宫
-- 逆 1 宫安天机
-- 再逆 2 宫安太阳
-- 再逆 1 宫安武曲
-- 再逆 1 宫安天同
-- 再逆 3 宫安廉贞
+- Tử Vi ở cung gốc
+- Lùi 1 cung an Thiên Cơ
+- Lùi tiếp 2 cung an Thái Dương
+- Lùi tiếp 1 cung an Vũ Khúc
+- Lùi tiếp 1 cung an Thiên Đồng
+- Lùi tiếp 3 cung an Liêm Trinh
 
-### 7.2 天府星
+### 7.2 Sao Thiên Phủ
 
-默认按安天府星诀处理：
+Mặc định theo quyết an sao Thiên Phủ:
 
-- 天府以紫微为参照推移，两星以寅申连线为轴左右对称（紫微、天府同在寅或同在申时同宫）
-- 不能理解成“永远与紫微对宫”
+- Thiên Phủ lấy Tử Vi làm mốc, hai sao đối xứng qua trục Dần – Thân (khi Tử Vi ở Dần hoặc Thân thì Thiên Phủ đồng cung)
+- Không được hiểu là "Thiên Phủ luôn ở cung đối với Tử Vi"
 
-可直接使用下表：
+Có thể dùng thẳng bảng dưới:
 
-| 紫微落宫 | 天府落宫 |
+| Tử Vi ở cung | Thiên Phủ ở cung |
 |----------|----------|
-| 寅 | 寅 |
-| 卯 | 丑 |
-| 辰 | 子 |
-| 巳 | 亥 |
-| 午 | 戌 |
-| 未 | 酉 |
-| 申 | 申 |
-| 酉 | 未 |
-| 戌 | 午 |
-| 亥 | 巳 |
-| 子 | 辰 |
-| 丑 | 卯 |
+| Dần | Dần |
+| Mão | Sửu |
+| Thìn | Tý |
+| Tỵ | Hợi |
+| Ngọ | Tuất |
+| Mùi | Dậu |
+| Thân | Thân |
+| Dậu | Mùi |
+| Tuất | Ngọ |
+| Hợi | Tỵ |
+| Tý | Thìn |
+| Sửu | Mão |
 
-### 7.3 天府星系
+### 7.3 Chòm Thiên Phủ
 
-口诀意译：
+Ý nghĩa khẩu quyết:
 
-- 天府顺行太阴
-- 再顺贪狼、巨门、天相、天梁、七杀
-- 七杀之后空三宫，于第四色宫安破军
+- Từ Thiên Phủ đi thuận đến Thái Âm
+- Tiếp tục thuận: Tham Lang, Cự Môn, Thiên Tướng, Thiên Lương, Thất Sát
+- Sau Thất Sát bỏ trống ba cung, đến cung thứ tư an Phá Quân
 
-默认排法：
+Cách an mặc định:
 
-- 天府在本宫
-- 顺 1 宫安太阴
-- 顺 1 宫安贪狼
-- 顺 1 宫安巨门
-- 顺 1 宫安天相
-- 顺 1 宫安天梁
-- 顺 1 宫安七杀
-- 再顺 4 宫安破军
+- Thiên Phủ ở cung gốc
+- Thuận 1 cung an Thái Âm
+- Thuận 1 cung an Tham Lang
+- Thuận 1 cung an Cự Môn
+- Thuận 1 cung an Thiên Tướng
+- Thuận 1 cung an Thiên Lương
+- Thuận 1 cung an Thất Sát
+- Thuận tiếp 4 cung an Phá Quân
 
-### 7.4 常见主星组合校核
+### 7.4 Kiểm tra các tổ hợp chính tinh thường gặp
 
-如果十四主星排完后，以下关系完全对不上，优先回查天府起法：
+Nếu an xong 14 chính tinh mà các quan hệ dưới đây hoàn toàn không khớp, hãy kiểm tra lại cách khởi Thiên Phủ trước:
 
-- 紫微天府同宫常见于寅、申
-- 紫微贪狼同宫常见于卯、酉
-- 紫微天相同宫常见于辰、戌
-- 紫微七杀同宫常见于巳、亥
-- 紫微破军同宫常见于丑、未
+- Tử Vi – Thiên Phủ đồng cung thường ở Dần, Thân
+- Tử Vi – Tham Lang đồng cung thường ở Mão, Dậu
+- Tử Vi – Thiên Tướng đồng cung thường ở Thìn, Tuất
+- Tử Vi – Thất Sát đồng cung thường ở Tỵ, Hợi
+- Tử Vi – Phá Quân đồng cung thường ở Sửu, Mùi
 
-## 8. 甲级辅星
+## 8. Phụ tinh hạng giáp
 
-### 文昌、文曲（按时辰）
+### Văn Xương, Văn Khúc (theo giờ sinh)
 
-| 时辰 | 子 | 丑 | 寅 | 卯 | 辰 | 巳 | 午 | 未 | 申 | 酉 | 戌 | 亥 |
+| Giờ | Tý | Sửu | Dần | Mão | Thìn | Tỵ | Ngọ | Mùi | Thân | Dậu | Tuất | Hợi |
 |------|----|----|----|----|----|----|----|----|----|----|----|----|
-| 文昌 | 戌 | 酉 | 申 | 未 | 午 | 巳 | 辰 | 卯 | 寅 | 丑 | 子 | 亥 |
-| 文曲 | 辰 | 巳 | 午 | 未 | 申 | 酉 | 戌 | 亥 | 子 | 丑 | 寅 | 卯 |
+| Văn Xương | Tuất | Dậu | Thân | Mùi | Ngọ | Tỵ | Thìn | Mão | Dần | Sửu | Tý | Hợi |
+| Văn Khúc | Thìn | Tỵ | Ngọ | Mùi | Thân | Dậu | Tuất | Hợi | Tý | Sửu | Dần | Mão |
 
-### 左辅、右弼（按月份）
+### Tả Phù, Hữu Bật (theo tháng sinh)
 
-| 月份 | 正月 | 二月 | 三月 | 四月 | 五月 | 六月 | 七月 | 八月 | 九月 | 十月 | 十一月 | 十二月 |
+| Tháng | Giêng | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | Chạp |
 |------|------|------|------|------|------|------|------|------|------|------|--------|--------|
-| 左辅 | 辰 | 巳 | 午 | 未 | 申 | 酉 | 戌 | 亥 | 子 | 丑 | 寅 | 卯 |
-| 右弼 | 戌 | 酉 | 申 | 未 | 午 | 巳 | 辰 | 卯 | 寅 | 丑 | 子 | 亥 |
+| Tả Phù | Thìn | Tỵ | Ngọ | Mùi | Thân | Dậu | Tuất | Hợi | Tý | Sửu | Dần | Mão |
+| Hữu Bật | Tuất | Dậu | Thân | Mùi | Ngọ | Tỵ | Thìn | Mão | Dần | Sửu | Tý | Hợi |
 
-### 天魁、天钺（按年干）
+### Thiên Khôi, Thiên Việt (theo can năm)
 
-| 年干 | 甲 | 乙 | 丙 | 丁 | 戊 | 己 | 庚 | 辛 | 壬 | 癸 |
+| Can năm | Giáp | Ất | Bính | Đinh | Mậu | Kỷ | Canh | Tân | Nhâm | Quý |
 |------|----|----|----|----|----|----|----|----|----|----|
-| 天魁 | 丑 | 子 | 亥 | 亥 | 丑 | 子 | 丑 | 午 | 卯 | 卯 |
-| 天钺 | 未 | 申 | 酉 | 酉 | 未 | 申 | 未 | 寅 | 巳 | 巳 |
+| Thiên Khôi | Sửu | Tý | Hợi | Hợi | Sửu | Tý | Sửu | Ngọ | Mão | Mão |
+| Thiên Việt | Mùi | Thân | Dậu | Dậu | Mùi | Thân | Mùi | Dần | Tỵ | Tỵ |
 
-口诀：甲戊庚牛羊，乙己鼠猴乡，丙丁猪鸡位，壬癸兔蛇藏，六辛逢马虎。丁年与丙年同为魁亥钺酉（旧版表丁年误作魁酉钺未，已更正）。
+Khẩu quyết: Giáp Mậu Canh ở Trâu Dê (Sửu, Mùi), Ất Kỷ ở Chuột Khỉ (Tý, Thân), Bính Đinh ở Lợn Gà (Hợi, Dậu), Nhâm Quý ở Mèo Rắn (Mão, Tỵ), sáu Tân gặp Ngựa Hổ (Ngọ, Dần). Năm Đinh giống năm Bính: Khôi ở Hợi, Việt ở Dậu (bảng bản cũ ghi năm Đinh là Khôi Dậu, Việt Mùi, đã sửa).
 
-### 禄存、擎羊、陀罗（按年干）
+### Lộc Tồn, Kình Dương, Đà La (theo can năm)
 
-| 年干 | 甲 | 乙 | 丙/戊 | 丁/己 | 庚 | 辛 | 壬 | 癸 |
+| Can năm | Giáp | Ất | Bính/Mậu | Đinh/Kỷ | Canh | Tân | Nhâm | Quý |
 |------|----|----|--------|--------|----|----|----|----|
-| 禄存 | 寅 | 卯 | 巳 | 午 | 申 | 酉 | 亥 | 子 |
-| 擎羊 | 卯 | 辰 | 午 | 未 | 酉 | 戌 | 子 | 丑 |
-| 陀罗 | 丑 | 寅 | 辰 | 巳 | 未 | 申 | 戌 | 亥 |
+| Lộc Tồn | Dần | Mão | Tỵ | Ngọ | Thân | Dậu | Hợi | Tý |
+| Kình Dương | Mão | Thìn | Ngọ | Mùi | Dậu | Tuất | Tý | Sửu |
+| Đà La | Sửu | Dần | Thìn | Tỵ | Mùi | Thân | Tuất | Hợi |
 
-### 火星、铃星（按年支与时辰）
+### Hỏa Tinh, Linh Tinh (theo chi năm và giờ sinh)
 
-起点表：
+Bảng điểm khởi:
 
-| 年支组 | 寅午戌 | 申子辰 | 巳酉丑 | 亥卯未 |
+| Nhóm chi năm | Dần Ngọ Tuất | Thân Tý Thìn | Tỵ Dậu Sửu | Hợi Mão Mùi |
 |--------|--------|--------|--------|--------|
-| 火星起点 | 丑 | 寅 | 卯 | 酉 |
-| 铃星起点 | 卯 | 戌 | 戌 | 戌 |
+| Khởi Hỏa Tinh | Sửu | Dần | Mão | Dậu |
+| Khởi Linh Tinh | Mão | Tuất | Tuất | Tuất |
 
-规则：
+Quy tắc:
 
-- 先按年支组找起点宫。
-- 以起点宫起子时，顺时针数到出生时辰。
-- 所到之宫即为火星或铃星落宫。
+- Tìm cung khởi theo nhóm chi năm.
+- Từ cung khởi đặt giờ Tý, đếm thuận chiều kim đồng hồ đến giờ sinh.
+- Cung dừng lại là nơi an Hỏa Tinh hoặc Linh Tinh.
 
-### 地空、地劫（按时辰）
+### Địa Không, Địa Kiếp (theo giờ sinh)
 
-| 时辰 | 子 | 丑 | 寅 | 卯 | 辰 | 巳 | 午 | 未 | 申 | 酉 | 戌 | 亥 |
+| Giờ | Tý | Sửu | Dần | Mão | Thìn | Tỵ | Ngọ | Mùi | Thân | Dậu | Tuất | Hợi |
 |------|----|----|----|----|----|----|----|----|----|----|----|----|
-| 地空 | 亥 | 戌 | 酉 | 申 | 未 | 午 | 巳 | 辰 | 卯 | 寅 | 丑 | 子 |
-| 地劫 | 亥 | 子 | 丑 | 寅 | 卯 | 辰 | 巳 | 午 | 未 | 申 | 酉 | 戌 |
+| Địa Không | Hợi | Tuất | Dậu | Thân | Mùi | Ngọ | Tỵ | Thìn | Mão | Dần | Sửu | Tý |
+| Địa Kiếp | Hợi | Tý | Sửu | Dần | Mão | Thìn | Tỵ | Ngọ | Mùi | Thân | Dậu | Tuất |
 
-### 天马（按年支）
+### Thiên Mã (theo chi năm)
 
-| 年支组 | 寅午戌 | 申子辰 | 巳酉丑 | 亥卯未 |
+| Nhóm chi năm | Dần Ngọ Tuất | Thân Tý Thìn | Tỵ Dậu Sửu | Hợi Mão Mùi |
 |--------|--------|--------|--------|--------|
-| 天马 | 申 | 寅 | 亥 | 巳 |
+| Thiên Mã | Thân | Dần | Hợi | Tỵ |
 
-## 9. 常用乙级星
+## 9. Một số sao hạng ất thường dùng
 
-默认按需使用：
+Dùng khi cần:
 
-- 天刑：正月起酉，顺行
-- 天姚：正月起丑，顺行
-- 红鸾：卯宫起子逆数到生年支
-- 天喜：红鸾对宫
-- 孤辰、寡宿：按年支三合组安
-- 天哭、天虚：午宫起子，哭逆虚顺
+- Thiên Hình: tháng Giêng khởi ở Dậu, đi thuận
+- Thiên Diêu: tháng Giêng khởi ở Sửu, đi thuận
+- Hồng Loan: từ cung Mão khởi Tý, đếm nghịch đến chi năm sinh
+- Thiên Hỷ: ở cung đối của Hồng Loan
+- Cô Thần, Quả Tú: an theo nhóm tam hợp của chi năm
+- Thiên Khốc, Thiên Hư: từ cung Ngọ khởi Tý, Thiên Khốc đếm nghịch, Thiên Hư đếm thuận
 
-如果用户只求简盘，可先不展开乙级星。
+Nếu người dùng chỉ cần lá số giản lược thì có thể chưa cần triển khai sao hạng ất.
 
-## 10. 大限
+## 10. Đại hạn
 
-### 起限年龄
+### Tuổi khởi hạn
 
-- 水二局：2 岁
-- 木三局：3 岁
-- 金四局：4 岁
-- 土五局：5 岁
-- 火六局：6 岁
+- Thủy Nhị Cục: 2 tuổi
+- Mộc Tam Cục: 3 tuổi
+- Kim Tứ Cục: 4 tuổi
+- Thổ Ngũ Cục: 5 tuổi
+- Hỏa Lục Cục: 6 tuổi
 
-### 顺逆规则
+### Quy tắc thuận nghịch
 
-- 阳男、阴女：从命宫顺行
-- 阴男、阳女：从命宫逆行
+- Dương nam, âm nữ: từ cung Mệnh đi thuận
+- Âm nam, dương nữ: từ cung Mệnh đi nghịch
 
-### 说明
+### Ghi chú
 
-- 每一宫管 10 年。
-- 第一大限从起限年龄开始，到起限年龄加 9 结束。
-- 用户问流年时，先定当前大限，再叠加流年四化。
+- Mỗi cung quản 10 năm.
+- Đại hạn đầu tiên bắt đầu từ tuổi khởi hạn và kết thúc ở tuổi khởi hạn cộng 9.
+- Khi người dùng hỏi lưu niên, xác định đại hạn hiện tại trước, rồi mới chồng tứ hóa lưu niên lên.
 
-## 11. 命主与身主
+## 11. Mệnh chủ và Thân chủ
 
-本 skill 默认采用以下常见口径：
+Skill này mặc định dùng quy ước thường gặp dưới đây:
 
-### 命主星（按命宫地支）
+### Sao Mệnh chủ (theo địa chi cung Mệnh)
 
-| 命宫地支 | 子 | 丑 | 寅 | 卯 | 辰 | 巳 | 午 | 未 | 申 | 酉 | 戌 | 亥 |
+| Địa chi cung Mệnh | Tý | Sửu | Dần | Mão | Thìn | Tỵ | Ngọ | Mùi | Thân | Dậu | Tuất | Hợi |
 |----------|----|----|----|----|----|----|----|----|----|----|----|----|
-| 命主星 | 贪狼 | 巨门 | 禄存 | 文曲 | 廉贞 | 武曲 | 破军 | 武曲 | 廉贞 | 文曲 | 禄存 | 巨门 |
+| Mệnh chủ | Tham Lang | Cự Môn | Lộc Tồn | Văn Khúc | Liêm Trinh | Vũ Khúc | Phá Quân | Vũ Khúc | Liêm Trinh | Văn Khúc | Lộc Tồn | Cự Môn |
 
-### 身主星（按出生年支）
+### Sao Thân chủ (theo chi năm sinh)
 
-| 年支 | 子 | 丑 | 寅 | 卯 | 辰 | 巳 | 午 | 未 | 申 | 酉 | 戌 | 亥 |
+| Chi năm | Tý | Sửu | Dần | Mão | Thìn | Tỵ | Ngọ | Mùi | Thân | Dậu | Tuất | Hợi |
 |------|----|----|----|----|----|----|----|----|----|----|----|----|
-| 身主星 | 火星 | 天相 | 天梁 | 天同 | 文昌 | 天机 | 火星 | 天相 | 天梁 | 天同 | 文昌 | 天机 |
+| Thân chủ | Hỏa Tinh | Thiên Tướng | Thiên Lương | Thiên Đồng | Văn Xương | Thiên Cơ | Hỏa Tinh | Thiên Tướng | Thiên Lương | Thiên Đồng | Văn Xương | Thiên Cơ |
 
-## 12. 排盘自检清单
+## 12. Danh sách tự kiểm tra lá số
 
-排盘结束后，用下面清单复核：
+Lập xong lá số, rà lại theo danh sách sau:
 
-- 命宫、身宫、十二宫顺序是否正确
-- 起寅首后各宫宫干是否连续无误
-- 五行局是否与命宫干支一致
-- 紫微与天府起法是否采用了同一套口诀
-- 十四主星是否完整安置，且没有重星、漏星
-- 四化是否挂到真实存在的星曜上
-- 大限顺逆是否与性别及年干阴阳一致
+- Cung Mệnh, cung Thân và thứ tự 12 cung có đúng không
+- Can các cung sau khi khởi can cung Dần có liên tục, không sai không
+- Ngũ hành cục có khớp với can chi cung Mệnh không
+- Cách khởi Tử Vi và Thiên Phủ có dùng cùng một bộ khẩu quyết không
+- 14 chính tinh đã an đủ, không trùng, không sót
+- Tứ hóa có gắn vào sao thật sự có trên lá số không
+- Chiều đại hạn có khớp với giới tính và âm dương của can năm không
 
-若出现明显异常，优先回查：
+Nếu thấy bất thường rõ, ưu tiên kiểm tra lại:
 
-1. 子时是否换日
-2. 农历月份是否含闰月
-3. 命宫宫干是否算错
-4. 天府起法是否误用了“轴对称简化说法”
+1. Giờ Tý có đổi ngày không
+2. Tháng âm lịch có phải tháng nhuận không
+3. Can cung Mệnh có tính sai không
+4. Cách khởi Thiên Phủ có lỡ dùng "cách nói giản lược đối xứng trục" không
 
-## 13. 脚本排盘口径
+## 13. Quy ước lập lá số của script
 
-正式排盘由 `scripts/ziwei_cli.py` 完成，本文件各表即脚本口径，`scripts/tests/` 会逐格核对脚本常量与本文件、`sihua.md`、`stars.md` 的表是否一致。本文件以外的细节口径如下：
+Lá số chính thức do `scripts/ziwei_cli.py` lập. Các bảng trong file này chính là quy ước của script, và `scripts/tests/` sẽ đối chiếu từng ô giữa hằng số trong script với các bảng của file này, `sihua.md` và `stars.md`. Các quy ước chi tiết ngoài file này:
 
-| 项目 | 脚本口径 | 输入字段 |
+| Hạng mục | Quy ước của script | Trường input |
 |---|---|---|
-| 年界 | 以农历正月初一换年，年干支取农历年（不以立春换年） | — |
-| 月、日 | 用农历月、农历日；出生日期为公历时由 `lunar_python` 换算 | `calendar_type` |
-| 子时换日 | 默认 23:00 起视为次日子时，农历日期按次日计算（见 §1）；用户既定口径不换日时传 `same_day`，取子时但日期不变 | `late_zi_rule`：`next_day`（默认）/ `same_day` |
-| 闰月归属 | 默认 `split_15`：闰月十五日及以前按本月，十六日起按下月（如闰二月十六按三月）。用户有既定口径时改传 `current`（整月按本月）或 `next`（整月按下月）。输出 `normalized_input.leap_month_rule` 与 `ruleset.leap_month_rule` 写明本次用的算法，`source` 为 `default`（未传，用默认）或 `explicit`（调用方指定）；闰月出生时 `warnings` 也会注明 | `leap_month_rule`：`split_15`（默认）/ `current` / `next` |
-| 闰月影响范围 | 只直接影响按月安的命宫、身宫、左辅、右弼、天刑、天姚；年、日不变。命宫变了，宫干、五行局及随局安的紫微星系也会跟着变 | — |
-| 大限年龄 | 虚岁 | — |
-| 流年 | 流年命宫在流年地支宫，流年四化取流年天干；大限四化取当前大限宫干（见 `sihua.md`「运限四化」） | `query_year`（农历年份，可选） |
-| 出生时间 | 按用户确认的钟表时间直接取时辰，不自动做真太阳时或夏令时修正；需要修正时先换算好再传入 | `birth_time` |
-| 乙级星 | 只安 §9 给出完整规则的天刑、天姚、红鸾、天喜、天哭、天虚；孤辰、寡宿本文件未给表，脚本不安 | — |
-| 庙旺利陷 | 十四主星按 `stars.md` 庙旺陷表输出（《紫微斗數全書》卷二总表，出处与异文见该表下注） | — |
+| Ranh giới năm | Đổi năm vào mùng 1 tháng Giêng âm lịch, can chi năm lấy theo năm âm lịch (không đổi năm theo Lập Xuân) | — |
+| Tháng, ngày | Dùng tháng, ngày âm lịch; ngày sinh dương lịch sẽ được `lunar_python` quy đổi | `calendar_type` |
+| Đổi ngày ở giờ Tý | Mặc định từ 23:00 coi là giờ Tý của ngày hôm sau, ngày âm lịch tính theo hôm sau (xem §1). Nếu quy ước của người dùng là không đổi ngày thì truyền `same_day`: vẫn lấy giờ Tý nhưng giữ nguyên ngày | `late_zi_rule`: `next_day` (mặc định) / `same_day` |
+| Tháng nhuận | Mặc định `split_15`: tháng nhuận từ ngày 15 trở về trước tính theo tháng hiện tại, từ ngày 16 tính theo tháng sau (ví dụ ngày 16 tháng 2 nhuận tính là tháng 3). Nếu người dùng có quy ước riêng thì truyền `current` (cả tháng theo tháng hiện tại) hoặc `next` (cả tháng theo tháng sau). Output `normalized_input.leap_month_rule` và `ruleset.leap_month_rule` ghi rõ thuật toán đã dùng, `source` là `default` (không truyền, dùng mặc định) hoặc `explicit` (bên gọi chỉ định); sinh tháng nhuận thì `warnings` cũng ghi chú | `leap_month_rule`: `split_15` (mặc định) / `current` / `next` |
+| Phạm vi ảnh hưởng của tháng nhuận | Chỉ trực tiếp ảnh hưởng các sao an theo tháng: cung Mệnh, cung Thân, Tả Phù, Hữu Bật, Thiên Hình, Thiên Diêu; năm và ngày không đổi. Cung Mệnh đổi thì can cung, ngũ hành cục và chòm Tử Vi (an theo cục) cũng đổi theo | — |
+| Tuổi đại hạn | Tuổi mụ | — |
+| Lưu niên | Cung Mệnh lưu niên ở cung mang địa chi của năm xem; tứ hóa lưu niên lấy theo can năm xem; tứ hóa đại hạn lấy theo can cung của đại hạn hiện tại (xem phần "Tứ hóa vận hạn" trong `sihua.md`) | `query_year` (năm âm lịch, không bắt buộc) |
+| Giờ sinh | Lấy giờ âm lịch thẳng từ giờ đồng hồ người dùng xác nhận, không tự hiệu chỉnh giờ mặt trời thật hay giờ mùa hè; cần hiệu chỉnh thì tự quy đổi trước rồi mới truyền vào | `birth_time` |
+| Sao hạng ất | Chỉ an các sao ở §9 có quy tắc đầy đủ: Thiên Hình, Thiên Diêu, Hồng Loan, Thiên Hỷ, Thiên Khốc, Thiên Hư. Cô Thần, Quả Tú chưa có bảng trong file này nên script không an | — |
+| Miếu vượng lợi hãm | 14 chính tinh xuất theo bảng miếu vượng hãm trong `stars.md` (bảng tổng ở quyển 2 sách *Tử Vi Đẩu Số Toàn Thư*, nguồn và dị bản xem chú thích dưới bảng) | — |
+| Ngôn ngữ output | Mặc định chuyển toàn bộ thuật ngữ trong output sang tiếng Việt (`vi_terms.py`). Truyền `"lang": "zh"` nếu muốn giữ chữ Hán như bản gốc | `lang`: `vi` (mặc định) / `zh` |
 
-脚本排完会自检：十四主星齐全不重复；紫微同宫组合只落在 §7.4 列出的宫位（如紫微七杀只在巳、亥）；四化星都在盘上。自检不过直接报错，不输出盘面。
+Lập xong script sẽ tự kiểm tra: 14 chính tinh đủ và không trùng; tổ hợp Tử Vi đồng cung chỉ rơi vào các cung liệt kê ở §7.4 (ví dụ Tử Vi – Thất Sát chỉ ở Tỵ, Hợi); các sao tứ hóa đều có trên lá số. Không qua kiểm tra thì báo lỗi ngay, không xuất lá số.
 
-回归测试的期望值来源：本文件各表与示例、安星诀推导（穷举五局三十日检查紫微双星组合宫位）、`lunar_python` 六十甲子纳音表（核对五行局）、开源排盘库 iztro 2.6.2 的 120 个盘例（逐星对照，含主星庙旺利陷；`scripts/tests/fixtures/gen_iztro_cases.cjs` 可重新生成核对）。
+Nguồn giá trị kỳ vọng cho test hồi quy: các bảng và ví dụ trong file này, suy ra từ an tinh quyết (duyệt hết 5 cục × 30 ngày để kiểm tra cung của các tổ hợp sao đôi với Tử Vi), bảng nạp âm Lục thập hoa giáp của `lunar_python` (để đối chiếu ngũ hành cục), và 120 lá số mẫu của thư viện lập lá số mã nguồn mở iztro 2.6.2 (đối chiếu từng sao, gồm cả miếu vượng lợi hãm của chính tinh; có thể tạo lại bằng `scripts/tests/fixtures/gen_iztro_cases.cjs`).

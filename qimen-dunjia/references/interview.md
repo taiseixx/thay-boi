@@ -1,65 +1,65 @@
-# 访谈问题库
+# Bộ câu hỏi phỏng vấn
 
-正式排盘前，一定先访谈。目标不是“问得多”，而是尽快收齐能排盘的信息。
+Trước khi lập bàn chính thức, nhất định phải phỏng vấn trước. Mục tiêu không phải "hỏi cho nhiều", mà là gom đủ thông tin để lập bàn càng nhanh càng tốt.
 
-## 第一轮核心问题
+## Vòng một: câu hỏi cốt lõi
 
-按这个顺序问，语气直白：
+Hỏi theo thứ tự này, giọng thẳng thắn:
 
-1. 你要看什么事？一句话说清。
-2. 事情对应的时间是什么？如果就是现在，直接说“现在”。
-3. 你人在哪个城市？如果不在中国大陆，请直接说国家/城市。
-4. 你最想判断什么？比如能不能成、什么时候动、选哪边、要避开什么。
-5. 这件事现在进展到哪一步了？
-6. 你要“直接结论”还是“详细讲解”？
+1. Bạn muốn xem việc gì? Nói gọn trong một câu.
+2. Việc này ứng với thời điểm nào? Nếu là ngay bây giờ thì cứ nói "bây giờ".
+3. Bạn đang ở thành phố nào? Nếu không ở Trung Quốc đại lục, nói luôn quốc gia / thành phố.
+4. Bạn muốn phán đoán điều gì nhất? Ví dụ có thành không, khi nào nên động, chọn bên nào, cần tránh gì.
+5. Việc này hiện đã tiến triển đến bước nào?
+6. Bạn muốn "kết luận thẳng" hay "giải thích chi tiết"?
 
-## 第二轮追问条件
+## Vòng hai: điều kiện hỏi thêm
 
-### 只有日期，没有时辰
+### Chỉ có ngày, không có giờ
 
-追问：
+Hỏi thêm:
 
-- 这件事具体是几点？如果记不准，至少告诉我是哪个时辰。
+- Việc này cụ thể lúc mấy giờ? Nếu không nhớ chính xác, ít nhất cho mình biết là giờ âm lịch nào.
 
-### 给的是农历
+### Đưa ngày âm lịch
 
-追问：
+Hỏi thêm:
 
-- 这是农历几月几日？
-- 如果那个月有闰月，你这次是不是闰月？
+- Đây là ngày mấy tháng mấy âm lịch?
+- Nếu tháng đó có tháng nhuận, lần này có phải tháng nhuận không?
 
-### 海外地点
+### Địa điểm ở nước ngoài
 
-追问：
+Hỏi thêm:
 
-- 你现在在哪个国家和城市？
-- 如果方便，直接把时区也告诉我。
+- Bạn đang ở quốc gia và thành phố nào?
+- Nếu tiện, cho mình biết luôn múi giờ.
 
-### 问题太泛
+### Câu hỏi quá chung
 
-追问：
+Hỏi thêm:
 
-- 你这次最想判断哪一个结果？
-- 你是更关心能不能成，还是更关心什么时候动？
+- Lần này bạn muốn phán đoán kết quả nào nhất?
+- Bạn quan tâm hơn đến việc có thành không, hay khi nào nên động?
 
-### 高风险主题
+### Chủ đề rủi ro cao
 
-涉及疾病、法律、重大投资、生死、失踪等问题时，额外补一句：
+Khi liên quan đến bệnh tật, pháp luật, đầu tư lớn, sinh tử, mất tích, nói thêm một câu:
 
-- 我会按奇门给你看趋势，但这类问题也建议同时看现实专业意见。你要不要我一起把现实建议写上？
+- Mình sẽ xem xu hướng theo Kỳ môn cho bạn, nhưng loại vấn đề này cũng nên tham khảo ý kiến chuyên môn thực tế. Bạn có muốn mình viết kèm lời khuyên thực tế không?
 
-## 理论学习模式
+## Chế độ học lý thuyết
 
-如果用户不是来正式排盘，而是来学习：
+Nếu người dùng không đến để lập bàn chính thức mà để học:
 
-先问：
+Hỏi trước:
 
-- 你想学基础概念、完整流程，还是看一个实战盘例？
+- Bạn muốn học khái niệm cơ bản, quy trình đầy đủ, hay xem một ví dụ bàn thực tế?
 
-然后再继续。
+Rồi mới tiếp tục.
 
-## 不要这样问
+## Đừng hỏi kiểu này
 
-- 不要一口气抛十几个术语问题。
-- 不要问“你是什么流派”这种普通用户听不懂的话。
-- 不要先排盘再回头补关键信息。
+- Đừng tung một lèo hơn chục câu hỏi đầy thuật ngữ.
+- Đừng hỏi "bạn theo phái nào", người dùng bình thường không hiểu.
+- Đừng lập bàn trước rồi mới quay lại hỏi bổ sung thông tin then chốt.
